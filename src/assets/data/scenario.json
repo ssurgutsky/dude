@@ -102,7 +102,7 @@
                     }
                   ],
                   "_mark": "dude_generator",
-                  "_content": "[LABEL {script generate_dude.qsp}]"
+                  "_content": "[LABEL {this.ox=220}{script generate_dude.qsp}]"
                 }
               ],
               "_mark": "",
