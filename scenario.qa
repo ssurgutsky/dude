@@ -1,13 +1,20 @@
-[mark_3z68p6amx549c803662v][IMAGE hints/hint_advices.jpg,hints/hint_bargain.jpg,hints/hint_credit.jpg,hints/hint_crush.jpg,hints/hint_defend.jpg,hints/hint_dvd.jpg,hints/hint_havefun.jpg,hints/hint_locations.jpg,hints/hint_quests.jpg,hints/hint_store.jpg,hints/hint_tuning.jpg,hints/hint_vip.jpg][AUDIO silent_1]{script init_vars.qsp}
+[mark_072k0e5b6nffqnr54rsj]Начало
 	
-		[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]
-			Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
-				[mark_xgr83yl1i8415k24172u]Карта{script show_map.qsp}
-					Рынок
-			[ddonate]Закивасить.
-				[mark_t319971dwu2865mjn7qo][NAVIGATEURL https://qiwi.com/n/SERJIOS]
-					
-						[mark_8r456ve83222mbv60b0m][GOTO START]
-		[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
-			Ну, ладно...
-				[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
+		[mark_3z68p6amx549c803662v]{script init_vars.qsp}
+			
+				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]
+					Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
+						[mark_xgr83yl1i8415k24172u]Карта{script show_map.qsp}
+							Рынок
+					Генератор чувака
+						[mark_3ryyirl37qf720cp3z9e][GOTO dude_generator]
+					[ddonate]Закивасить.
+						[mark_t319971dwu2865mjn7qo][NAVIGATEURL https://qiwi.com/n/SERJIOS]
+							
+								[mark_8r456ve83222mbv60b0m][GOTO START]
+				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
+					Ну, ладно...
+						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
+		[dude_generator]{script generate_dude.qsp}
+			[mark_hov923hz1g449v653q46]Следующий
+				[mark_5i558f76n5f1iu6kiw33][GOTO dude_generator]

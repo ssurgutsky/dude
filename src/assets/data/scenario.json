@@ -13,66 +13,104 @@
                         {
                           "node": [
                             {
+                              "node": [
+                                {
+                                  "node": [
+                                    {
+                                      "_mark": "",
+                                      "_content": "[LABEL Рынок]"
+                                    }
+                                  ],
+                                  "_mark": "mark_xgr83yl1i8415k24172u",
+                                  "_content": "[LABEL Карта{script show_map.qsp}]"
+                                }
+                              ],
                               "_mark": "",
-                              "_content": "[LABEL Рынок]"
+                              "_content": "[LABEL Начать игру.][ANSWERIMAGE icons/ru.png|50;400]"
+                            },
+                            {
+                              "node": [
+                                {
+                                  "_mark": "mark_3ryyirl37qf720cp3z9e",
+                                  "_content": "[LABEL ][GOTO dude_generator]"
+                                }
+                              ],
+                              "_mark": "",
+                              "_content": "[LABEL Генератор чувака]"
+                            },
+                            {
+                              "node": [
+                                {
+                                  "node": [
+                                    {
+                                      "node": [
+                                        {
+                                          "_mark": "mark_8r456ve83222mbv60b0m",
+                                          "_content": "[LABEL ][GOTO START]"
+                                        }
+                                      ],
+                                      "_mark": "",
+                                      "_content": "[LABEL ]"
+                                    }
+                                  ],
+                                  "_mark": "mark_t319971dwu2865mjn7qo",
+                                  "_content": "[LABEL ][NAVIGATEURL https://qiwi.com/n/SERJIOS]"
+                                }
+                              ],
+                              "_mark": "ddonate",
+                              "_content": "[LABEL Закивасить.]"
                             }
                           ],
-                          "_mark": "mark_xgr83yl1i8415k24172u",
-                          "_content": "[LABEL Карта{script show_map.qsp}]"
-                        }
-                      ],
-                      "_mark": "",
-                      "_content": "[LABEL Начать игру.][ANSWERIMAGE icons/ru.png|50;400]"
-                    },
-                    {
-                      "node": [
+                          "_mark": "START",
+                          "_content": "[LABEL Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.][BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]"
+                        },
                         {
                           "node": [
                             {
                               "node": [
                                 {
-                                  "_mark": "mark_8r456ve83222mbv60b0m",
-                                  "_content": "[LABEL ][GOTO START]"
+                                  "_mark": "mark_4tx0ilu5994y600686mx",
+                                  "_content": "[LABEL {script init_vars}][GOTO main_menu]"
                                 }
                               ],
                               "_mark": "",
-                              "_content": "[LABEL ]"
+                              "_content": "[LABEL Ну, ладно...]"
                             }
                           ],
-                          "_mark": "mark_t319971dwu2865mjn7qo",
-                          "_content": "[LABEL ][NAVIGATEURL https://qiwi.com/n/SERJIOS]"
+                          "_mark": "GAME_UPGRADEPOINT",
+                          "_content": "[LABEL Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.][IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]"
                         }
                       ],
-                      "_mark": "ddonate",
-                      "_content": "[LABEL Закивасить.]"
+                      "_mark": "",
+                      "_content": "[LABEL ]"
                     }
                   ],
-                  "_mark": "START",
-                  "_content": "[LABEL Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.][BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]"
+                  "_mark": "mark_3z68p6amx549c803662v",
+                  "_content": "[LABEL {script init_vars.qsp}]"
                 },
                 {
                   "node": [
                     {
                       "node": [
                         {
-                          "_mark": "mark_4tx0ilu5994y600686mx",
-                          "_content": "[LABEL {script init_vars}][GOTO main_menu]"
+                          "_mark": "mark_5i558f76n5f1iu6kiw33",
+                          "_content": "[LABEL ][GOTO dude_generator]"
                         }
                       ],
-                      "_mark": "",
-                      "_content": "[LABEL Ну, ладно...]"
+                      "_mark": "mark_hov923hz1g449v653q46",
+                      "_content": "[LABEL Следующий]"
                     }
                   ],
-                  "_mark": "GAME_UPGRADEPOINT",
-                  "_content": "[LABEL Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.][IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]"
+                  "_mark": "dude_generator",
+                  "_content": "[LABEL {script generate_dude.qsp}]"
                 }
               ],
               "_mark": "",
               "_content": "[LABEL ]"
             }
           ],
-          "_mark": "mark_3z68p6amx549c803662v",
-          "_content": "[LABEL {script init_vars.qsp}][IMAGE hints/hint_advices.jpg,hints/hint_bargain.jpg,hints/hint_credit.jpg,hints/hint_crush.jpg,hints/hint_defend.jpg,hints/hint_dvd.jpg,hints/hint_havefun.jpg,hints/hint_locations.jpg,hints/hint_quests.jpg,hints/hint_store.jpg,hints/hint_tuning.jpg,hints/hint_vip.jpg][AUDIO silent_1]"
+          "_mark": "mark_072k0e5b6nffqnr54rsj",
+          "_content": "[LABEL Начало]"
         }
       ]
     }
