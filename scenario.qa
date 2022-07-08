@@ -4,17 +4,51 @@
 			
 				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]
 					Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
-						[mark_xgr83yl1i8415k24172u]Карта{script show_map.qsp}
-							Рынок
+						[MAP]Карта{script show_map.qsp}
+							{this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+								[mark_h7v5642454m553fa1d9x]{this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+									
+										[mark_58gg854k4qojgl5ppequ][GOTO TRIP_QUESTS]
+							{this.newlocation=2;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+								[mark_q2144z0dmjcfis47t8ve]{this.newlocation=2;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+									
+										[mark_945m6mv79qh80ym47uhr][GOTO TRIP_QUESTS]
+							{this.newlocation=3;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+								[mark_dse7z5n856wap89y7n58]{this.newlocation=3;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+									
+										[mark_x3402q1s9818471rh87t][GOTO TRIP_QUESTS]
+							{this.newlocation=4;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+								[mark_8uhqd7vh7b0f2bjqy5zh]{this.newlocation=4;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+									
+										[mark_z14bu7o52x5gl3mw0k9f][GOTO TRIP_QUESTS]
+							{this.newlocation=5;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+								[mark_8cg8tv1579u80nwsv334]<Enter text here>
+							{this.newlocation=6;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+								[mark_fvjpa5nc0wbyahr7udi2]<Enter text here>
+							{this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+								[mark_4k3h8blerj88b25q8642]<Enter text here>
 					Генератор чувака
 						[mark_3ryyirl37qf720cp3z9e][GOTO dude_generator]
 					[ddonate]Закивасить.
 						[mark_t319971dwu2865mjn7qo][NAVIGATEURL https://qiwi.com/n/SERJIOS]
 							
 								[mark_8r456ve83222mbv60b0m][GOTO START]
+				[TRIP_QUESTS]{script trip_video.qsp}
+					
+						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]";''} 
+							
+								[mark_8i78i65qrm7jv0s6a437]{this.ox=220;''}{script quest_1_show.qsp}
+									Далее...
+										[mark_d2752e0b18z1a1r2wd58][GOTO QUEST2]
+						[QUEST2]{if (Math.random() > 0.5) "[GOTO QUEST3]";''} 
+							
+								[mark_26hez718lm5g88ibsc8o]{this.ox=220;''}{script quest_2_show.qsp}
+									Далее...
+										[mark_q5lxq4mz1oe25ue5j178][GOTO QUESTS_DONE]
+						[QUESTS_DONE]{this.location=this.newlocation;''}[GOTO MAP]
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
-		[dude_generator]{this.ox=220}{script generate_dude.qsp}
+		[dude_generator]{this.ox=220;''}{script generate_dude.qsp}
 			[mark_hov923hz1g449v653q46]Следующий
 				[mark_5i558f76n5f1iu6kiw33][GOTO dude_generator]
