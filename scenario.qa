@@ -4,7 +4,7 @@
 			
 				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]
 					Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
-						[MAP]Карта{script show_map.qsp}
+						[MAP]{this.locations[this.location].name}. Куда пойдешь?{script show_map.qsp}
 							{this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 								[mark_h7v5642454m553fa1d9x]{this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 									
@@ -37,14 +37,22 @@
 					
 						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]"} 
 							
-								[mark_8i78i65qrm7jv0s6a437]{this.ox=220;''}{script quest_1_show.qsp}
-									Далее...
-										[mark_d2752e0b18z1a1r2wd58][GOTO QUEST2]
+								[mark_8i78i65qrm7jv0s6a437]Здарова, брутаху! Выручи монетой?{this.ox=220;''}{script quest_1_show.qsp}
+									Иди работай
+										[mark_0kq2h61l01odwyd6s56m]{script trip_video.qsp}
+											
+												[mark_d2752e0b18z1a1r2wd58][GOTO QUEST2]
+									Ну держи
+										[mark_k201s77803019w464is5]{script trip_video.qsp}
+											
+												[mark_uj99e17263ddegf84dv1][GOTO QUEST2]
 						[QUEST2]{if (Math.random() > 0.5) "[GOTO QUEST3]"} 
 							
-								[mark_26hez718lm5g88ibsc8o]{this.ox=220;''}{script quest_2_show.qsp}
-									Далее...
-										[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
+								[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.ox=220;''}{script quest_2_show.qsp}
+									Мне некогда
+										[mark_12pt269r2pmbpkj62w8b]{script trip_video.qsp}
+											
+												[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
 						[QUEST3]{this.location=this.newlocation;''}[GOTO MAP]
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...

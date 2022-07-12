@@ -136,7 +136,7 @@
                                     }
                                   ],
                                   "_mark": "MAP",
-                                  "_content": "[LABEL Карта{script show_map.qsp}]"
+                                  "_content": "[LABEL {this.locations[this.location].name}. Куда пойдешь?{script show_map.qsp}]"
                                 }
                               ],
                               "_mark": "",
@@ -191,16 +191,50 @@
                                             {
                                               "node": [
                                                 {
-                                                  "_mark": "mark_d2752e0b18z1a1r2wd58",
-                                                  "_content": "[LABEL ][GOTO QUEST2]"
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_d2752e0b18z1a1r2wd58",
+                                                          "_content": "[LABEL ][GOTO QUEST2]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "mark_0kq2h61l01odwyd6s56m",
+                                                  "_content": "[LABEL {script trip_video.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
-                                              "_content": "[LABEL Далее...]"
+                                              "_content": "[LABEL Иди работай]"
+                                            },
+                                            {
+                                              "node": [
+                                                {
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_uj99e17263ddegf84dv1",
+                                                          "_content": "[LABEL ][GOTO QUEST2]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "mark_k201s77803019w464is5",
+                                                  "_content": "[LABEL {script trip_video.qsp}]"
+                                                }
+                                              ],
+                                              "_mark": "",
+                                              "_content": "[LABEL Ну держи]"
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL {this.ox=220;''}{script quest_1_show.qsp}]"
+                                          "_content": "[LABEL Здарова, брутаху! Выручи монетой?{this.ox=220;''}{script quest_1_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -219,16 +253,28 @@
                                             {
                                               "node": [
                                                 {
-                                                  "_mark": "mark_q5lxq4mz1oe25ue5j178",
-                                                  "_content": "[LABEL ][GOTO QUEST3]"
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_q5lxq4mz1oe25ue5j178",
+                                                          "_content": "[LABEL ][GOTO QUEST3]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "mark_12pt269r2pmbpkj62w8b",
+                                                  "_content": "[LABEL {script trip_video.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
-                                              "_content": "[LABEL Далее...]"
+                                              "_content": "[LABEL Мне некогда]"
                                             }
                                           ],
                                           "_mark": "mark_26hez718lm5g88ibsc8o",
-                                          "_content": "[LABEL {this.ox=220;''}{script quest_2_show.qsp}]"
+                                          "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.ox=220;''}{script quest_2_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
