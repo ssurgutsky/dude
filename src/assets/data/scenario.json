@@ -208,7 +208,7 @@
                                     }
                                   ],
                                   "_mark": "QUEST1",
-                                  "_content": "[LABEL {if (Math.random() > 0.5) \"[GOTO QUEST2]\";''} ]"
+                                  "_content": "[LABEL {if (Math.random() > 0.5) \"[GOTO QUEST2]\"} ]"
                                 },
                                 {
                                   "node": [
@@ -220,7 +220,7 @@
                                               "node": [
                                                 {
                                                   "_mark": "mark_q5lxq4mz1oe25ue5j178",
-                                                  "_content": "[LABEL ][GOTO QUESTS_DONE]"
+                                                  "_content": "[LABEL ][GOTO QUEST3]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -236,10 +236,10 @@
                                     }
                                   ],
                                   "_mark": "QUEST2",
-                                  "_content": "[LABEL {if (Math.random() > 0.5) \"[GOTO QUEST3]\";''} ]"
+                                  "_content": "[LABEL {if (Math.random() > 0.5) \"[GOTO QUEST3]\"} ]"
                                 },
                                 {
-                                  "_mark": "QUESTS_DONE",
+                                  "_mark": "QUEST3",
                                   "_content": "[LABEL {this.location=this.newlocation;''}][GOTO MAP]"
                                 }
                               ],
