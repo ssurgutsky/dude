@@ -23,120 +23,132 @@
                                             {
                                               "node": [
                                                 {
-                                                  "_mark": "mark_58gg854k4qojgl5ppequ",
-                                                  "_content": "[LABEL ][GOTO TRIP_QUESTS]"
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_58gg854k4qojgl5ppequ",
+                                                          "_content": "[LABEL ][GOTO TRIP_QUESTS]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "mark_h7v5642454m553fa1d9x",
+                                                  "_content": "[LABEL {this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
-                                              "_content": "[LABEL ]"
-                                            }
-                                          ],
-                                          "_mark": "mark_h7v5642454m553fa1d9x",
-                                          "_content": "[LABEL {this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
-                                        }
-                                      ],
-                                      "_mark": "",
-                                      "_content": "[LABEL {this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
-                                    },
-                                    {
-                                      "node": [
-                                        {
-                                          "node": [
+                                              "_content": "[LABEL {this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                            },
                                             {
                                               "node": [
                                                 {
-                                                  "_mark": "mark_945m6mv79qh80ym47uhr",
-                                                  "_content": "[LABEL ][GOTO TRIP_QUESTS]"
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_945m6mv79qh80ym47uhr",
+                                                          "_content": "[LABEL ][GOTO TRIP_QUESTS]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "mark_q2144z0dmjcfis47t8ve",
+                                                  "_content": "[LABEL {this.newlocation=2;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
-                                              "_content": "[LABEL ]"
-                                            }
-                                          ],
-                                          "_mark": "mark_q2144z0dmjcfis47t8ve",
-                                          "_content": "[LABEL {this.newlocation=2;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
-                                        }
-                                      ],
-                                      "_mark": "",
-                                      "_content": "[LABEL {this.newlocation=2;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
-                                    },
-                                    {
-                                      "node": [
-                                        {
-                                          "node": [
+                                              "_content": "[LABEL {this.newlocation=2;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                            },
                                             {
                                               "node": [
                                                 {
-                                                  "_mark": "mark_x3402q1s9818471rh87t",
-                                                  "_content": "[LABEL ][GOTO TRIP_QUESTS]"
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_x3402q1s9818471rh87t",
+                                                          "_content": "[LABEL ][GOTO TRIP_QUESTS]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "mark_dse7z5n856wap89y7n58",
+                                                  "_content": "[LABEL {this.newlocation=3;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
-                                              "_content": "[LABEL ]"
-                                            }
-                                          ],
-                                          "_mark": "mark_dse7z5n856wap89y7n58",
-                                          "_content": "[LABEL {this.newlocation=3;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
-                                        }
-                                      ],
-                                      "_mark": "",
-                                      "_content": "[LABEL {this.newlocation=3;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
-                                    },
-                                    {
-                                      "node": [
-                                        {
-                                          "node": [
+                                              "_content": "[LABEL {this.newlocation=3;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                            },
                                             {
                                               "node": [
                                                 {
-                                                  "_mark": "mark_z14bu7o52x5gl3mw0k9f",
-                                                  "_content": "[LABEL ][GOTO TRIP_QUESTS]"
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_z14bu7o52x5gl3mw0k9f",
+                                                          "_content": "[LABEL ][GOTO TRIP_QUESTS]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "mark_8uhqd7vh7b0f2bjqy5zh",
+                                                  "_content": "[LABEL {this.newlocation=4;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
-                                              "_content": "[LABEL ]"
+                                              "_content": "[LABEL {this.newlocation=4;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                            },
+                                            {
+                                              "node": [
+                                                {
+                                                  "_mark": "mark_8cg8tv1579u80nwsv334",
+                                                  "_content": "[LABEL <Enter text here>]"
+                                                }
+                                              ],
+                                              "_mark": "",
+                                              "_content": "[LABEL {this.newlocation=5;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                            },
+                                            {
+                                              "node": [
+                                                {
+                                                  "_mark": "mark_fvjpa5nc0wbyahr7udi2",
+                                                  "_content": "[LABEL <Enter text here>]"
+                                                }
+                                              ],
+                                              "_mark": "",
+                                              "_content": "[LABEL {this.newlocation=6;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                            },
+                                            {
+                                              "node": [
+                                                {
+                                                  "_mark": "mark_4k3h8blerj88b25q8642",
+                                                  "_content": "[LABEL <Enter text here>]"
+                                                }
+                                              ],
+                                              "_mark": "",
+                                              "_content": "[LABEL {this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
                                             }
                                           ],
-                                          "_mark": "mark_8uhqd7vh7b0f2bjqy5zh",
-                                          "_content": "[LABEL {this.newlocation=4;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
+                                          "_mark": "MAP",
+                                          "_content": "[LABEL {script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script map_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
-                                      "_content": "[LABEL {this.newlocation=4;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
-                                    },
-                                    {
-                                      "node": [
-                                        {
-                                          "_mark": "mark_8cg8tv1579u80nwsv334",
-                                          "_content": "[LABEL <Enter text here>]"
-                                        }
-                                      ],
-                                      "_mark": "",
-                                      "_content": "[LABEL {this.newlocation=5;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
-                                    },
-                                    {
-                                      "node": [
-                                        {
-                                          "_mark": "mark_fvjpa5nc0wbyahr7udi2",
-                                          "_content": "[LABEL <Enter text here>]"
-                                        }
-                                      ],
-                                      "_mark": "",
-                                      "_content": "[LABEL {this.newlocation=6;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
-                                    },
-                                    {
-                                      "node": [
-                                        {
-                                          "_mark": "mark_4k3h8blerj88b25q8642",
-                                          "_content": "[LABEL <Enter text here>]"
-                                        }
-                                      ],
-                                      "_mark": "",
-                                      "_content": "[LABEL {this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                      "_content": "[LABEL Пойду]"
                                     }
                                   ],
-                                  "_mark": "MAP",
-                                  "_content": "[LABEL {script show_player_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script show_map.qsp}]"
+                                  "_mark": "MENU",
+                                  "_content": "[LABEL {script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Что будешь делать?{script location_show.qsp}]"
                                 }
                               ],
                               "_mark": "",
@@ -286,7 +298,7 @@
                                 },
                                 {
                                   "_mark": "QUEST3",
-                                  "_content": "[LABEL {script trip_complete}][GOTO MAP]"
+                                  "_content": "[LABEL {script trip_complete}][GOTO MENU]"
                                 }
                               ],
                               "_mark": "",
