@@ -136,7 +136,7 @@
                                     }
                                   ],
                                   "_mark": "MAP",
-                                  "_content": "[LABEL {this.locations[this.location].name}. Куда пойдешь?{script show_map.qsp}]"
+                                  "_content": "[LABEL {script show_player_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script show_map.qsp}]"
                                 }
                               ],
                               "_mark": "",
@@ -286,7 +286,7 @@
                                 },
                                 {
                                   "_mark": "QUEST3",
-                                  "_content": "[LABEL {this.location=this.newlocation;''}][GOTO MAP]"
+                                  "_content": "[LABEL {script trip_complete}][GOTO MAP]"
                                 }
                               ],
                               "_mark": "",

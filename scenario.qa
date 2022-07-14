@@ -4,7 +4,7 @@
 			
 				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]
 					Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
-						[MAP]{this.locations[this.location].name}. Куда пойдешь?{script show_map.qsp}
+						[MAP]{script show_player_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script show_map.qsp}
 							{this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 								[mark_h7v5642454m553fa1d9x]{this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 									
@@ -53,7 +53,7 @@
 										[mark_12pt269r2pmbpkj62w8b]{script trip_video.qsp}
 											
 												[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
-						[QUEST3]{this.location=this.newlocation;''}[GOTO MAP]
+						[QUEST3]{script trip_complete}[GOTO MAP]
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
