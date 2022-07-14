@@ -7,6 +7,8 @@
 						[MENU]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Что будешь делать?{script location_show.qsp}
 							Пойду
 								[MAP]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script map_show.qsp}
+									Обратно в меню
+										[mark_4sue376w18un6v5631ka][GOTO MENU]
 									{this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 										[mark_h7v5642454m553fa1d9x]{this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 											
@@ -29,6 +31,10 @@
 										[mark_fvjpa5nc0wbyahr7udi2]<Enter text here>
 									{this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 										[mark_4k3h8blerj88b25q8642]<Enter text here>
+							Зайду
+								[mark_17pu05h1bjfk9a0ny6q5]Закрыто...{script location_show.qsp}
+									Ладно
+										[mark_1n9ql3qq283xdeo6419h][GOTO MENU]
 					Генератор чувака
 						[mark_3ryyirl37qf720cp3z9e][GOTO dude_generator]
 					[ddonate]Закивасить.

@@ -23,6 +23,16 @@
                                             {
                                               "node": [
                                                 {
+                                                  "_mark": "mark_4sue376w18un6v5631ka",
+                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                }
+                                              ],
+                                              "_mark": "",
+                                              "_content": "[LABEL Обратно в меню]"
+                                            },
+                                            {
+                                              "node": [
+                                                {
                                                   "node": [
                                                     {
                                                       "node": [
@@ -145,6 +155,28 @@
                                       ],
                                       "_mark": "",
                                       "_content": "[LABEL Пойду]"
+                                    },
+                                    {
+                                      "node": [
+                                        {
+                                          "node": [
+                                            {
+                                              "node": [
+                                                {
+                                                  "_mark": "mark_1n9ql3qq283xdeo6419h",
+                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                }
+                                              ],
+                                              "_mark": "",
+                                              "_content": "[LABEL Ладно]"
+                                            }
+                                          ],
+                                          "_mark": "mark_17pu05h1bjfk9a0ny6q5",
+                                          "_content": "[LABEL Закрыто...{script location_show.qsp}]"
+                                        }
+                                      ],
+                                      "_mark": "",
+                                      "_content": "[LABEL Зайду]"
                                     }
                                   ],
                                   "_mark": "MENU",
