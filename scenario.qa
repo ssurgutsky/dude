@@ -32,39 +32,53 @@
 									{this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 										[mark_4k3h8blerj88b25q8642]<Enter text here>
 							Зайду
-								[mark_17pu05h1bjfk9a0ny6q5]Закрыто...{script location_show.qsp}
-									Ладно
-										[mark_1n9ql3qq283xdeo6419h][GOTO MENU]
+								[mark_l1n41ert02w6w8r6ks11][GOTO location{this.location}]
+									
+										[location1]Закрыто...{script location_show.qsp}
+											Ладно
+												[mark_s9iw3564trm5740k2y5j][GOTO MENU]
+										[location2]Закрыто...{script location_show.qsp}
+											Ладно
+												[mark_1n9ql3qq283xdeo6419h][GOTO MENU]
+										[location3]
+											<Enter text here>
+										[location4]Закрыто...{script location_show.qsp}
+											Ладно
+												[mark_pkg54f4bbgd4vr61btr1][GOTO MENU]
 					Генератор чувака
 						[mark_3ryyirl37qf720cp3z9e][GOTO dude_generator]
 					[ddonate]Закивасить.
 						[mark_t319971dwu2865mjn7qo][NAVIGATEURL https://qiwi.com/n/SERJIOS]
 							
 								[mark_8r456ve83222mbv60b0m][GOTO START]
-				[TRIP_QUESTS]{script trip_video.qsp}
+				[TRIP_QUESTS]{script trip_video_out.qsp}
 					
 						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]"} 
 							
-								[mark_8i78i65qrm7jv0s6a437]Здарова, брутаху! Выручи монетой?{this.ox=220;''}{script quest_1_show.qsp}
+								[mark_8i78i65qrm7jv0s6a437]Здарова, брутахан! Выручи монетой?{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}
 									Иди работай
-										[mark_0kq2h61l01odwyd6s56m]{script trip_video.qsp}
-											
+										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю.{this.ox=190;''}{script dude_show.qsp}
+											Это бесчеловечно
 												[mark_d2752e0b18z1a1r2wd58][GOTO QUEST2]
 									Ну держи
-										[mark_k201s77803019w464is5]{script trip_video.qsp}
-											
+										[mark_4tf36mhe4817916jgx8q]От души душевно в душу, брат!{this.ox=250;''}{script dude_show.qsp}
+											Ну бывай
 												[mark_uj99e17263ddegf84dv1][GOTO QUEST2]
 						[QUEST2]{if (Math.random() > 0.5) "[GOTO QUEST3]"} 
 							
-								[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.ox=220;''}{script quest_2_show.qsp}
-									Мне некогда
-										[mark_12pt269r2pmbpkj62w8b]{script trip_video.qsp}
-											
-												[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
-						[QUEST3]{script trip_complete}[GOTO MENU]
+								[mark_75n6axfeqvpwk2p1hwqu]{script trip_video_med.qsp}
+									
+										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}
+											Мне некогда
+												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{this.ox=250;this.oy=50;''}{script dude_show.qsp}
+													Отвали
+														[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
+						[QUEST3]{script trip_complete}{script trip_video_in.qsp}
+							
+								[mark_gx1cu580s61e8reucjf7][GOTO MENU]
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
-		[dude_generator]{this.ox=220;''}{script generate_dude.qsp}
+		[dude_generator]{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}
 			[mark_hov923hz1g449v653q46]Следующий
 				[mark_5i558f76n5f1iu6kiw33][GOTO dude_generator]
