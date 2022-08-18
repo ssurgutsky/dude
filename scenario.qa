@@ -40,8 +40,18 @@
 										[location2]Закрыто...{script location_show.qsp}
 											Ладно
 												[mark_1n9ql3qq283xdeo6419h][GOTO MENU]
-										[location3]
-											<Enter text here>
+										[location3]...[BGNDIMAGE bg/location3_1.jpg]
+											Пройду на ЖД пути
+												[mark_5n7rhdykq7x9t11499ja]...[VIDEO train_in1.mp4][AUDIO silent_4]
+													
+														[mark_g5zht0sy2l28lq4l02k7]...[BGNDIMAGE bg/location3_2.jpg]
+															Вернусь обратно
+																[mark_9941mh3z44vwelrye7og]...[VIDEO train_out1.mp4][AUDIO silent_4]
+																	
+																		[mark_6uqb43hcu7e0ah50u98l][GOTO location3]
+															Спрошу о работе
+											Выйду наружу
+												[mark_ett54z84o0n6b27289sp][GOTO MENU]
 										[location4]Закрыто...{script location_show.qsp}
 											Ладно
 												[mark_pkg54f4bbgd4vr61btr1][GOTO MENU]
@@ -55,7 +65,7 @@
 					
 						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]"} 
 							
-								[mark_8i78i65qrm7jv0s6a437]Здарова, брутахан! Выручи монетой?{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}
+								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}
 									Иди работай
 										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю.{this.ox=190;''}{script dude_show.qsp}
 											Это бесчеловечно

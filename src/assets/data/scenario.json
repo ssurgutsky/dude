@@ -197,12 +197,68 @@
                                                 {
                                                   "node": [
                                                     {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_6uqb43hcu7e0ah50u98l",
+                                                                                  "_content": "[LABEL ][GOTO location3]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_9941mh3z44vwelrye7og",
+                                                                          "_content": "[LABEL ...][VIDEO train_out1.mp4][AUDIO silent_4]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Вернусь обратно]"
+                                                                    },
+                                                                    {
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Спрошу о работе]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_g5zht0sy2l28lq4l02k7",
+                                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location3_2.jpg]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_5n7rhdykq7x9t11499ja",
+                                                          "_content": "[LABEL ...][VIDEO train_in1.mp4][AUDIO silent_4]"
+                                                        }
+                                                      ],
                                                       "_mark": "",
-                                                      "_content": "[LABEL <Enter text here>]"
+                                                      "_content": "[LABEL Пройду на ЖД пути]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_ett54z84o0n6b27289sp",
+                                                          "_content": "[LABEL ][GOTO MENU]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL Выйду наружу]"
                                                     }
                                                   ],
                                                   "_mark": "location3",
-                                                  "_content": "[LABEL ]"
+                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location3_1.jpg]"
                                                 },
                                                 {
                                                   "node": [
@@ -332,7 +388,7 @@
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL Здарова, брутахан! Выручи монетой?{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
