@@ -451,7 +451,7 @@ export default {
         }
 
         let answersOrder = commonUtils.getTagValueANSWERSORDER(this.currentNode._parsedContent)
-        if (answersOrder.toUpperCase() !== 'ON' && !this.$debug) {
+        if (answersOrder.toUpperCase() === 'ON' && !this.$debug) {
           commonUtils.shuffle(this.currentAnswers)
         }
       }

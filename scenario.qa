@@ -5,7 +5,7 @@
 				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]
 					Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
 						[MENU]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Что будешь делать?{script location_show.qsp}
-							Пойду
+							Пойду в другое место
 								[MAP]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script map_show.qsp}
 									Обратно в меню
 										[mark_4sue376w18un6v5631ka][GOTO MENU]
@@ -31,11 +31,39 @@
 										[mark_fvjpa5nc0wbyahr7udi2]<Enter text here>
 									{this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 										[mark_4k3h8blerj88b25q8642]<Enter text here>
-							Зайду
+							Зайду внутрь
 								[mark_l1n41ert02w6w8r6ks11][GOTO location{this.location}]
 									
-										[location1]Закрыто...{script location_show.qsp}
-											Ладно
+										[location1]Прихожая. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room1.jpg]
+											[go_home1_room2]Пойду в зал
+												[home1_room2]Зал. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room2.jpg]
+													Почитаю объявления
+														[mark_2a5xcj1661r162tdhh7g]Требуются грузчики на ЖД Вокзал, Доставщики в фирму "Фома виз лав"...[BGNDIMAGE bg/home1_room2.jpg]
+															...
+																[mark_6g2di69p79b5223pgg4m][GOTO home1_room2]
+													[GOTO go_home1_room3]
+													[GOTO go_home1_room4]
+													[GOTO home1_go_out]
+											[go_home1_room3]Пойду к себе в комнату
+												[home1_room3]Твоя комната. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room3.jpg]
+													Посплю/Отдохну
+														[mark_9od108u40qlp0u7029g4]{this.rest=100;''}Хорошо выспался![BGNDIMAGE bg/home1_room3.jpg]
+															...
+																[mark_056h56k40dz77y8ak198][GOTO home1_room3]
+														[mark_pify3oo379p99q6y2dh3]<Enter text here>
+													[GOTO go_home1_room2]
+													[GOTO go_home1_room4]
+													[GOTO home1_go_out]
+											[go_home1_room4]Пойду на кухню
+												[home1_room4]Кухня. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room4.jpg]
+													Поем
+														[mark_f235bcn695nos7r24g9n]{this.energy=100;''}Было вкусно![BGNDIMAGE bg/home1_room4.jpg]
+															...
+																[mark_1utn430b61m3b6hi15a6][GOTO home1_room4]
+													[GOTO go_home1_room2]
+													[GOTO go_home1_room3]
+													[GOTO home1_go_out]
+											[home1_go_out]Выйду из дома
 												[mark_s9iw3564trm5740k2y5j][GOTO MENU]
 										[location2]Закрыто...{script location_show.qsp}
 											Ладно

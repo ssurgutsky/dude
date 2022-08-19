@@ -154,7 +154,7 @@
                                         }
                                       ],
                                       "_mark": "",
-                                      "_content": "[LABEL Пойду]"
+                                      "_content": "[LABEL Пойду в другое место]"
                                     },
                                     {
                                       "node": [
@@ -167,16 +167,158 @@
                                                     {
                                                       "node": [
                                                         {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_6g2di69p79b5223pgg4m",
+                                                                          "_content": "[LABEL ][GOTO home1_room2]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ...]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_2a5xcj1661r162tdhh7g",
+                                                                  "_content": "[LABEL Требуются грузчики на ЖД Вокзал, Доставщики в фирму \"Фома виз лав\"...][BGNDIMAGE bg/home1_room2.jpg]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Почитаю объявления]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO go_home1_room3]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO go_home1_room4]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO home1_go_out]"
+                                                            }
+                                                          ],
+                                                          "_mark": "home1_room2",
+                                                          "_content": "[LABEL Зал. Что будешь делать?\n{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room2.jpg]"
+                                                        }
+                                                      ],
+                                                      "_mark": "go_home1_room2",
+                                                      "_content": "[LABEL Пойду в зал]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_056h56k40dz77y8ak198",
+                                                                          "_content": "[LABEL ][GOTO home1_room3]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ...]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_9od108u40qlp0u7029g4",
+                                                                  "_content": "[LABEL {this.rest=100;''}Хорошо выспался!][BGNDIMAGE bg/home1_room3.jpg]"
+                                                                },
+                                                                {
+                                                                  "_mark": "mark_pify3oo379p99q6y2dh3",
+                                                                  "_content": "[LABEL <Enter text here>]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Посплю/Отдохну]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO go_home1_room2]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO go_home1_room4]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO home1_go_out]"
+                                                            }
+                                                          ],
+                                                          "_mark": "home1_room3",
+                                                          "_content": "[LABEL Твоя комната. Что будешь делать?\n{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room3.jpg]"
+                                                        }
+                                                      ],
+                                                      "_mark": "go_home1_room3",
+                                                      "_content": "[LABEL Пойду к себе в комнату]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_1utn430b61m3b6hi15a6",
+                                                                          "_content": "[LABEL ][GOTO home1_room4]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ...]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_f235bcn695nos7r24g9n",
+                                                                  "_content": "[LABEL {this.energy=100;''}Было вкусно!][BGNDIMAGE bg/home1_room4.jpg]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Поем]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO go_home1_room2]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO go_home1_room3]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO home1_go_out]"
+                                                            }
+                                                          ],
+                                                          "_mark": "home1_room4",
+                                                          "_content": "[LABEL Кухня. Что будешь делать?\n{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room4.jpg]"
+                                                        }
+                                                      ],
+                                                      "_mark": "go_home1_room4",
+                                                      "_content": "[LABEL Пойду на кухню]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
                                                           "_mark": "mark_s9iw3564trm5740k2y5j",
                                                           "_content": "[LABEL ][GOTO MENU]"
                                                         }
                                                       ],
-                                                      "_mark": "",
-                                                      "_content": "[LABEL Ладно]"
+                                                      "_mark": "home1_go_out",
+                                                      "_content": "[LABEL Выйду из дома]"
                                                     }
                                                   ],
                                                   "_mark": "location1",
-                                                  "_content": "[LABEL Закрыто...{script location_show.qsp}]"
+                                                  "_content": "[LABEL Прихожая. Что будешь делать?\n{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room1.jpg]"
                                                 },
                                                 {
                                                   "node": [
@@ -358,7 +500,7 @@
                                         }
                                       ],
                                       "_mark": "",
-                                      "_content": "[LABEL Зайду]"
+                                      "_content": "[LABEL Зайду внутрь]"
                                     }
                                   ],
                                   "_mark": "MENU",
