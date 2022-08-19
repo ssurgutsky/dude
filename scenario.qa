@@ -44,12 +44,14 @@
 											Пройду на ЖД пути
 												[mark_5n7rhdykq7x9t11499ja]...[VIDEO train_in1.mp4]
 													
-														[mark_g5zht0sy2l28lq4l02k7]...{this.dudesBg='bg/location3_2.jpg';this.newDudes=true;this.ox=220;this.oy=0;this.sx=0.8;this.sy=0.8;''}{script dude_show.qsp}
+														[mark_g5zht0sy2l28lq4l02k7]...[BGNDIMAGE bg/location3_2.jpg]
 															Спрошу о работе
-																[mark_lwl3486lna24bcnh4zw9]Иди разгружай вагон.{this.dudesBg='bg/location3_2.jpg';this.ox=220;this.oy=0;''}{script dude_show.qsp}
+																[mark_lwl3486lna24bcnh4zw9]Иди разгружай вагон.[BGNDIMAGE bg/location3_2.jpg]
 																	А денег сколько дашь?
-																		[mark_iai8574258822emdi316]Договоримся...{this.dudesBg='bg/location3_2.jpg';this.ox=220;this.oy=0;''}{script dude_show.qsp}
+																		[mark_iai8574258822emdi316]Договоримся...[BGNDIMAGE bg/location3_2.jpg]
 																			Ладно
+																				[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																					[GOTO train_station_back]
 																			[GOTO train_station_back]
 															[train_station_back]Вернусь обратно
 																[mark_9941mh3z44vwelrye7og]...[VIDEO train_out1.mp4]
@@ -60,7 +62,7 @@
 										[location4]Закрыто...{script location_show.qsp}
 											Ладно
 												[mark_pkg54f4bbgd4vr61btr1][GOTO MENU]
-					Генератор чувака
+					Генератор чуваков
 						[mark_3ryyirl37qf720cp3z9e][GOTO dude_generator]
 					[ddonate]Закивасить.
 						[mark_t319971dwu2865mjn7qo][NAVIGATEURL https://qiwi.com/n/SERJIOS]
@@ -70,22 +72,22 @@
 					
 						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]"} 
 							
-								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.newDudes=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}
+								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesCnt=1;''}{script dude_show.qsp}
 									Иди работай
-										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю.{this.ox=190;''}{script dude_show.qsp}
+										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю.{script dude_show.qsp}
 											Это бесчеловечно
 												[mark_d2752e0b18z1a1r2wd58][GOTO QUEST2]
 									Ну держи
-										[mark_4tf36mhe4817916jgx8q]От души душевно в душу, брат!{this.ox=250;''}{script dude_show.qsp}
+										[mark_4tf36mhe4817916jgx8q]От души душевно в душу, брат!{script dude_show.qsp}
 											Ну бывай
 												[mark_uj99e17263ddegf84dv1][GOTO QUEST2]
 						[QUEST2]{if (Math.random() > 0.5) "[GOTO QUEST3]"} 
 							
 								[mark_75n6axfeqvpwk2p1hwqu]{script trip_video_med.qsp}
 									
-										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.newDudes=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}
+										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesCnt=3;''}{script dude_show.qsp}
 											Мне некогда
-												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{this.ox=250;this.oy=50;''}{script dude_show.qsp}
+												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{script dude_show.qsp}
 													Отвали
 														[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
 						[QUEST3]{script trip_complete}{script trip_video_in.qsp}
@@ -94,6 +96,10 @@
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
-		[dude_generator]{this.newDudes=true;this.ox=220;this.oy=0;this.sx=0.5;this.sy=0.5;''}{script dude_show.qsp}
-			[mark_hov923hz1g449v653q46]Следующий
+		[dude_generator]{this.dudesBg=null;this.dudesStr=null;this.dudesCnt=5;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.5;this.dudesSY=0.5;''}{script dude_show.qsp}
+			[dude_generator_next]Заново
 				[mark_5i558f76n5f1iu6kiw33][GOTO dude_generator]
+			[dude_generator_again]Эти же
+				[mark_br5c8k8j9y801u4057dz]...{script dude_show.qsp}
+					[GOTO dude_generator_next]
+					[GOTO dude_generator_again]

@@ -213,6 +213,18 @@
                                                                                 {
                                                                                   "node": [
                                                                                     {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL ][GOTO train_station_back]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "mark_99m5c2c84m59131989rk",
+                                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                                        }
+                                                                                      ],
                                                                                       "_mark": "",
                                                                                       "_content": "[LABEL Ладно]"
                                                                                     },
@@ -222,7 +234,7 @@
                                                                                     }
                                                                                   ],
                                                                                   "_mark": "mark_iai8574258822emdi316",
-                                                                                  "_content": "[LABEL Договоримся...{this.dudesBg='bg/location3_2.jpg';this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                                                                  "_content": "[LABEL Договоримся...][BGNDIMAGE bg/location3_2.jpg]"
                                                                                 }
                                                                               ],
                                                                               "_mark": "",
@@ -230,7 +242,7 @@
                                                                             }
                                                                           ],
                                                                           "_mark": "mark_lwl3486lna24bcnh4zw9",
-                                                                          "_content": "[LABEL Иди разгружай вагон.{this.dudesBg='bg/location3_2.jpg';this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                                                          "_content": "[LABEL Иди разгружай вагон.][BGNDIMAGE bg/location3_2.jpg]"
                                                                         }
                                                                       ],
                                                                       "_mark": "",
@@ -260,7 +272,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_g5zht0sy2l28lq4l02k7",
-                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location3_2.jpg';this.newDudes=true;this.ox=220;this.oy=0;this.sx=0.8;this.sy=0.8;''}{script dude_show.qsp}]"
+                                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location3_2.jpg]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -332,7 +344,7 @@
                                 }
                               ],
                               "_mark": "",
-                              "_content": "[LABEL Генератор чувака]"
+                              "_content": "[LABEL Генератор чуваков]"
                             },
                             {
                               "node": [
@@ -386,7 +398,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_3rx50wu498p329wkm06r",
-                                                  "_content": "[LABEL Нее! Я так больше получаю.{this.ox=190;''}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL Нее! Я так больше получаю.{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -408,7 +420,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_4tf36mhe4817916jgx8q",
-                                                  "_content": "[LABEL От души душевно в душу, брат!{this.ox=250;''}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL От души душевно в душу, брат!{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -416,7 +428,7 @@
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.newDudes=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesCnt=1;''}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -452,7 +464,7 @@
                                                             }
                                                           ],
                                                           "_mark": "mark_m4of8zwf5xb29h8548e7",
-                                                          "_content": "[LABEL Да ты чо?! Куда пошел?{this.ox=250;this.oy=50;''}{script dude_show.qsp}]"
+                                                          "_content": "[LABEL Да ты чо?! Куда пошел?{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
@@ -460,7 +472,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_26hez718lm5g88ibsc8o",
-                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.newDudes=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesCnt=3;''}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -535,12 +547,32 @@
                           "_content": "[LABEL ][GOTO dude_generator]"
                         }
                       ],
-                      "_mark": "mark_hov923hz1g449v653q46",
-                      "_content": "[LABEL Следующий]"
+                      "_mark": "dude_generator_next",
+                      "_content": "[LABEL Заново]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "node": [
+                            {
+                              "_mark": "",
+                              "_content": "[LABEL ][GOTO dude_generator_next]"
+                            },
+                            {
+                              "_mark": "",
+                              "_content": "[LABEL ][GOTO dude_generator_again]"
+                            }
+                          ],
+                          "_mark": "mark_br5c8k8j9y801u4057dz",
+                          "_content": "[LABEL ...{script dude_show.qsp}]"
+                        }
+                      ],
+                      "_mark": "dude_generator_again",
+                      "_content": "[LABEL Эти же]"
                     }
                   ],
                   "_mark": "dude_generator",
-                  "_content": "[LABEL {this.newDudes=true;this.ox=220;this.oy=0;this.sx=0.5;this.sy=0.5;''}{script dude_show.qsp}]"
+                  "_content": "[LABEL {this.dudesBg=null;this.dudesStr=null;this.dudesCnt=5;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.5;this.dudesSY=0.5;''}{script dude_show.qsp}]"
                 }
               ],
               "_mark": "",
