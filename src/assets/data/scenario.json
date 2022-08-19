@@ -211,6 +211,38 @@
                                                                             {
                                                                               "node": [
                                                                                 {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL Ладно]"
+                                                                                    },
+                                                                                    {
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL ][GOTO train_station_back]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "mark_iai8574258822emdi316",
+                                                                                  "_content": "[LABEL Договоримся...{this.dudesBg='bg/location3_2.jpg';this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL А денег сколько дашь?]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_lwl3486lna24bcnh4zw9",
+                                                                          "_content": "[LABEL Иди разгружай вагон.{this.dudesBg='bg/location3_2.jpg';this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Спрошу о работе]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
                                                                                   "_mark": "mark_6uqb43hcu7e0ah50u98l",
                                                                                   "_content": "[LABEL ][GOTO location3]"
                                                                                 }
@@ -223,16 +255,12 @@
                                                                           "_content": "[LABEL ...][VIDEO train_out1.mp4]"
                                                                         }
                                                                       ],
-                                                                      "_mark": "",
+                                                                      "_mark": "train_station_back",
                                                                       "_content": "[LABEL Вернусь обратно]"
-                                                                    },
-                                                                    {
-                                                                      "_mark": "",
-                                                                      "_content": "[LABEL Спрошу о работе]"
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_g5zht0sy2l28lq4l02k7",
-                                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location3_2.jpg]"
+                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location3_2.jpg';this.newDudes=true;this.ox=220;this.oy=0;this.sx=0.8;this.sy=0.8;''}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -388,7 +416,7 @@
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.newDudes=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -432,7 +460,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_26hez718lm5g88ibsc8o",
-                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.newDudes=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -512,7 +540,7 @@
                     }
                   ],
                   "_mark": "dude_generator",
-                  "_content": "[LABEL {this.newDude=true;this.ox=220;this.oy=0;''}{script dude_show.qsp}]"
+                  "_content": "[LABEL {this.newDudes=true;this.ox=220;this.oy=0;this.sx=0.5;this.sy=0.5;''}{script dude_show.qsp}]"
                 }
               ],
               "_mark": "",
