@@ -50,7 +50,13 @@
 																	А денег сколько дашь?
 																		[mark_iai8574258822emdi316]Договоримся...[BGNDIMAGE bg/location3_2.jpg]
 																			Ладно
-																				[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																				[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																					Здарова, мужики!
+																						[mark_6839or4t66ait3rzxslx]Здарова. У Петровича сегодня Днюха, скидывайся на бутылку.{script dude_show.qsp}
+																							Я же не пью
+																								[mark_5519wo200yn35663e9uc]Ты что, Петровича не уважаешь?{script dude_show.qsp}
+																									[GOTO train_station_back]
+																							[GOTO train_station_back]
 																					[GOTO train_station_back]
 																			[GOTO train_station_back]
 															[train_station_back]Вернусь обратно
@@ -72,7 +78,7 @@
 					
 						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]"} 
 							
-								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesCnt=1;''}{script dude_show.qsp}
+								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCnt=1;''}{script dude_show.qsp}
 									Иди работай
 										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю.{script dude_show.qsp}
 											Это бесчеловечно
@@ -85,9 +91,9 @@
 							
 								[mark_75n6axfeqvpwk2p1hwqu]{script trip_video_med.qsp}
 									
-										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesCnt=3;''}{script dude_show.qsp}
+										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCnt=3;''}{script dude_show.qsp}
 											Мне некогда
-												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{script dude_show.qsp}
+												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}
 													Отвали
 														[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
 						[QUEST3]{script trip_complete}{script trip_video_in.qsp}
@@ -96,7 +102,7 @@
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
-		[dude_generator]{this.dudesBg=null;this.dudesStr=null;this.dudesCnt=5;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.5;this.dudesSY=0.5;''}{script dude_show.qsp}
+		[dude_generator]{this.dudesBg=null;this.dudesData=null;this.dudesCnt=5;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 			[dude_generator_next]Заново
 				[mark_5i558f76n5f1iu6kiw33][GOTO dude_generator]
 			[dude_generator_again]Эти же

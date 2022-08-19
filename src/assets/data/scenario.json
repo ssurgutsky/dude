@@ -217,12 +217,44 @@
                                                                                         {
                                                                                           "node": [
                                                                                             {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "node": [
+                                                                                                    {
+                                                                                                      "node": [
+                                                                                                        {
+                                                                                                          "node": [
+                                                                                                            {
+                                                                                                              "_mark": "",
+                                                                                                              "_content": "[LABEL ][GOTO train_station_back]"
+                                                                                                            }
+                                                                                                          ],
+                                                                                                          "_mark": "mark_5519wo200yn35663e9uc",
+                                                                                                          "_content": "[LABEL Ты что, Петровича не уважаешь?{script dude_show.qsp}]"
+                                                                                                        }
+                                                                                                      ],
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL Я же не пью]"
+                                                                                                    },
+                                                                                                    {
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL ][GOTO train_station_back]"
+                                                                                                    }
+                                                                                                  ],
+                                                                                                  "_mark": "mark_6839or4t66ait3rzxslx",
+                                                                                                  "_content": "[LABEL Здарова. У Петровича сегодня Днюха, скидывайся на бутылку.{script dude_show.qsp}]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL Здарова, мужики!]"
+                                                                                            },
+                                                                                            {
                                                                                               "_mark": "",
                                                                                               "_content": "[LABEL ][GOTO train_station_back]"
                                                                                             }
                                                                                           ],
                                                                                           "_mark": "mark_99m5c2c84m59131989rk",
-                                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                                         }
                                                                                       ],
                                                                                       "_mark": "",
@@ -428,7 +460,7 @@
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesCnt=1;''}{script dude_show.qsp}]"
+                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCnt=1;''}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -464,7 +496,7 @@
                                                             }
                                                           ],
                                                           "_mark": "mark_m4of8zwf5xb29h8548e7",
-                                                          "_content": "[LABEL Да ты чо?! Куда пошел?{script dude_show.qsp}]"
+                                                          "_content": "[LABEL Да ты чо?! Куда пошел?{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
@@ -472,7 +504,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_26hez718lm5g88ibsc8o",
-                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesStr=null;this.dudesOX=220;this.dudesOY=0;this.dudesCnt=3;''}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCnt=3;''}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -572,7 +604,7 @@
                     }
                   ],
                   "_mark": "dude_generator",
-                  "_content": "[LABEL {this.dudesBg=null;this.dudesStr=null;this.dudesCnt=5;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.5;this.dudesSY=0.5;''}{script dude_show.qsp}]"
+                  "_content": "[LABEL {this.dudesBg=null;this.dudesData=null;this.dudesCnt=5;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                 }
               ],
               "_mark": "",
