@@ -396,7 +396,7 @@
                                                                                             }
                                                                                           ],
                                                                                           "_mark": "mark_99m5c2c84m59131989rk",
-                                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                                         }
                                                                                       ],
                                                                                       "_mark": "",
@@ -602,7 +602,7 @@
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCnt=1;''}{script dude_show.qsp}]"
+                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=3;this.dudesCnt=1;''}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -646,7 +646,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_26hez718lm5g88ibsc8o",
-                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCnt=3;''}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=2;this.dudesCnt=3;''}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
