@@ -2,7 +2,7 @@
 	
 		[mark_3z68p6amx549c803662v]{script init_vars.qsp}
 			
-				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]
+				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro]
 					Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
 						[MENU]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Что будешь делать?{script location_show.qsp}
 							Пойду в другое место

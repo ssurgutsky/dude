@@ -544,7 +544,7 @@
                             }
                           ],
                           "_mark": "START",
-                          "_content": "[LABEL Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.][BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]"
+                          "_content": "[LABEL Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.][BGNDIMAGE poster.jpg][AMBIENT intro]"
                         },
                         {
                           "node": [
