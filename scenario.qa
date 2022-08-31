@@ -47,10 +47,29 @@
 											[go_home1_room3]Пойду к себе в комнату
 												[home1_room3]Твоя комната. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room3.jpg]
 													Посплю/Отдохну
-														[mark_9od108u40qlp0u7029g4]{this.rest=100;''}Хорошо выспался![BGNDIMAGE bg/home1_room3.jpg]
-															...
-																[mark_056h56k40dz77y8ak198][GOTO home1_room3]
-														[mark_pify3oo379p99q6y2dh3]<Enter text here>
+														[mark_4454vi2k628o2i853plt]Долго спать будешь?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room3.jpg]{script player_check_rest.qsp}
+															{if (this.rest < 100) {'Полностью высплюсь (' + this.rest_hours_needed + ' ч.)'} else {''}}
+																[mark_r667v296b24319mosa9x]{this.rest_hours=this.rest_hours_needed;''}
+																	
+																		[home1_room3_slept]{script player_calc_rest.qsp}{script rounding.qsp}Все, поспал.\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room3.jpg]
+																			>>>
+																				[mark_hg02klni3l5jg9niy27k][GOTO home1_room3]
+															Посплю 1 час
+																[mark_874yx85so9yabrb4543h]{this.rest_hours=1;''}
+																	
+																		[mark_6f8qo9160coht5s0r0h1][GOTO home1_room3_slept]
+															Посплю 2 часа
+																[mark_51bh987n7ejlu09m6o66]{this.rest_hours=2;''}
+																	
+																		[mark_70sm9b38fdk88l2m3fiw][GOTO home1_room3_slept]
+															Посплю 3 часа
+																[mark_t6ww4fbza5fev0pw6lqq]{this.rest_hours=3;''}
+																	
+																		[mark_z0xgpvwwnb47p0qz9al6][GOTO home1_room3_slept]
+															Посплю 4 часа
+																[mark_rod988a4bp3v15b3jy3g]{this.rest_hours=4;''}
+																	
+																		[mark_dyu9io0qic70wrepa0jc][GOTO home1_room3_slept]
 													[GOTO go_home1_room2]
 													[GOTO go_home1_room4]
 													[GOTO home1_go_out]
@@ -74,18 +93,38 @@
 													
 														[mark_g5zht0sy2l28lq4l02k7]...[BGNDIMAGE bg/location3_2.jpg]
 															Спрошу о работе
-																[mark_lwl3486lna24bcnh4zw9]Иди разгружай вагон.[BGNDIMAGE bg/location3_2.jpg]
-																	А денег сколько дашь?
-																		[mark_iai8574258822emdi316]Договоримся...[BGNDIMAGE bg/location3_2.jpg]
-																			Ладно
-																				[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
-																					Здарова, мужики!
-																						[mark_6839or4t66ait3rzxslx]Здарова. У Петровича сегодня Днюха, скидывайся на бутылку.{script dude_show.qsp}
-																							Я же не пью
-																								[mark_5519wo200yn35663e9uc]Ты что, Петровича не уважаешь?{script dude_show.qsp}
-																									[GOTO train_station_back]
+																[mark_8j9u8434v96yw7a2gs0a]{script train_work_check.qsp}{if (this.train_has_work) {'[GOTO train_work_success]'} else {'[GOTO train_work_fail]'}}
+																	
+																		[train_work_success]Иди разгружай вагон.[BGNDIMAGE bg/location3_2.jpg]
+																			А денег сколько дашь?
+																				[mark_iai8574258822emdi316]Сегодня плачу {this.train_work_payment_hour} руб в час. Работы на {this.train_work_hours} ч.[BGNDIMAGE bg/location3_2.jpg]
+																					Ладно
+																						[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																							Здарова, мужики.
+																								[mark_6v2of29vibs4gbkvdy9o]{if (this.train_work_vodka > 0) {'[GOTO train_work_vodka]'} else {'[GOTO train_work_start]'}}
+																									
+																										[train_work_vodka]Здарова. {this.train_work_cause} С тебя {this.train_work_vodka} руб.{script dude_show.qsp}
+																											У меня нет денег
+																												[mark_jo6117g789c8d4624c89]Дык щас заработаешь, отдашь.{script dude_show.qsp}
+																													[train_work_vodka_ok]Ладно
+																														[mark_2a74aiqic92fawvg46b9]Наш парень!{script dude_show.qsp}
+																															>>>
+																																[train_work_start]За работу, разгружаем!{script dude_show.qsp}
+																																	>>>
+																																		[mark_oxvogt2zl4922nmk8na2]{script train_work_calc.qsp}Работа заняла {this.train_work_hours} ч., заработано {this.train_work_payment} руб. {if (this.train_work_vodka > 0) {'Скинулся ' + this.train_work_vodka + ' руб'}}[BGNDIMAGE bg/location3_2.jpg]
+																																			[mark_8la4h7q5j8au6v89qc8o][GOTO train_station_back]
+																													[train_work_vodka_no]Нет, я не скидываюсь, извиняйте
+																														[mark_9105i79rx1a17562l3n0]Ну ты и...{this.train_work_negative++; if (this.train_work_negative > 100) {this.train_work_negative=100};''}{script dude_show.qsp}
+																															>>>
+																																[mark_7m56gb3o5t52txee4taa][GOTO train_work_start]
+																											Я же не пью
+																												[mark_5519wo200yn35663e9uc]Можешь не пить, но скинуться надо.{script dude_show.qsp}
+																													[GOTO train_work_vodka_ok]
+																													[GOTO train_work_vodka_no]
+																											[GOTO train_work_vodka_ok]
 																							[GOTO train_station_back]
 																					[GOTO train_station_back]
+																		[train_work_fail]Нет работы, приходи позже.[BGNDIMAGE bg/location3_2.jpg]
 																			[GOTO train_station_back]
 															[train_station_back]Вернусь обратно
 																[mark_9941mh3z44vwelrye7og]...[VIDEO train_out1.mp4]
@@ -119,7 +158,7 @@
 							
 								[mark_75n6axfeqvpwk2p1hwqu]{script trip_video_med.qsp}
 									
-										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=2;this.dudesCnt=3;''}{script dude_show.qsp}
+										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=2;this.dudesCnt=1;''}{script dude_show.qsp}
 											Мне некогда
 												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}
 													Отвали
@@ -144,5 +183,7 @@
 				[mark_33ath74m5a41q61bu55x]{this.dudesCtg=1;''}[GOTO dude_generator]
 			Обычные
 				[mark_m82u2l32u3z685s5o7ax]{this.dudesCtg=4;''}[GOTO dude_generator]
+			Бандит
+				[mark_a6151259092ew03ivuhz]{this.dudesCtg=5;''}[GOTO dude_generator]
 			[dude_generator_next]Всякие разные
 				[mark_5i558f76n5f1iu6kiw33]{this.dudesCtg=0;''}[GOTO dude_generator]
