@@ -238,7 +238,7 @@
                                                                                     }
                                                                                   ],
                                                                                   "_mark": "home1_room3_slept",
-                                                                                  "_content": "[LABEL {script player_calc_rest.qsp}{script rounding.qsp}Все, поспал.\n{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room3.jpg]"
+                                                                                  "_content": "[LABEL {script player_calc_rest.qsp}{script rounding.qsp}Все, поспал.\n{script rounding.qsp}{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room3.jpg]"
                                                                                 }
                                                                               ],
                                                                               "_mark": "",
@@ -388,7 +388,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_f235bcn695nos7r24g9n",
-                                                                  "_content": "[LABEL {this.energy=100;''}Было вкусно!][BGNDIMAGE bg/home1_room4.jpg]"
+                                                                  "_content": "[LABEL {this.energy=100;''}Было вкусно!{this.game_hours++;''}{script rounding.qsp}][BGNDIMAGE bg/home1_room4.jpg]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -495,130 +495,152 @@
                                                                                                                                                 {
                                                                                                                                                   "node": [
                                                                                                                                                     {
-                                                                                                                                                      "_mark": "mark_8la4h7q5j8au6v89qc8o",
-                                                                                                                                                      "_content": "[LABEL ][GOTO train_station_back]"
+                                                                                                                                                      "node": [
+                                                                                                                                                        {
+                                                                                                                                                          "node": [
+                                                                                                                                                            {
+                                                                                                                                                              "_mark": "",
+                                                                                                                                                              "_content": "[LABEL ][GOTO train_station_back]"
+                                                                                                                                                            }
+                                                                                                                                                          ],
+                                                                                                                                                          "_mark": "train_work_drink",
+                                                                                                                                                          "_content": "[LABEL Также ты скинулся {this.train_work_vodka} руб и еще час провел в компании коллег.{this.game_hours++;''}][BGNDIMAGE bg/location3_2.jpg]"
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                          "node": [
+                                                                                                                                                            {
+                                                                                                                                                              "_mark": "",
+                                                                                                                                                              "_content": "[LABEL ][GOTO train_station_back]"
+                                                                                                                                                            }
+                                                                                                                                                          ],
+                                                                                                                                                          "_mark": "train_work_drink_no",
+                                                                                                                                                          "_content": "[LABEL Так как ты не скинулся мужикам, то они на тебя обиделись...{script dude_show.qsp}]"
+                                                                                                                                                        }
+                                                                                                                                                      ],
+                                                                                                                                                      "_mark": "",
+                                                                                                                                                      "_content": "[LABEL ]"
                                                                                                                                                     }
                                                                                                                                                   ],
-                                                                                                                                                  "_mark": "mark_oxvogt2zl4922nmk8na2",
-                                                                                                                                                  "_content": "[LABEL {script train_work_calc.qsp}Работа заняла {this.train_work_hours} ч., заработано {this.train_work_payment} руб. {if (this.train_work_vodka > 0) {'Скинулся ' + this.train_work_vodka + ' руб'}}][BGNDIMAGE bg/location3_2.jpg]"
+                                                                                                                                                  "_mark": "mark_0a1zj11aqevto5k460zm",
+                                                                                                                                                  "_content": "[LABEL {this.train_work_vodka >= 0 ? '[GOTO train_work_drink]' :'[GOTO train_work_drink_no]'}]"
                                                                                                                                                 }
                                                                                                                                               ],
                                                                                                                                               "_mark": "",
                                                                                                                                               "_content": "[LABEL >>>]"
                                                                                                                                             }
                                                                                                                                           ],
-                                                                                                                                          "_mark": "train_work_start",
-                                                                                                                                          "_content": "[LABEL За работу, разгружаем!{script dude_show.qsp}]"
+                                                                                                                                          "_mark": "mark_oxvogt2zl4922nmk8na2",
+                                                                                                                                          "_content": "[LABEL {script train_work_calc.qsp}{script rounding.qsp}Работа заняла {this.train_work_hours} ч., заработано {this.train_work_payment} руб.][BGNDIMAGE bg/location3_2.jpg]"
                                                                                                                                         }
                                                                                                                                       ],
                                                                                                                                       "_mark": "",
                                                                                                                                       "_content": "[LABEL >>>]"
                                                                                                                                     }
                                                                                                                                   ],
-                                                                                                                                  "_mark": "mark_2a74aiqic92fawvg46b9",
-                                                                                                                                  "_content": "[LABEL Наш парень!{script dude_show.qsp}]"
+                                                                                                                                  "_mark": "train_work_start",
+                                                                                                                                  "_content": "[LABEL За работу, разгружаем!{script dude_show.qsp}]"
                                                                                                                                 }
                                                                                                                               ],
-                                                                                                                              "_mark": "train_work_vodka_ok",
-                                                                                                                              "_content": "[LABEL Ладно]"
-                                                                                                                            },
-                                                                                                                            {
-                                                                                                                              "node": [
-                                                                                                                                {
-                                                                                                                                  "node": [
-                                                                                                                                    {
-                                                                                                                                      "node": [
-                                                                                                                                        {
-                                                                                                                                          "_mark": "mark_7m56gb3o5t52txee4taa",
-                                                                                                                                          "_content": "[LABEL ][GOTO train_work_start]"
-                                                                                                                                        }
-                                                                                                                                      ],
-                                                                                                                                      "_mark": "",
-                                                                                                                                      "_content": "[LABEL >>>]"
-                                                                                                                                    }
-                                                                                                                                  ],
-                                                                                                                                  "_mark": "mark_9105i79rx1a17562l3n0",
-                                                                                                                                  "_content": "[LABEL Ну ты и...{this.train_work_negative++; if (this.train_work_negative > 100) {this.train_work_negative=100};''}{script dude_show.qsp}]"
-                                                                                                                                }
-                                                                                                                              ],
-                                                                                                                              "_mark": "train_work_vodka_no",
-                                                                                                                              "_content": "[LABEL Нет, я не скидываюсь, извиняйте]"
+                                                                                                                              "_mark": "",
+                                                                                                                              "_content": "[LABEL >>>]"
                                                                                                                             }
                                                                                                                           ],
-                                                                                                                          "_mark": "mark_jo6117g789c8d4624c89",
-                                                                                                                          "_content": "[LABEL Дык щас заработаешь, отдашь.{script dude_show.qsp}]"
+                                                                                                                          "_mark": "mark_2a74aiqic92fawvg46b9",
+                                                                                                                          "_content": "[LABEL Наш парень!{script dude_show.qsp}]"
                                                                                                                         }
                                                                                                                       ],
-                                                                                                                      "_mark": "",
-                                                                                                                      "_content": "[LABEL У меня нет денег]"
+                                                                                                                      "_mark": "train_work_vodka_ok",
+                                                                                                                      "_content": "[LABEL Ладно]"
                                                                                                                     },
                                                                                                                     {
                                                                                                                       "node": [
                                                                                                                         {
                                                                                                                           "node": [
                                                                                                                             {
+                                                                                                                              "node": [
+                                                                                                                                {
+                                                                                                                                  "_mark": "mark_7m56gb3o5t52txee4taa",
+                                                                                                                                  "_content": "[LABEL ][GOTO train_work_start]"
+                                                                                                                                }
+                                                                                                                              ],
                                                                                                                               "_mark": "",
-                                                                                                                              "_content": "[LABEL ][GOTO train_work_vodka_ok]"
-                                                                                                                            },
-                                                                                                                            {
-                                                                                                                              "_mark": "",
-                                                                                                                              "_content": "[LABEL ][GOTO train_work_vodka_no]"
+                                                                                                                              "_content": "[LABEL >>>]"
                                                                                                                             }
                                                                                                                           ],
-                                                                                                                          "_mark": "mark_5519wo200yn35663e9uc",
-                                                                                                                          "_content": "[LABEL Можешь не пить, но скинуться надо.{script dude_show.qsp}]"
+                                                                                                                          "_mark": "mark_9105i79rx1a17562l3n0",
+                                                                                                                          "_content": "[LABEL Ну ты и...{this.train_work_vodka=-1;this.train_negative_value=1;''}{script train_negative.qsp}{script dude_show.qsp}]"
                                                                                                                         }
                                                                                                                       ],
-                                                                                                                      "_mark": "",
-                                                                                                                      "_content": "[LABEL Я же не пью]"
-                                                                                                                    },
-                                                                                                                    {
-                                                                                                                      "_mark": "",
-                                                                                                                      "_content": "[LABEL ][GOTO train_work_vodka_ok]"
+                                                                                                                      "_mark": "train_work_vodka_no",
+                                                                                                                      "_content": "[LABEL Нет, я не скидываюсь, извиняйте]"
                                                                                                                     }
                                                                                                                   ],
-                                                                                                                  "_mark": "train_work_vodka",
-                                                                                                                  "_content": "[LABEL Здарова. {this.train_work_cause} С тебя {this.train_work_vodka} руб.{script dude_show.qsp}]"
+                                                                                                                  "_mark": "mark_jo6117g789c8d4624c89",
+                                                                                                                  "_content": "[LABEL Дык щас заработаешь, отдашь.{script dude_show.qsp}]"
                                                                                                                 }
                                                                                                               ],
                                                                                                               "_mark": "",
-                                                                                                              "_content": "[LABEL ]"
+                                                                                                              "_content": "[LABEL У меня нет денег]"
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "node": [
+                                                                                                                {
+                                                                                                                  "node": [
+                                                                                                                    {
+                                                                                                                      "_mark": "",
+                                                                                                                      "_content": "[LABEL ][GOTO train_work_vodka_ok]"
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                      "_mark": "",
+                                                                                                                      "_content": "[LABEL ][GOTO train_work_vodka_no]"
+                                                                                                                    }
+                                                                                                                  ],
+                                                                                                                  "_mark": "mark_5519wo200yn35663e9uc",
+                                                                                                                  "_content": "[LABEL Можешь не пить, но скинуться надо.{script dude_show.qsp}]"
+                                                                                                                }
+                                                                                                              ],
+                                                                                                              "_mark": "",
+                                                                                                              "_content": "[LABEL Я же не пью]"
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "_mark": "",
+                                                                                                              "_content": "[LABEL ][GOTO train_work_vodka_ok]"
                                                                                                             }
                                                                                                           ],
-                                                                                                          "_mark": "mark_6v2of29vibs4gbkvdy9o",
-                                                                                                          "_content": "[LABEL {if (this.train_work_vodka > 0) {'[GOTO train_work_vodka]'} else {'[GOTO train_work_start]'}}]"
+                                                                                                          "_mark": "train_work_vodka",
+                                                                                                          "_content": "[LABEL Здаров. {this.train_work_cause} С тебя {this.train_work_vodka} руб.{script dude_show.qsp}]"
                                                                                                         }
                                                                                                       ],
                                                                                                       "_mark": "",
-                                                                                                      "_content": "[LABEL Здарова, мужики.]"
-                                                                                                    },
-                                                                                                    {
-                                                                                                      "_mark": "",
-                                                                                                      "_content": "[LABEL ][GOTO train_station_back]"
+                                                                                                      "_content": "[LABEL ]"
                                                                                                     }
                                                                                                   ],
-                                                                                                  "_mark": "mark_99m5c2c84m59131989rk",
-                                                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                                                  "_mark": "mark_6v2of29vibs4gbkvdy9o",
+                                                                                                  "_content": "[LABEL {if (this.train_work_vodka > 0) {'[GOTO train_work_vodka]'} else {'[GOTO train_work_start]'}}]"
                                                                                                 }
                                                                                               ],
                                                                                               "_mark": "",
-                                                                                              "_content": "[LABEL Ладно]"
+                                                                                              "_content": "[LABEL Здарова, мужики.]"
                                                                                             },
                                                                                             {
                                                                                               "_mark": "",
                                                                                               "_content": "[LABEL ][GOTO train_station_back]"
                                                                                             }
                                                                                           ],
-                                                                                          "_mark": "mark_iai8574258822emdi316",
-                                                                                          "_content": "[LABEL Сегодня плачу {this.train_work_payment_hour} руб в час. Работы на {this.train_work_hours} ч.][BGNDIMAGE bg/location3_2.jpg]"
+                                                                                          "_mark": "mark_99m5c2c84m59131989rk",
+                                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                                         }
                                                                                       ],
                                                                                       "_mark": "",
-                                                                                      "_content": "[LABEL А денег сколько дашь?]"
+                                                                                      "_content": "[LABEL Ладно]"
+                                                                                    },
+                                                                                    {
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL ][GOTO train_station_back]"
                                                                                     }
                                                                                   ],
                                                                                   "_mark": "train_work_success",
-                                                                                  "_content": "[LABEL Иди разгружай вагон.][BGNDIMAGE bg/location3_2.jpg]"
+                                                                                  "_content": "[LABEL Иди разгружай вагон. Сегодня плачу {this.train_work_payment_hour} руб в час. Работы на {this.train_work_hours} ч.][BGNDIMAGE bg/location3_2.jpg]"
                                                                                 },
                                                                                 {
                                                                                   "node": [
@@ -636,7 +658,7 @@
                                                                             }
                                                                           ],
                                                                           "_mark": "mark_8j9u8434v96yw7a2gs0a",
-                                                                          "_content": "[LABEL {script train_work_check.qsp}{if (this.train_has_work) {'[GOTO train_work_success]'} else {'[GOTO train_work_fail]'}}]"
+                                                                          "_content": "[LABEL {if (this.train_has_work) {'[GOTO train_work_success]'} else {'[GOTO train_work_fail]'}}]"
                                                                         }
                                                                       ],
                                                                       "_mark": "",
@@ -674,7 +696,7 @@
                                                             }
                                                           ],
                                                           "_mark": "mark_5n7rhdykq7x9t11499ja",
-                                                          "_content": "[LABEL ...][VIDEO train_in1.mp4]"
+                                                          "_content": "[LABEL ...{script train_work_check.qsp}][VIDEO train_in1.mp4]"
                                                         }
                                                       ],
                                                       "_mark": "",

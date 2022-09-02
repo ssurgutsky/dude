@@ -51,7 +51,7 @@
 															{if (this.rest < 100) {'Полностью высплюсь (' + this.rest_hours_needed + ' ч.)'} else {''}}
 																[mark_r667v296b24319mosa9x]{this.rest_hours=this.rest_hours_needed;''}
 																	
-																		[home1_room3_slept]{script player_calc_rest.qsp}{script rounding.qsp}Все, поспал.\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room3.jpg]
+																		[home1_room3_slept]{script player_calc_rest.qsp}{script rounding.qsp}Все, поспал.\n{script rounding.qsp}{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room3.jpg]
 																			>>>
 																				[mark_hg02klni3l5jg9niy27k][GOTO home1_room3]
 															Посплю 1 час
@@ -76,7 +76,7 @@
 											[go_home1_room4]Пойду на кухню
 												[home1_room4]Кухня. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room4.jpg]
 													Поем
-														[mark_f235bcn695nos7r24g9n]{this.energy=100;''}Было вкусно![BGNDIMAGE bg/home1_room4.jpg]
+														[mark_f235bcn695nos7r24g9n]{this.energy=100;''}Было вкусно!{this.game_hours++;''}{script rounding.qsp}[BGNDIMAGE bg/home1_room4.jpg]
 															...
 																[mark_1utn430b61m3b6hi15a6][GOTO home1_room4]
 													[GOTO go_home1_room2]
@@ -89,41 +89,45 @@
 												[mark_1n9ql3qq283xdeo6419h][GOTO MENU]
 										[location3]...[BGNDIMAGE bg/location3_1.jpg]
 											Пройду на ЖД пути
-												[mark_5n7rhdykq7x9t11499ja]...[VIDEO train_in1.mp4]
+												[mark_5n7rhdykq7x9t11499ja]...{script train_work_check.qsp}[VIDEO train_in1.mp4]
 													
 														[mark_g5zht0sy2l28lq4l02k7]...[BGNDIMAGE bg/location3_2.jpg]
 															Спрошу о работе
-																[mark_8j9u8434v96yw7a2gs0a]{script train_work_check.qsp}{if (this.train_has_work) {'[GOTO train_work_success]'} else {'[GOTO train_work_fail]'}}
+																[mark_8j9u8434v96yw7a2gs0a]{if (this.train_has_work) {'[GOTO train_work_success]'} else {'[GOTO train_work_fail]'}}
 																	
-																		[train_work_success]Иди разгружай вагон.[BGNDIMAGE bg/location3_2.jpg]
-																			А денег сколько дашь?
-																				[mark_iai8574258822emdi316]Сегодня плачу {this.train_work_payment_hour} руб в час. Работы на {this.train_work_hours} ч.[BGNDIMAGE bg/location3_2.jpg]
-																					Ладно
-																						[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
-																							Здарова, мужики.
-																								[mark_6v2of29vibs4gbkvdy9o]{if (this.train_work_vodka > 0) {'[GOTO train_work_vodka]'} else {'[GOTO train_work_start]'}}
-																									
-																										[train_work_vodka]Здарова. {this.train_work_cause} С тебя {this.train_work_vodka} руб.{script dude_show.qsp}
-																											У меня нет денег
-																												[mark_jo6117g789c8d4624c89]Дык щас заработаешь, отдашь.{script dude_show.qsp}
-																													[train_work_vodka_ok]Ладно
-																														[mark_2a74aiqic92fawvg46b9]Наш парень!{script dude_show.qsp}
+																		[train_work_success]Иди разгружай вагон. Сегодня плачу {this.train_work_payment_hour} руб в час. Работы на {this.train_work_hours} ч.[BGNDIMAGE bg/location3_2.jpg]
+																			Ладно
+																				[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																					Здарова, мужики.
+																						[mark_6v2of29vibs4gbkvdy9o]{if (this.train_work_vodka > 0) {'[GOTO train_work_vodka]'} else {'[GOTO train_work_start]'}}
+																							
+																								[train_work_vodka]Здаров. {this.train_work_cause} С тебя {this.train_work_vodka} руб.{script dude_show.qsp}
+																									У меня нет денег
+																										[mark_jo6117g789c8d4624c89]Дык щас заработаешь, отдашь.{script dude_show.qsp}
+																											[train_work_vodka_ok]Ладно
+																												[mark_2a74aiqic92fawvg46b9]Наш парень!{script dude_show.qsp}
+																													>>>
+																														[train_work_start]За работу, разгружаем!{script dude_show.qsp}
 																															>>>
-																																[train_work_start]За работу, разгружаем!{script dude_show.qsp}
+																																[mark_oxvogt2zl4922nmk8na2]{script train_work_calc.qsp}{script rounding.qsp}Работа заняла {this.train_work_hours} ч., заработано {this.train_work_payment} руб.[BGNDIMAGE bg/location3_2.jpg]
 																																	>>>
-																																		[mark_oxvogt2zl4922nmk8na2]{script train_work_calc.qsp}Работа заняла {this.train_work_hours} ч., заработано {this.train_work_payment} руб. {if (this.train_work_vodka > 0) {'Скинулся ' + this.train_work_vodka + ' руб'}}[BGNDIMAGE bg/location3_2.jpg]
-																																			[mark_8la4h7q5j8au6v89qc8o][GOTO train_station_back]
-																													[train_work_vodka_no]Нет, я не скидываюсь, извиняйте
-																														[mark_9105i79rx1a17562l3n0]Ну ты и...{this.train_work_negative++; if (this.train_work_negative > 100) {this.train_work_negative=100};''}{script dude_show.qsp}
-																															>>>
-																																[mark_7m56gb3o5t52txee4taa][GOTO train_work_start]
-																											Я же не пью
-																												[mark_5519wo200yn35663e9uc]Можешь не пить, но скинуться надо.{script dude_show.qsp}
-																													[GOTO train_work_vodka_ok]
-																													[GOTO train_work_vodka_no]
+																																		[mark_0a1zj11aqevto5k460zm]{this.train_work_vodka >= 0 ? '[GOTO train_work_drink]' :'[GOTO train_work_drink_no]'}
+																																			
+																																				[train_work_drink]Также ты скинулся {this.train_work_vodka} руб и еще час провел в компании коллег.{this.game_hours++;''}[BGNDIMAGE bg/location3_2.jpg]
+																																					[GOTO train_station_back]
+																																				[train_work_drink_no]Так как ты не скинулся мужикам, то они на тебя обиделись...{script dude_show.qsp}
+																																					[GOTO train_station_back]
+																											[train_work_vodka_no]Нет, я не скидываюсь, извиняйте
+																												[mark_9105i79rx1a17562l3n0]Ну ты и...{this.train_work_vodka=-1;this.train_negative_value=1;''}{script train_negative.qsp}{script dude_show.qsp}
+																													>>>
+																														[mark_7m56gb3o5t52txee4taa][GOTO train_work_start]
+																									Я же не пью
+																										[mark_5519wo200yn35663e9uc]Можешь не пить, но скинуться надо.{script dude_show.qsp}
 																											[GOTO train_work_vodka_ok]
-																							[GOTO train_station_back]
+																											[GOTO train_work_vodka_no]
+																									[GOTO train_work_vodka_ok]
 																					[GOTO train_station_back]
+																			[GOTO train_station_back]
 																		[train_work_fail]Нет работы, приходи позже.[BGNDIMAGE bg/location3_2.jpg]
 																			[GOTO train_station_back]
 															[train_station_back]Вернусь обратно
