@@ -119,7 +119,12 @@ export default {
         const saveObj = { ...this.gameData }
 
         // Save the copy to local storage
-        localStorage.setItem('gameData', JSON.stringify(saveObj))
+        localStorage.setItem('gameData', JSON.stringify(saveObj, function (key, value) {
+          if (typeof value === 'function') {
+            return '/Function(' + value.toString() + ')/'
+          }
+          return value
+        }))
 
         // Restore link to the IAP store
         this.gameData.store = storeLink
@@ -138,7 +143,14 @@ export default {
         let storeLink = this.gameData.store
 
         // Load data from the local storage
-        this.gameData = JSON.parse(localStorage.getItem('gameData'))
+        this.gameData = JSON.parse(localStorage.getItem('gameData'), function (key, value) {
+          if (typeof value === 'string' && value.startsWith('/Function(') && value.endsWith(')/')) {
+            value = value.substring(10, value.length - 2)
+            /* eslint no-eval: 0 */
+            return (0, eval)('(' + value + ')')
+          }
+          return value
+        })
 
         // Restore link to the IAP store
         this.gameData.store = storeLink
