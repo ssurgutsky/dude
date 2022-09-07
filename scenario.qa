@@ -5,32 +5,6 @@
 				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro]
 					Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
 						[MENU]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Что будешь делать?{script location_show.qsp}
-							Пойду в другое место
-								[MAP]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script map_show.qsp}
-									Обратно в меню
-										[mark_4sue376w18un6v5631ka][GOTO MENU]
-									{this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-										[mark_h7v5642454m553fa1d9x]{this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}
-											
-												[mark_58gg854k4qojgl5ppequ][GOTO TRIP_QUESTS]
-									{this.newlocation=2;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-										[mark_q2144z0dmjcfis47t8ve]{this.newlocation=2;''}{script trip_calc.qsp}Карта{script show_map.qsp}
-											
-												[mark_945m6mv79qh80ym47uhr][GOTO TRIP_QUESTS]
-									{this.newlocation=3;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-										[mark_dse7z5n856wap89y7n58]{this.newlocation=3;''}{script trip_calc.qsp}Карта{script show_map.qsp}
-											
-												[mark_x3402q1s9818471rh87t][GOTO TRIP_QUESTS]
-									{this.newlocation=4;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-										[mark_8uhqd7vh7b0f2bjqy5zh]{this.newlocation=4;''}{script trip_calc.qsp}Карта{script show_map.qsp}
-											
-												[mark_z14bu7o52x5gl3mw0k9f][GOTO TRIP_QUESTS]
-									{this.newlocation=5;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-										[mark_8cg8tv1579u80nwsv334]<Enter text here>
-									{this.newlocation=6;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-										[mark_fvjpa5nc0wbyahr7udi2]<Enter text here>
-									{this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-										[mark_4k3h8blerj88b25q8642]<Enter text here>
 							Зайду внутрь
 								[mark_l1n41ert02w6w8r6ks11][GOTO location{this.location}]
 									
@@ -84,52 +58,76 @@
 													[GOTO home1_go_out]
 											[home1_go_out]Выйду из дома
 												[mark_s9iw3564trm5740k2y5j][GOTO MENU]
-										[location2]Закрыто...{script location_show.qsp}
-											Ладно
-												[mark_1n9ql3qq283xdeo6419h][GOTO MENU]
+										[location2]...{script foma_work_check.qsp}[BGNDIMAGE bg/location2_1.jpg]
+											Спрошу насчет работы
+												[mark_r2171o000i61ilnf4u03]{this.foma_work_active ? '[GOTO foma_work_active]' : '[GOTO foma_work_ok]'}
+													
+														[foma_work_ok]Отнесешь это по адресам {this.foma_work_locations}. Получишь {this.foma_work_payment} руб.[BGNDIMAGE bg/location2_1.jpg][IMAGE foma_pack.png|200;300;1;1;0]
+															Ладно
+																[mark_1n9ql3qq283xdeo6419h]Давай только не задерживайся!{this.foma_work_active=true;''}[BGNDIMAGE bg/location2_1.jpg]
+																	Понял
+																		[mark_f4asss9163v00vaeutqh][GOTO MENU]
+															[foma_back]Выйду отсюда
+																[mark_75eoj4b1x0eg21m8qlie][GOTO MENU]
+														[foma_work_active]Ты свою текущую работу еще не закончил.[BGNDIMAGE bg/location2_1.jpg]
+															А, точно
+																[mark_17lpk7t6y79t8e0ktqj1][GOTO location2]
+											[GOTO foma_back]
 										[location3]...[BGNDIMAGE bg/location3_1.jpg]
 											Пройду на ЖД пути
 												[mark_5n7rhdykq7x9t11499ja]...{script train_work_check.qsp}[VIDEO train_in1.mp4]
 													
 														[mark_g5zht0sy2l28lq4l02k7]...[BGNDIMAGE bg/location3_2.jpg]
 															Спрошу о работе
-																[mark_8j9u8434v96yw7a2gs0a]{if (this.train_has_work) {'[GOTO train_work_success]'} else {'[GOTO train_work_fail]'}}
+																[mark_tc5590kjp5p6706ywu8a]{(this.train_negative > 5)  ? '[GOTO train_work_fail]' : (this.train_negative > 3) ? '[GOTO train_work_negative]' : '[GOTO train_work_positive]'}
 																	
-																		[train_work_success]Иди разгружай вагон. Сегодня плачу {this.train_work_payment_hour} руб в час. Работы на {this.train_work_hours} ч.[BGNDIMAGE bg/location3_2.jpg]
-																			Ладно
-																				[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
-																					Здарова, мужики.
-																						[mark_6v2of29vibs4gbkvdy9o]{if (this.train_work_vodka > 0) {'[GOTO train_work_vodka]'} else {'[GOTO train_work_start]'}}
-																							
-																								[train_work_vodka]Здаров. {this.train_work_cause} С тебя {this.train_work_vodka} руб.{script dude_show.qsp}
-																									У меня нет денег
-																										[mark_jo6117g789c8d4624c89]Дык щас заработаешь, отдашь.{script dude_show.qsp}
-																											[train_work_vodka_ok]Ладно
-																												[mark_2a74aiqic92fawvg46b9]Наш парень!{script dude_show.qsp}
-																													>>>
-																														[train_work_start]За работу, разгружаем!{script dude_show.qsp}
+																		[train_work_positive]{this.train_has_work ? '[GOTO train_work_success]' : '[GOTO train_work_fail]'}
+																			
+																				[train_work_success]Иди разгружай вагон. Сегодня плачу {this.train_work_payment_hour} руб в час. Работы на {this.train_work_hours} ч.[BGNDIMAGE bg/location3_2.jpg]
+																					Ладно
+																						[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																							Здарова, мужики.
+																								[mark_6v2of29vibs4gbkvdy9o]{if (this.train_work_vodka > 0) {'[GOTO train_work_vodka]'} else {'[GOTO train_work_start]'}}
+																									
+																										[train_work_vodka]Здаров. {this.train_work_cause} С тебя {this.train_work_vodka} руб.{script dude_show.qsp}
+																											У меня нет денег
+																												[mark_jo6117g789c8d4624c89]Дык щас заработаешь, отдашь.{script dude_show.qsp}
+																													[train_work_vodka_ok]Ладно
+																														[mark_2a74aiqic92fawvg46b9]Наш парень!{this.train_negative=0;''}{script dude_show.qsp}
 																															>>>
-																																[mark_oxvogt2zl4922nmk8na2]{script train_work_calc.qsp}{script rounding.qsp}Работа заняла {this.train_work_hours} ч., заработано {this.train_work_payment} руб.[BGNDIMAGE bg/location3_2.jpg]
+																																[train_work_start]За работу, разгружаем!{script dude_show.qsp}
 																																	>>>
-																																		[mark_0a1zj11aqevto5k460zm]{this.train_work_vodka >= 0 ? '[GOTO train_work_drink]' :'[GOTO train_work_drink_no]'}
-																																			
-																																				[train_work_drink]Также ты скинулся {this.train_work_vodka} руб и еще час провел в компании коллег.{this.game_hours++;''}[BGNDIMAGE bg/location3_2.jpg]
-																																					[GOTO train_station_back]
-																																				[train_work_drink_no]Так как ты не скинулся мужикам, то они на тебя обиделись...{script dude_show.qsp}
-																																					[GOTO train_station_back]
-																											[train_work_vodka_no]Нет, я не скидываюсь, извиняйте
-																												[mark_9105i79rx1a17562l3n0]Ну ты и...{this.train_work_vodka=-1;this.train_negative_value=1;''}{script train_negative.qsp}{script dude_show.qsp}
-																													>>>
-																														[mark_7m56gb3o5t52txee4taa][GOTO train_work_start]
-																									Я же не пью
-																										[mark_5519wo200yn35663e9uc]Можешь не пить, но скинуться надо.{script dude_show.qsp}
+																																		[mark_oxvogt2zl4922nmk8na2]{script train_work_calc.qsp}{script rounding.qsp}Работа заняла {this.train_work_hours} ч., заработано {this.train_work_payment} руб.[BGNDIMAGE bg/location3_2.jpg]
+																																			>>>
+																																				[mark_xi2v56d8wp4sj7149hk6]{script player_check_status.qsp}
+																																					
+																																						[mark_0a1zj11aqevto5k460zm]{(this.train_work_vodka == -1) ? '[GOTO train_work_done]' : (this.train_work_vodka == 0) ? '[GOTO train_work_drink_no]' : '[GOTO train_work_drink]'}
+																																							
+																																								[train_work_drink]Также ты скинулся {this.train_work_vodka} руб и еще час провел в компании коллег.{this.game_hours++;''}{script dude_show.qsp}
+																																									[GOTO train_station_back]
+																																								[train_work_drink_no]Ты не скинулся мужикам деньгами, они на тебя обиделись...{script dude_show.qsp}
+																																									[GOTO train_station_back]
+																																								[train_work_done]{script player_show_stats.qsp}[BGNDIMAGE bg/location3_2.jpg]
+																																									[GOTO train_station_back]
+																													[train_work_vodka_no]Нет, я не скидываюсь, извиняйте
+																														[mark_9105i79rx1a17562l3n0]Ну ты и...{this.train_work_vodka=0;this.train_negative_value=1;''}{script train_negative.qsp}{script dude_show.qsp}
+																															>>>
+																																[mark_7m56gb3o5t52txee4taa][GOTO train_work_start]
+																											Я же не пью
+																												[mark_5519wo200yn35663e9uc]Можешь не пить, но скинуться надо.{script dude_show.qsp}
+																													[GOTO train_work_vodka_ok]
+																													[GOTO train_work_vodka_no]
 																											[GOTO train_work_vodka_ok]
-																											[GOTO train_work_vodka_no]
-																									[GOTO train_work_vodka_ok]
+																							[GOTO train_station_back]
 																					[GOTO train_station_back]
-																			[GOTO train_station_back]
-																		[train_work_fail]Нет работы, приходи позже.[BGNDIMAGE bg/location3_2.jpg]
-																			[GOTO train_station_back]
+																				[train_work_fail]Нет работы, приходи позже.[BGNDIMAGE bg/location3_2.jpg]
+																					[GOTO train_station_back]
+																		[train_work_negative]{script train_work_negative.qsp}{this.train_work_negative_msg1}[BGNDIMAGE bg/location3_2.jpg]
+																			Почему?
+																				[mark_u2igbmg2ex1cz60zu1uj]{this.train_work_negative_msg2}[BGNDIMAGE bg/location3_2.jpg]
+																					[train_work_ok_will_fix]Понял, исправлюсь
+																						[mark_703f432nf5ic3l4w3j10][GOTO train_work_success]
+																			[GOTO train_work_ok_will_fix]
 															[train_station_back]Вернусь обратно
 																[mark_9941mh3z44vwelrye7og]...[VIDEO train_out1.mp4]
 																	
@@ -139,6 +137,42 @@
 										[location4]Закрыто...{script location_show.qsp}
 											Ладно
 												[mark_pkg54f4bbgd4vr61btr1][GOTO MENU]
+							Пойду в другое место
+								[mark_qnpag892ow868r0gi4id]{this.player_move_type=1;''}[GOTO MAP]
+									
+										[MAP]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script map_show.qsp}
+											Обратно в меню
+												[mark_4sue376w18un6v5631ka][GOTO MENU]
+											{this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+												[mark_h7v5642454m553fa1d9x]{this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+													
+														[mark_58gg854k4qojgl5ppequ]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+											{this.newlocation=2;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+												[mark_q2144z0dmjcfis47t8ve]{this.newlocation=2;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+													
+														[mark_7pi03v69b6qknin5y421]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+											{this.newlocation=3;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+												[mark_dse7z5n856wap89y7n58]{this.newlocation=3;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+													
+														[mark_3ox3c164bo73f2ku037q]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+											{this.newlocation=4;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+												[mark_8uhqd7vh7b0f2bjqy5zh]{this.newlocation=4;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+													
+														[mark_3q344urclpeulmun7599]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+											{this.newlocation=5;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+												[mark_8cg8tv1579u80nwsv334]<Enter text here>
+											{this.newlocation=6;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+												[mark_fvjpa5nc0wbyahr7udi2]<Enter text here>
+											{this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+												[mark_4k3h8blerj88b25q8642]<Enter text here>
+							Поеду на маршрутке ({this.MAP_MOVES_TYPE[2].cost} руб)
+								[mark_30297xh1ylux4uow6923]{if (this.money >= this.MAP_MOVES_TYPE[2].cost) {this.player_move_type=2;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}
+									
+										[move_no_money]У тебя нет столько денег...{script location_show.qsp}
+											Точно
+												[mark_425j7iwa8l3uq409669v][GOTO MENU]
+							Поеду на такси ({this.MAP_MOVES_TYPE[3].cost} руб)
+								[mark_lq9rhv56anqf8qg8fxsu]{if (this.money >= this.MAP_MOVES_TYPE[3].cost) {this.player_move_type=3;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}
 					Генератор чуваков
 						[mark_3ryyirl37qf720cp3z9e][GOTO dude_generator]
 					[ddonate]Закивасить.
@@ -167,12 +201,13 @@
 												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}
 													Отвали
 														[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
-						[QUEST3]{script trip_complete}{script trip_video_in.qsp}
+						[QUEST3]{script trip_video_in.qsp}
 							
-								[mark_gx1cu580s61e8reucjf7][GOTO MENU]
+								[TRIP_COMPLETE]{script trip_complete.qsp}[GOTO MENU]
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
+				[player_die]К сожалению - ты умер...{script player_show_stats.qsp}
 		[dude_generator]{this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 			[dude_generator_again]Эти же
 				[mark_br5c8k8j9y801u4057dz]...{script dude_show.qsp}
