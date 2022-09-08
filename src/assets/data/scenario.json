@@ -1309,6 +1309,26 @@
                     {
                       "node": [
                         {
+                          "_mark": "mark_vtijvkg54d647dgtf802",
+                          "_content": "[LABEL {this.dudesCtg=7;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Барыги]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_7q5a2k6g8n3t50mr05zl",
+                          "_content": "[LABEL {this.dudesCtg=8;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Преподы]"
+                    },
+                    {
+                      "node": [
+                        {
                           "_mark": "mark_5i558f76n5f1iu6kiw33",
                           "_content": "[LABEL {this.dudesCtg=0;''}][GOTO dude_generator]"
                         }
