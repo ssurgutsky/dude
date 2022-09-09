@@ -243,5 +243,7 @@
 				[mark_vtijvkg54d647dgtf802]{this.dudesCtg=7;''}[GOTO dude_generator]
 			Преподы
 				[mark_7q5a2k6g8n3t50mr05zl]{this.dudesCtg=8;''}[GOTO dude_generator]
+			Студент
+				[mark_qux8j77b2dpdh4fje0v0]{this.dudesCtg=9;''}[GOTO dude_generator]
 			[dude_generator_next]Всякие разные
 				[mark_5i558f76n5f1iu6kiw33]{this.dudesCtg=0;''}[GOTO dude_generator]

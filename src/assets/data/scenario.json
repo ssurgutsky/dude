@@ -1329,6 +1329,16 @@
                     {
                       "node": [
                         {
+                          "_mark": "mark_qux8j77b2dpdh4fje0v0",
+                          "_content": "[LABEL {this.dudesCtg=9;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Студент]"
+                    },
+                    {
+                      "node": [
+                        {
                           "_mark": "mark_5i558f76n5f1iu6kiw33",
                           "_content": "[LABEL {this.dudesCtg=0;''}][GOTO dude_generator]"
                         }
