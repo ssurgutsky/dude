@@ -145,9 +145,33 @@
 																		[mark_6ilq2t9v0ktxz001h3dv][GOTO MENU]
 													[GOTO tolyan_go_away]
 											[GOTO tolyan_go_away]
-										[location5]Закрыто...{script location_show.qsp}
-											Ладно
-												[mark_99ibu8kd0723a103rrgm][GOTO MENU]
+										[location5]...[BGNDIMAGE bg/location5_1.jpg]
+											Пойду налево
+												[mark_90yk3d0gkrm93qc889xj]...{this.dudesBg='bg/location5_2.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+													Вперед
+														[mark_i226f0kq9w9f8p4fx8gw]...{this.dudesBg='bg/location5_2_2.jpg';this.dudesData=null;this.dudesCtg=8;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=80;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+															Вперед
+																[mark_98n6e72jh8x4ex06wo4k]...{this.dudesBg='bg/location5_2_3.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																	Зайду в аудиторию
+																		[mark_8j06819se2dn6y23wu08]...[BGNDIMAGE bg/location5_4.jpg]
+																			[location5_go_out]Уйду из универа
+																				[mark_99ibu8kd0723a103rrgm][GOTO MENU]
+																	[GOTO location5_go_out]
+															[GOTO location5_go_out]
+													[GOTO location5_go_out]
+											Пойду направо
+												[mark_j42j2cew3158jw7s3aya]...{this.dudesBg='bg/location5_3.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+													Вперед
+														[mark_601s120gw7ei85i8l78h]...{this.dudesBg='bg/location5_3_2.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+															Вперед
+																[mark_83naacfm59nen6d4z609]...{this.dudesBg='bg/location5_3_3.jpg';this.dudesData=null;this.dudesCtg=8;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																	Зайду в аудиторию
+																		[mark_g16fic37ine09drk5657]Закрыто[BGNDIMAGE bg/location5_3_3.jpg]
+																			[GOTO location5_go_out]
+																	[GOTO location5_go_out]
+															[GOTO location5_go_out]
+													[GOTO location5_go_out]
+											[GOTO location5_go_out]
 							Пойду в другое место
 								[mark_qnpag892ow868r0gi4id]{this.player_move_type=1;''}[GOTO MAP]
 									
@@ -198,7 +222,7 @@
 							
 								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=3;this.dudesCnt=1;''}{script dude_show.qsp}
 									Иди работай
-										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю.{script dude_show.qsp}
+										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю / Я итак на работе.{script dude_show.qsp}
 											Это бесчеловечно
 												[mark_d2752e0b18z1a1r2wd58][GOTO QUEST2]
 									Ну держи

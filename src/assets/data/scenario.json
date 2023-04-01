@@ -773,16 +773,144 @@
                                                     {
                                                       "node": [
                                                         {
-                                                          "_mark": "mark_99ibu8kd0723a103rrgm",
-                                                          "_content": "[LABEL ][GOTO MENU]"
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "_mark": "mark_99ibu8kd0723a103rrgm",
+                                                                                          "_content": "[LABEL ][GOTO MENU]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "location5_go_out",
+                                                                                      "_content": "[LABEL Уйду из универа]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "mark_8j06819se2dn6y23wu08",
+                                                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location5_4.jpg]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Зайду в аудиторию]"
+                                                                            },
+                                                                            {
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ][GOTO location5_go_out]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_98n6e72jh8x4ex06wo4k",
+                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_2_3.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Вперед]"
+                                                                    },
+                                                                    {
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ][GOTO location5_go_out]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_i226f0kq9w9f8p4fx8gw",
+                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location5_2_2.jpg';this.dudesData=null;this.dudesCtg=8;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=80;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Вперед]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO location5_go_out]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_90yk3d0gkrm93qc889xj",
+                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_2.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
-                                                      "_content": "[LABEL Ладно]"
+                                                      "_content": "[LABEL Пойду налево]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL ][GOTO location5_go_out]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "mark_g16fic37ine09drk5657",
+                                                                                  "_content": "[LABEL Закрыто][BGNDIMAGE bg/location5_3_3.jpg]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Зайду в аудиторию]"
+                                                                            },
+                                                                            {
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ][GOTO location5_go_out]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_83naacfm59nen6d4z609",
+                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_3_3.jpg';this.dudesData=null;this.dudesCtg=8;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Вперед]"
+                                                                    },
+                                                                    {
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ][GOTO location5_go_out]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_601s120gw7ei85i8l78h",
+                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location5_3_2.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Вперед]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO location5_go_out]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_j42j2cew3158jw7s3aya",
+                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_3.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL Пойду направо]"
+                                                    },
+                                                    {
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ][GOTO location5_go_out]"
                                                     }
                                                   ],
                                                   "_mark": "location5",
-                                                  "_content": "[LABEL Закрыто...{script location_show.qsp}]"
+                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location5_1.jpg]"
                                                 }
                                               ],
                                               "_mark": "",
