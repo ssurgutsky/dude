@@ -911,6 +911,66 @@
                                                   ],
                                                   "_mark": "location5",
                                                   "_content": "[LABEL ...][BGNDIMAGE bg/location5_1.jpg]"
+                                                },
+                                                {
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_7a4137t797ud54uz2ve7",
+                                                                          "_content": "[LABEL <Enter text here>]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Работа грузчиком]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_d4pi9cd0295l6l44m3ao",
+                                                                          "_content": "[LABEL <Enter text here>]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Работа охранником]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_2i5qnz1gu6y0c61q3363",
+                                                                  "_content": "[LABEL На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=10;this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Спрошу про работу]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_dp1nib8132h836w9x520",
+                                                                  "_content": "[LABEL <Enter text here>]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Куплю поесть]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_y488h9yvgew855881hhn",
+                                                          "_content": "[LABEL Что будешь делать?][BGNDIMAGE bg/location6_1.jpg]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "location6",
+                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location6_1.jpg]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -1475,6 +1535,16 @@
                       ],
                       "_mark": "",
                       "_content": "[LABEL Студент]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_1wz088jqf91rl7xzt349",
+                          "_content": "[LABEL {this.dudesCtg=10;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Работник]"
                     },
                     {
                       "node": [

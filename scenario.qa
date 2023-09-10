@@ -172,6 +172,17 @@
 															[GOTO location5_go_out]
 													[GOTO location5_go_out]
 											[GOTO location5_go_out]
+										[location6]...[BGNDIMAGE bg/location6_1.jpg]
+											
+												[mark_y488h9yvgew855881hhn]Что будешь делать?[BGNDIMAGE bg/location6_1.jpg]
+													Спрошу про работу
+														[mark_2i5qnz1gu6y0c61q3363]На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=10;this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+															Работа грузчиком
+																[mark_7a4137t797ud54uz2ve7]<Enter text here>
+															Работа охранником
+																[mark_d4pi9cd0295l6l44m3ao]<Enter text here>
+													Куплю поесть
+														[mark_dp1nib8132h836w9x520]<Enter text here>
 							Пойду в другое место
 								[mark_qnpag892ow868r0gi4id]{this.player_move_type=1;''}[GOTO MAP]
 									
@@ -271,5 +282,7 @@
 				[mark_7q5a2k6g8n3t50mr05zl]{this.dudesCtg=8;''}[GOTO dude_generator]
 			Студент
 				[mark_qux8j77b2dpdh4fje0v0]{this.dudesCtg=9;''}[GOTO dude_generator]
+			Работник
+				[mark_1wz088jqf91rl7xzt349]{this.dudesCtg=10;''}[GOTO dude_generator]
 			[dude_generator_next]Всякие разные
 				[mark_5i558f76n5f1iu6kiw33]{this.dudesCtg=0;''}[GOTO dude_generator]
