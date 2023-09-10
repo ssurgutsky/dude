@@ -1055,8 +1055,20 @@
                                                     {
                                                       "node": [
                                                         {
-                                                          "_mark": "mark_fvjpa5nc0wbyahr7udi2",
-                                                          "_content": "[LABEL <Enter text here>]"
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_2296h43u267im498ir47",
+                                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_9b1j9iw3b9zsf8b38vjh",
+                                                          "_content": "[LABEL {this.newlocation=6;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
@@ -1202,7 +1214,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_3rx50wu498p329wkm06r",
-                                                  "_content": "[LABEL Нее! Я так больше получаю.{script dude_show.qsp}]"
+                                                  "_content": "[LABEL Нее! Я так больше получаю / Я итак на работе.{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",

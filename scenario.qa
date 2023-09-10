@@ -199,7 +199,9 @@
 													
 														[mark_ztv2cj3535nbc1g7lmcr]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
 											{this.newlocation=6;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-												[mark_fvjpa5nc0wbyahr7udi2]<Enter text here>
+												[mark_9b1j9iw3b9zsf8b38vjh]{this.newlocation=6;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+													
+														[mark_2296h43u267im498ir47]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
 											{this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 												[mark_4k3h8blerj88b25q8642]<Enter text here>
 							Поеду на маршрутке ({this.MAP_MOVES_TYPE[2].cost} руб)
