@@ -925,26 +925,264 @@
                                                                     {
                                                                       "node": [
                                                                         {
-                                                                          "_mark": "mark_7a4137t797ud54uz2ve7",
-                                                                          "_content": "[LABEL <Enter text here>]"
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "node": [
+                                                                                                    {
+                                                                                                      "node": [
+                                                                                                        {
+                                                                                                          "node": [
+                                                                                                            {
+                                                                                                              "node": [
+                                                                                                                {
+                                                                                                                  "node": [
+                                                                                                                    {
+                                                                                                                      "node": [
+                                                                                                                        {
+                                                                                                                          "_mark": "mark_v8k7hb77e0022cfg2xct",
+                                                                                                                          "_content": "[LABEL ][GOTO sixstore_lobby]"
+                                                                                                                        }
+                                                                                                                      ],
+                                                                                                                      "_mark": "",
+                                                                                                                      "_content": "[LABEL ]"
+                                                                                                                    }
+                                                                                                                  ],
+                                                                                                                  "_mark": "mark_gi915836aktwv86bl71o",
+                                                                                                                  "_content": "[LABEL {script player_check_status.qsp}]"
+                                                                                                                }
+                                                                                                              ],
+                                                                                                              "_mark": "",
+                                                                                                              "_content": "[LABEL >>>]"
+                                                                                                            }
+                                                                                                          ],
+                                                                                                          "_mark": "sixstore_work1_end",
+                                                                                                          "_content": "[LABEL {script sixstore_work1_calc.qsp}][BGNDIMAGE bg/location6_1.jpg]"
+                                                                                                        }
+                                                                                                      ],
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL ]"
+                                                                                                    }
+                                                                                                  ],
+                                                                                                  "_mark": "mark_99h91wx7n86vhgmc753o",
+                                                                                                  "_content": "[LABEL {if (this.sixstore_work_hour>=this.sixstore_work_hours){'[GOTO sixstore_work1_end]'} else {'[GOTO sixstore_work1_loop]'}}]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL {this.sixstore_work1_answer}]"
+                                                                                            },
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "_mark": "mark_2y48c837rd10qn9u6812",
+                                                                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "sixstore_work1_leave",
+                                                                                              "_content": "[LABEL Уйду отсюда]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "mark_944swc4bzk1lo3y0i36v",
+                                                                                          "_content": "[LABEL {this.sixstore_work_hour++;this.sixstore_work1_msg2}{script dude_show.qsp}]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL Выполню]"
+                                                                                    },
+                                                                                    {
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL ][GOTO sixstore_work1_leave]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "sixstore_work1_loop",
+                                                                                  "_content": "[LABEL {script sixstore_work1_loop.qsp}{this.sixstore_work1_msg1}{script dude_show.qsp}]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Пойду]"
+                                                                            },
+                                                                            {
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ][GOTO sixstore_work1_leave]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_941tukb83u3x7ttnf8f6",
+                                                                          "_content": "[LABEL Иди на склад, там тебе скажут, что делать...{this.sixstore_work_type=1;this.sixstore_work_hour=0;this.sixstore_work_hours=this.randomInt(6,10);'';}{script dude_show.qsp}]"
                                                                         }
                                                                       ],
                                                                       "_mark": "",
-                                                                      "_content": "[LABEL Работа грузчиком]"
+                                                                      "_content": "[LABEL Работа грузчиком ({this.SIXSTORE_WORK1_RATE} в час)]"
                                                                     },
                                                                     {
                                                                       "node": [
                                                                         {
-                                                                          "_mark": "mark_d4pi9cd0295l6l44m3ao",
-                                                                          "_content": "[LABEL <Enter text here>]"
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "node": [
+                                                                                                    {
+                                                                                                      "node": [
+                                                                                                        {
+                                                                                                          "node": [
+                                                                                                            {
+                                                                                                              "node": [
+                                                                                                                {
+                                                                                                                  "node": [
+                                                                                                                    {
+                                                                                                                      "node": [
+                                                                                                                        {
+                                                                                                                          "node": [
+                                                                                                                            {
+                                                                                                                              "node": [
+                                                                                                                                {
+                                                                                                                                  "node": [
+                                                                                                                                    {
+                                                                                                                                      "node": [
+                                                                                                                                        {
+                                                                                                                                          "_mark": "mark_g0n02nhq8j1oj91577yv",
+                                                                                                                                          "_content": "[LABEL ][GOTO sixstore_lobby]"
+                                                                                                                                        }
+                                                                                                                                      ],
+                                                                                                                                      "_mark": "",
+                                                                                                                                      "_content": "[LABEL ]"
+                                                                                                                                    }
+                                                                                                                                  ],
+                                                                                                                                  "_mark": "mark_30l7n2acb67l1s9g3c61",
+                                                                                                                                  "_content": "[LABEL {script player_check_status.qsp}]"
+                                                                                                                                }
+                                                                                                                              ],
+                                                                                                                              "_mark": "",
+                                                                                                                              "_content": "[LABEL >>>]"
+                                                                                                                            }
+                                                                                                                          ],
+                                                                                                                          "_mark": "sixstore_work2_end",
+                                                                                                                          "_content": "[LABEL {script sixstore_work2_calc.qsp}][BGNDIMAGE bg/location6_1.jpg]"
+                                                                                                                        }
+                                                                                                                      ],
+                                                                                                                      "_mark": "",
+                                                                                                                      "_content": "[LABEL ]"
+                                                                                                                    }
+                                                                                                                  ],
+                                                                                                                  "_mark": "mark_n7c78928g29mo515jely",
+                                                                                                                  "_content": "[LABEL {if (this.sixstore_work_hour>=this.sixstore_work_hours){'[GOTO sixstore_work2_end]'} else {'[GOTO sixstore_work2_loop]'}}]"
+                                                                                                                }
+                                                                                                              ],
+                                                                                                              "_mark": "",
+                                                                                                              "_content": "[LABEL Проходите]"
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "node": [
+                                                                                                                {
+                                                                                                                  "_mark": "mark_m0tcld0qlbb8o88ahbp2",
+                                                                                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                                                                                }
+                                                                                                              ],
+                                                                                                              "_mark": "sixstore_work2_leave",
+                                                                                                              "_content": "[LABEL Уйду отсюда]"
+                                                                                                            }
+                                                                                                          ],
+                                                                                                          "_mark": "mark_li0z1yhw2o1j590699e4",
+                                                                                                          "_content": "[LABEL {this.sixstore_work_hour++;this.sixstore_work2_msg2}{script dude_show.qsp}]"
+                                                                                                        }
+                                                                                                      ],
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL {this.sixstore_work2_answer}]"
+                                                                                                    },
+                                                                                                    {
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL ][GOTO sixstore_work2_leave]"
+                                                                                                    }
+                                                                                                  ],
+                                                                                                  "_mark": "mark_oji2rvvop98at7yb9nyy",
+                                                                                                  "_content": "[LABEL {this.sixstore_work2_msg1}{script dude_show.qsp}]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL Постойте, подождите!]"
+                                                                                            },
+                                                                                            {
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL ][GOTO sixstore_work2_leave]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "sixstore_work2_loop",
+                                                                                          "_content": "[LABEL {script sixstore_work2_loop.qsp}Голос по рации: \"Подозрение на кражу! Останови и проверь...\"{script dude_show.qsp}]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL Хорошо]"
+                                                                                    },
+                                                                                    {
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL ][GOTO sixstore_work2_leave]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "sixstore_work2_loop",
+                                                                                  "_content": "[LABEL Приступай к работе.{script dude_show.qsp}]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Понятно]"
+                                                                            },
+                                                                            {
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ][GOTO sixstore_work2_leave]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_rkd4x7or0dmjbmzsuov8",
+                                                                          "_content": "[LABEL Тебе будут сообщать о подозрительных посетителях. Твоя задача - останавливать и проверять их.{this.sixstore_work_type=2;this.sixstore_work_hour=0;this.sixstore_work_hours=this.randomInt(6,10);'';}{script dude_show.qsp}]"
                                                                         }
                                                                       ],
                                                                       "_mark": "",
-                                                                      "_content": "[LABEL Работа охранником]"
+                                                                      "_content": "[LABEL Работа охранником ({this.SIXSTORE_WORK2_RATE} в час)]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL <Enter text here>]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_746462lw901n58wl17in",
+                                                                          "_content": "[LABEL Приступай!]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Работа менеджером ({this.SIXSTORE_WORK3_RATE} в час, нужно в/о)]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_bakwv9r03fn4s5pi07v6",
+                                                                          "_content": "[LABEL ][GOTO sixstore_lobby]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Нет, спасибо]"
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_2i5qnz1gu6y0c61q3363",
-                                                                  "_content": "[LABEL На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=10;this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                  "_content": "[LABEL На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=11;this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -953,16 +1191,170 @@
                                                             {
                                                               "node": [
                                                                 {
-                                                                  "_mark": "mark_dp1nib8132h836w9x520",
-                                                                  "_content": "[LABEL <Enter text here>]"
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "node": [
+                                                                                                    {
+                                                                                                      "node": [
+                                                                                                        {
+                                                                                                          "_mark": "mark_c471c061a973dmuu6aa1",
+                                                                                                          "_content": "[LABEL ][GOTO sixstore_eat]"
+                                                                                                        }
+                                                                                                      ],
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL Да, еще]"
+                                                                                                    },
+                                                                                                    {
+                                                                                                      "node": [
+                                                                                                        {
+                                                                                                          "_mark": "mark_ls304tm99agb02pg2rev",
+                                                                                                          "_content": "[LABEL {script rounding.qsp}][GOTO sixstore_lobby]"
+                                                                                                        }
+                                                                                                      ],
+                                                                                                      "_mark": "sixstore_eat_nothing",
+                                                                                                      "_content": "[LABEL Ничего]"
+                                                                                                    }
+                                                                                                  ],
+                                                                                                  "_mark": "mark_9e27h6ak60twhv5i2xa9",
+                                                                                                  "_content": "[LABEL {script player_show_stats.qsp}\nОтлично! Еще что-нибудь хочешь?][BGNDIMAGE bg/location6_6.jpg]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL ]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "sixstore_eat_ok",
+                                                                                          "_content": "[LABEL {this.money-=this.payment;this.energy+=this.energy_new;'';}{script player_check_status.qsp}]"
+                                                                                        },
+                                                                                        {
+                                                                                          "_mark": "sixstore_eat_no",
+                                                                                          "_content": "[LABEL ]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL ]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "sixstore_eat_check_payment",
+                                                                                  "_content": "[LABEL {if(this.money<this.payment) '[GOTO sixstore_eat_no]'}]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_861w90o16xi4em928hld",
+                                                                          "_content": "[LABEL {this.payment=this.SIXSTORE_FOOD1_PRICE;this.energy_new=this.SIXSTORE_FOOD1_ENERGY;'';}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Сухари (Цена: {this.SIXSTORE_FOOD1_PRICE}, Сила: {this.SIXSTORE_FOOD1_ENERGY})]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_e03583h6cm6ne8bg5477",
+                                                                                  "_content": "[LABEL ][GOTO sixstore_eat_check_payment]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_42b5o1gj791d6u654v98",
+                                                                          "_content": "[LABEL {this.payment=this.SIXSTORE_FOOD2_PRICE;this.energy_new=this.SIXSTORE_FOOD2_ENERGY;'';}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Дошик (Цена: {this.SIXSTORE_FOOD2_PRICE}, Сила: {this.SIXSTORE_FOOD2_ENERGY})]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_9jlj92fc41l9g2117625",
+                                                                                  "_content": "[LABEL ][GOTO sixstore_eat_check_payment]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_258920dpj5364nn87l27",
+                                                                          "_content": "[LABEL {this.payment=this.SIXSTORE_FOOD3_PRICE;this.energy_new=this.SIXSTORE_FOOD3_ENERGY;'';}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Котлетбургер (Цена: {this.SIXSTORE_FOOD3_PRICE}, Сила: {this.SIXSTORE_FOOD3_ENERGY})]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_6487oi6xx1i7wo0u190h",
+                                                                                  "_content": "[LABEL ][GOTO sixstore_eat_check_payment]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_n8oco0z0dwiyhhh03elp",
+                                                                          "_content": "[LABEL {this.payment=this.SIXSTORE_FOOD4_PRICE;this.energy_new=this.SIXSTORE_FOOD4_ENERGY;'';}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Пицца (Цена: {this.SIXSTORE_FOOD4_PRICE}, Сила: {this.SIXSTORE_FOOD4_ENERGY})]"
+                                                                    },
+                                                                    {
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ][GOTO sixstore_eat_nothing]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "sixstore_eat",
+                                                                  "_content": "[LABEL {script player_show_stats.qsp}\nЧто съешь?][BGNDIMAGE bg/location6_6.jpg]"
                                                                 }
                                                               ],
                                                               "_mark": "",
                                                               "_content": "[LABEL Куплю поесть]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_p05z79lkt5495439z05k",
+                                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Выйду отсюда]"
                                                             }
                                                           ],
-                                                          "_mark": "mark_y488h9yvgew855881hhn",
-                                                          "_content": "[LABEL Что будешь делать?][BGNDIMAGE bg/location6_1.jpg]"
+                                                          "_mark": "sixstore_lobby",
+                                                          "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location6_6.jpg]"
                                                         }
                                                       ],
                                                       "_mark": "",
@@ -971,6 +1363,146 @@
                                                   ],
                                                   "_mark": "location6",
                                                   "_content": "[LABEL ...][BGNDIMAGE bg/location6_1.jpg]"
+                                                },
+                                                {
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "node": [
+                                                                                                    {
+                                                                                                      "node": [
+                                                                                                        {
+                                                                                                          "node": [
+                                                                                                            {
+                                                                                                              "node": [
+                                                                                                                {
+                                                                                                                  "node": [
+                                                                                                                    {
+                                                                                                                      "node": [
+                                                                                                                        {
+                                                                                                                          "_mark": "mark_tn54e6n3tfmx0e9yp7h6",
+                                                                                                                          "_content": "[LABEL ][GOTO carwash_lobby]"
+                                                                                                                        }
+                                                                                                                      ],
+                                                                                                                      "_mark": "",
+                                                                                                                      "_content": "[LABEL ]"
+                                                                                                                    }
+                                                                                                                  ],
+                                                                                                                  "_mark": "mark_6oi496f6dufih2x9n576",
+                                                                                                                  "_content": "[LABEL {script player_check_status.qsp}]"
+                                                                                                                }
+                                                                                                              ],
+                                                                                                              "_mark": "",
+                                                                                                              "_content": "[LABEL >>>]"
+                                                                                                            }
+                                                                                                          ],
+                                                                                                          "_mark": "carwash_work1_end",
+                                                                                                          "_content": "[LABEL {script carwash_work1_calc.qsp}][BGNDIMAGE bg/location7_1.jpg]"
+                                                                                                        }
+                                                                                                      ],
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL ]"
+                                                                                                    }
+                                                                                                  ],
+                                                                                                  "_mark": "mark_r5gxp618vvw486z36wov",
+                                                                                                  "_content": "[LABEL {if (this.carwash_work_hour>=this.carwash_work_hours){'[GOTO carwash_work1_end]'} else {'[GOTO carwash_work1_loop]'}}]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL Промолчу]"
+                                                                                            },
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "_mark": "mark_65fn3o17cm3f4d1022j2",
+                                                                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "carwash_leave",
+                                                                                              "_content": "[LABEL Уйду отсюда]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "mark_75sbm27fl3o9rk4bom20",
+                                                                                          "_content": "[LABEL {this.carwash_work_hour++;this.carwash_work1_msg2}{script dude_show.qsp}]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL {this.carwash_work1_answer}]"
+                                                                                    },
+                                                                                    {
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL ][GOTO carwash_leave]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "carwash_work1_loop",
+                                                                                  "_content": "[LABEL {script carwash_work1_loop.qsp}{this.carwash_work1_msg1}{script dude_show.qsp}]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Хорошо]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_2i5qnz1gu6y0c61q3363",
+                                                                          "_content": "[LABEL {this.carwash_work1_msg2}{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "mark_6x78xcds213m1005pe94",
+                                                                      "_content": "[LABEL Да, согласен]"
+                                                                    },
+                                                                    {
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ][GOTO carwash_leave]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_h5v53di93t50n7rn2875",
+                                                                  "_content": "[LABEL {script carwash_prepare.qsp}{this.carwash_work1_msg1}{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "mark_7cjhp27pa010mp2kt6w9",
+                                                              "_content": "[LABEL Спрошу работу]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_7206222s19e51y27i7mk",
+                                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Выйду отсюда]"
+                                                            }
+                                                          ],
+                                                          "_mark": "carwash_lobby",
+                                                          "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location7_1.jpg]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ]"
+                                                    }
+                                                  ],
+                                                  "_mark": "location7",
+                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location7_1.jpg]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -1407,8 +1939,12 @@
                           "_content": "[LABEL Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.][IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]"
                         },
                         {
-                          "_mark": "player_die",
-                          "_content": "[LABEL К сожалению - ты умер...{script player_show_stats.qsp}]"
+                          "_mark": "player_die_energy_out",
+                          "_content": "[LABEL К сожалению - ты умер от недостатка жизненных сил...{script player_show_stats.qsp}]"
+                        },
+                        {
+                          "_mark": "player_die_energy_overflow",
+                          "_content": "[LABEL К сожалению - ты умер от переизбытка жизненных сил...{script player_show_stats.qsp}]"
                         }
                       ],
                       "_mark": "",

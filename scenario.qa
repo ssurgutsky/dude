@@ -174,15 +174,111 @@
 											[GOTO location5_go_out]
 										[location6]...[BGNDIMAGE bg/location6_1.jpg]
 											
-												[mark_y488h9yvgew855881hhn]Что будешь делать?[BGNDIMAGE bg/location6_1.jpg]
+												[sixstore_lobby]{script player_show_stats.qsp}\nЧто будешь делать?[BGNDIMAGE bg/location6_6.jpg]
 													Спрошу про работу
-														[mark_2i5qnz1gu6y0c61q3363]На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=10;this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
-															Работа грузчиком
-																[mark_7a4137t797ud54uz2ve7]<Enter text here>
-															Работа охранником
-																[mark_d4pi9cd0295l6l44m3ao]<Enter text here>
+														[mark_2i5qnz1gu6y0c61q3363]На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=11;this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+															Работа грузчиком ({this.SIXSTORE_WORK1_RATE} в час)
+																[mark_941tukb83u3x7ttnf8f6]Иди на склад, там тебе скажут, что делать...{this.sixstore_work_type=1;this.sixstore_work_hour=0;this.sixstore_work_hours=this.randomInt(6,10);'';}{script dude_show.qsp}
+																	Пойду
+																		[sixstore_work1_loop]{script sixstore_work1_loop.qsp}{this.sixstore_work1_msg1}{script dude_show.qsp}
+																			Выполню
+																				[mark_944swc4bzk1lo3y0i36v]{this.sixstore_work_hour++;this.sixstore_work1_msg2}{script dude_show.qsp}
+																					{this.sixstore_work1_answer}
+																						[mark_99h91wx7n86vhgmc753o]{if (this.sixstore_work_hour>=this.sixstore_work_hours){'[GOTO sixstore_work1_end]'} else {'[GOTO sixstore_work1_loop]'}}
+																							
+																								[sixstore_work1_end]{script sixstore_work1_calc.qsp}[BGNDIMAGE bg/location6_1.jpg]
+																									>>>
+																										[mark_gi915836aktwv86bl71o]{script player_check_status.qsp}
+																											
+																												[mark_v8k7hb77e0022cfg2xct][GOTO sixstore_lobby]
+																					[sixstore_work1_leave]Уйду отсюда
+																						[mark_2y48c837rd10qn9u6812][GOTO MENU]
+																			[GOTO sixstore_work1_leave]
+																	[GOTO sixstore_work1_leave]
+															Работа охранником ({this.SIXSTORE_WORK2_RATE} в час)
+																[mark_rkd4x7or0dmjbmzsuov8]Тебе будут сообщать о подозрительных посетителях. Твоя задача - останавливать и проверять их.{this.sixstore_work_type=2;this.sixstore_work_hour=0;this.sixstore_work_hours=this.randomInt(6,10);'';}{script dude_show.qsp}
+																	Понятно
+																		[sixstore_work2_loop]Приступай к работе.{script dude_show.qsp}
+																			Хорошо
+																				[sixstore_work2_loop]{script sixstore_work2_loop.qsp}Голос по рации: "Подозрение на кражу! Останови и проверь..."{script dude_show.qsp}
+																					Постойте, подождите!
+																						[mark_oji2rvvop98at7yb9nyy]{this.sixstore_work2_msg1}{script dude_show.qsp}
+																							{this.sixstore_work2_answer}
+																								[mark_li0z1yhw2o1j590699e4]{this.sixstore_work_hour++;this.sixstore_work2_msg2}{script dude_show.qsp}
+																									Проходите
+																										[mark_n7c78928g29mo515jely]{if (this.sixstore_work_hour>=this.sixstore_work_hours){'[GOTO sixstore_work2_end]'} else {'[GOTO sixstore_work2_loop]'}}
+																											
+																												[sixstore_work2_end]{script sixstore_work2_calc.qsp}[BGNDIMAGE bg/location6_1.jpg]
+																													>>>
+																														[mark_30l7n2acb67l1s9g3c61]{script player_check_status.qsp}
+																															
+																																[mark_g0n02nhq8j1oj91577yv][GOTO sixstore_lobby]
+																									[sixstore_work2_leave]Уйду отсюда
+																										[mark_m0tcld0qlbb8o88ahbp2][GOTO MENU]
+																							[GOTO sixstore_work2_leave]
+																					[GOTO sixstore_work2_leave]
+																			[GOTO sixstore_work2_leave]
+																	[GOTO sixstore_work2_leave]
+															Работа менеджером ({this.SIXSTORE_WORK3_RATE} в час, нужно в/о)
+																[mark_746462lw901n58wl17in]Приступай!
+																	<Enter text here>
+															Нет, спасибо
+																[mark_bakwv9r03fn4s5pi07v6][GOTO sixstore_lobby]
 													Куплю поесть
-														[mark_dp1nib8132h836w9x520]<Enter text here>
+														[sixstore_eat]{script player_show_stats.qsp}\nЧто съешь?[BGNDIMAGE bg/location6_6.jpg]
+															Сухари (Цена: {this.SIXSTORE_FOOD1_PRICE}, Сила: {this.SIXSTORE_FOOD1_ENERGY})
+																[mark_861w90o16xi4em928hld]{this.payment=this.SIXSTORE_FOOD1_PRICE;this.energy_new=this.SIXSTORE_FOOD1_ENERGY;'';}
+																	
+																		[sixstore_eat_check_payment]{if(this.money<this.payment) '[GOTO sixstore_eat_no]'}
+																			
+																				[sixstore_eat_ok]{this.money-=this.payment;this.energy+=this.energy_new;'';}{script player_check_status.qsp}
+																					
+																						[mark_9e27h6ak60twhv5i2xa9]{script player_show_stats.qsp}\nОтлично! Еще что-нибудь хочешь?[BGNDIMAGE bg/location6_6.jpg]
+																							Да, еще
+																								[mark_c471c061a973dmuu6aa1][GOTO sixstore_eat]
+																							[sixstore_eat_nothing]Ничего
+																								[mark_ls304tm99agb02pg2rev]{script rounding.qsp}[GOTO sixstore_lobby]
+																				[sixstore_eat_no]
+															Дошик (Цена: {this.SIXSTORE_FOOD2_PRICE}, Сила: {this.SIXSTORE_FOOD2_ENERGY})
+																[mark_42b5o1gj791d6u654v98]{this.payment=this.SIXSTORE_FOOD2_PRICE;this.energy_new=this.SIXSTORE_FOOD2_ENERGY;'';}
+																	
+																		[mark_e03583h6cm6ne8bg5477][GOTO sixstore_eat_check_payment]
+															Котлетбургер (Цена: {this.SIXSTORE_FOOD3_PRICE}, Сила: {this.SIXSTORE_FOOD3_ENERGY})
+																[mark_258920dpj5364nn87l27]{this.payment=this.SIXSTORE_FOOD3_PRICE;this.energy_new=this.SIXSTORE_FOOD3_ENERGY;'';}
+																	
+																		[mark_9jlj92fc41l9g2117625][GOTO sixstore_eat_check_payment]
+															Пицца (Цена: {this.SIXSTORE_FOOD4_PRICE}, Сила: {this.SIXSTORE_FOOD4_ENERGY})
+																[mark_n8oco0z0dwiyhhh03elp]{this.payment=this.SIXSTORE_FOOD4_PRICE;this.energy_new=this.SIXSTORE_FOOD4_ENERGY;'';}
+																	
+																		[mark_6487oi6xx1i7wo0u190h][GOTO sixstore_eat_check_payment]
+															[GOTO sixstore_eat_nothing]
+													Выйду отсюда
+														[mark_p05z79lkt5495439z05k][GOTO MENU]
+										[location7]...[BGNDIMAGE bg/location7_1.jpg]
+											
+												[carwash_lobby]{script player_show_stats.qsp}\nЧто будешь делать?[BGNDIMAGE bg/location7_1.jpg]
+													[mark_7cjhp27pa010mp2kt6w9]Спрошу работу
+														[mark_h5v53di93t50n7rn2875]{script carwash_prepare.qsp}{this.carwash_work1_msg1}{script dude_show.qsp}
+															[mark_6x78xcds213m1005pe94]Да, согласен
+																[mark_2i5qnz1gu6y0c61q3363]{this.carwash_work1_msg2}{script dude_show.qsp}
+																	Хорошо
+																		[carwash_work1_loop]{script carwash_work1_loop.qsp}{this.carwash_work1_msg1}{script dude_show.qsp}
+																			{this.carwash_work1_answer}
+																				[mark_75sbm27fl3o9rk4bom20]{this.carwash_work_hour++;this.carwash_work1_msg2}{script dude_show.qsp}
+																					Промолчу
+																						[mark_r5gxp618vvw486z36wov]{if (this.carwash_work_hour>=this.carwash_work_hours){'[GOTO carwash_work1_end]'} else {'[GOTO carwash_work1_loop]'}}
+																							
+																								[carwash_work1_end]{script carwash_work1_calc.qsp}[BGNDIMAGE bg/location7_1.jpg]
+																									>>>
+																										[mark_6oi496f6dufih2x9n576]{script player_check_status.qsp}
+																											
+																												[mark_tn54e6n3tfmx0e9yp7h6][GOTO carwash_lobby]
+																					[carwash_leave]Уйду отсюда
+																						[mark_65fn3o17cm3f4d1022j2][GOTO MENU]
+																			[GOTO carwash_leave]
+															[GOTO carwash_leave]
+													Выйду отсюда
+														[mark_7206222s19e51y27i7mk][GOTO MENU]
 							Пойду в другое место
 								[mark_qnpag892ow868r0gi4id]{this.player_move_type=1;''}[GOTO MAP]
 									
@@ -257,7 +353,8 @@
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
-				[player_die]К сожалению - ты умер...{script player_show_stats.qsp}
+				[player_die_energy_out]К сожалению - ты умер от недостатка жизненных сил...{script player_show_stats.qsp}
+				[player_die_energy_overflow]К сожалению - ты умер от переизбытка жизненных сил...{script player_show_stats.qsp}
 		[dude_generator]{this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 			[dude_generator_again]Эти же
 				[mark_br5c8k8j9y801u4057dz]...{script dude_show.qsp}
