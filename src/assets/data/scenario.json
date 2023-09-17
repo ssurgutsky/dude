@@ -1503,6 +1503,148 @@
                                                   ],
                                                   "_mark": "location7",
                                                   "_content": "[LABEL ...][BGNDIMAGE bg/location7_1.jpg]"
+                                                },
+                                                {
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_7s475o8rb5eb6319u2p6",
+                                                                  "_content": "[LABEL ][GOTO location8]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Ничего]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "_mark": "mark_m46ft1qi9vw6nfs8q3wc",
+                                                                                                  "_content": "[LABEL ][GOTO megapolice_buy_something]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL >>>]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "megapolice_money_ok",
+                                                                                          "_content": "[LABEL {this.money-=this.things[this.thing].price;this.things[this.thing].has=1;''}Приобретено!][BGNDIMAGE bg/location8_2.jpg]"
+                                                                                        },
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "_mark": "mark_jjrlv817rh2377dj6phs",
+                                                                                                  "_content": "[LABEL ][GOTO megapolice_buy_something]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL Проклятье!]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "megapolice_money_no",
+                                                                                          "_content": "[LABEL У тебя недостаточно денег...][BGNDIMAGE bg/location8_2.jpg]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL ]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "megapolice_check_money",
+                                                                                  "_content": "[LABEL {this.callback_ok='megapolice_money_ok';this.callback_no='megapolice_money_no';'';}{script player_check_money.qsp}]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Купить]"
+                                                                            },
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_03dhca98gj6314fnlrxg",
+                                                                                  "_content": "[LABEL ][GOTO megapolice_buy_something]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Отмена]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "megapolice_show_thing",
+                                                                          "_content": "[LABEL {script show_thing.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_qwoul568o0095qo17d07",
+                                                                  "_content": "[LABEL {this.payment=this.things[this.thing_pepper].price;this.thing=this.thing_pepper;'';}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL {this.things[this.thing_pepper].name}, цена: {this.things[this.thing_pepper].price}]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_fgk912i5772555u2b7ol",
+                                                                  "_content": "[LABEL {this.payment=this.things[this.thing_gun].price;this.thing=this.thing_gun;'';}][GOTO megapolice_show_thing]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL {this.things[this.thing_gun].name}, цена: {this.things[this.thing_gun].price}]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_zje1k69047g41m2xn083",
+                                                                  "_content": "[LABEL {this.payment=this.things[this.thing_bicycle].price;this.thing=this.thing_bicycle;'';}][GOTO megapolice_show_thing]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL {this.things[this.thing_bicycle].name}, цена: {this.things[this.thing_bicycle].price}]"
+                                                            }
+                                                          ],
+                                                          "_mark": "megapolice_buy_something",
+                                                          "_content": "[LABEL {script player_show_stats.qsp}\nЧто хочешь купить?][BGNDIMAGE bg/location8_2.jpg]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL Куплю что-нибудь]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_a3vs2rzys3bv39k6t8ij",
+                                                          "_content": "[LABEL ][GOTO MENU]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL Выйду наружу]"
+                                                    }
+                                                  ],
+                                                  "_mark": "location8",
+                                                  "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location8_1.jpg]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -1541,8 +1683,8 @@
                                                             {
                                                               "node": [
                                                                 {
-                                                                  "_mark": "mark_58gg854k4qojgl5ppequ",
-                                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
+                                                                  "_mark": "mark_23s32mtrz2l28ynp8kl2",
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -1563,8 +1705,8 @@
                                                             {
                                                               "node": [
                                                                 {
-                                                                  "_mark": "mark_7pi03v69b6qknin5y421",
-                                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
+                                                                  "_mark": "mark_69vh053boayqoh97q11a",
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -1585,8 +1727,8 @@
                                                             {
                                                               "node": [
                                                                 {
-                                                                  "_mark": "mark_3ox3c164bo73f2ku037q",
-                                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
+                                                                  "_mark": "mark_d7s6e34j9l5118t31631",
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -1607,8 +1749,8 @@
                                                             {
                                                               "node": [
                                                                 {
-                                                                  "_mark": "mark_3q344urclpeulmun7599",
-                                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
+                                                                  "_mark": "mark_w9f6ri168lob07a039wp",
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -1629,8 +1771,8 @@
                                                             {
                                                               "node": [
                                                                 {
-                                                                  "_mark": "mark_ztv2cj3535nbc1g7lmcr",
-                                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
+                                                                  "_mark": "mark_6259b629w71u81ij65p6",
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -1652,7 +1794,7 @@
                                                               "node": [
                                                                 {
                                                                   "_mark": "mark_2296h43u267im498ir47",
-                                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -1669,16 +1811,54 @@
                                                     {
                                                       "node": [
                                                         {
-                                                          "_mark": "mark_4k3h8blerj88b25q8642",
-                                                          "_content": "[LABEL <Enter text here>]"
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_gjzy158mpkc2p16u2z85",
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_584dx00n37v45or7t549",
+                                                          "_content": "[LABEL {this.newlocation=7;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
                                                       "_content": "[LABEL {this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_ak4m0h2yzwq9tg889t2m",
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_iq33rh0s698n3j564nm0",
+                                                          "_content": "[LABEL {this.newlocation=8;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL {this.newlocation=8;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
                                                     }
                                                   ],
                                                   "_mark": "MAP",
                                                   "_content": "[LABEL {script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script map_show.qsp}]"
+                                                },
+                                                {
+                                                  "_mark": "TRIP",
+                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -1940,11 +2120,15 @@
                         },
                         {
                           "_mark": "player_die_energy_out",
-                          "_content": "[LABEL К сожалению - ты умер от недостатка жизненных сил...{script player_show_stats.qsp}]"
+                          "_content": "[LABEL {script player_show_stats.qsp}\nК сожалению - ты умер от недостатка жизненных сил...]"
                         },
                         {
                           "_mark": "player_die_energy_overflow",
-                          "_content": "[LABEL К сожалению - ты умер от переизбытка жизненных сил...{script player_show_stats.qsp}]"
+                          "_content": "[LABEL {script player_show_stats.qsp}\nК сожалению - ты умер от переизбытка жизненных сил...]"
+                        },
+                        {
+                          "_mark": "player_die_rest_out",
+                          "_content": "[LABEL {script player_show_stats.qsp}\nК сожалению - ты умер от недостатка отдыха...]"
                         }
                       ],
                       "_mark": "",

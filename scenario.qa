@@ -279,6 +279,32 @@
 															[GOTO carwash_leave]
 													Выйду отсюда
 														[mark_7206222s19e51y27i7mk][GOTO MENU]
+										[location8]{script player_show_stats.qsp}\nЧто будешь делать?[BGNDIMAGE bg/location8_1.jpg]
+											Куплю что-нибудь
+												[megapolice_buy_something]{script player_show_stats.qsp}\nЧто хочешь купить?[BGNDIMAGE bg/location8_2.jpg]
+													Ничего
+														[mark_7s475o8rb5eb6319u2p6][GOTO location8]
+													{this.things[this.thing_pepper].name}, цена: {this.things[this.thing_pepper].price}
+														[mark_qwoul568o0095qo17d07]{this.payment=this.things[this.thing_pepper].price;this.thing=this.thing_pepper;'';}
+															
+																[megapolice_show_thing]{script show_thing.qsp}
+																	Купить
+																		[megapolice_check_money]{this.callback_ok='megapolice_money_ok';this.callback_no='megapolice_money_no';'';}{script player_check_money.qsp}
+																			
+																				[megapolice_money_ok]{this.money-=this.things[this.thing].price;this.things[this.thing].has=1;''}Приобретено![BGNDIMAGE bg/location8_2.jpg]
+																					>>>
+																						[mark_m46ft1qi9vw6nfs8q3wc][GOTO megapolice_buy_something]
+																				[megapolice_money_no]У тебя недостаточно денег...[BGNDIMAGE bg/location8_2.jpg]
+																					Проклятье!
+																						[mark_jjrlv817rh2377dj6phs][GOTO megapolice_buy_something]
+																	Отмена
+																		[mark_03dhca98gj6314fnlrxg][GOTO megapolice_buy_something]
+													{this.things[this.thing_gun].name}, цена: {this.things[this.thing_gun].price}
+														[mark_fgk912i5772555u2b7ol]{this.payment=this.things[this.thing_gun].price;this.thing=this.thing_gun;'';}[GOTO megapolice_show_thing]
+													{this.things[this.thing_bicycle].name}, цена: {this.things[this.thing_bicycle].price}
+														[mark_zje1k69047g41m2xn083]{this.payment=this.things[this.thing_bicycle].price;this.thing=this.thing_bicycle;'';}[GOTO megapolice_show_thing]
+											Выйду наружу
+												[mark_a3vs2rzys3bv39k6t8ij][GOTO MENU]
 							Пойду в другое место
 								[mark_qnpag892ow868r0gi4id]{this.player_move_type=1;''}[GOTO MAP]
 									
@@ -288,29 +314,36 @@
 											{this.newlocation=1;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 												[mark_h7v5642454m553fa1d9x]{this.newlocation=1;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 													
-														[mark_58gg854k4qojgl5ppequ]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+														[mark_23s32mtrz2l28ynp8kl2][GOTO TRIP]
 											{this.newlocation=2;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 												[mark_q2144z0dmjcfis47t8ve]{this.newlocation=2;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 													
-														[mark_7pi03v69b6qknin5y421]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+														[mark_69vh053boayqoh97q11a][GOTO TRIP]
 											{this.newlocation=3;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 												[mark_dse7z5n856wap89y7n58]{this.newlocation=3;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 													
-														[mark_3ox3c164bo73f2ku037q]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+														[mark_d7s6e34j9l5118t31631][GOTO TRIP]
 											{this.newlocation=4;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 												[mark_8uhqd7vh7b0f2bjqy5zh]{this.newlocation=4;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 													
-														[mark_3q344urclpeulmun7599]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+														[mark_w9f6ri168lob07a039wp][GOTO TRIP]
 											{this.newlocation=5;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 												[mark_txlav5szh69jaqdh89y9]{this.newlocation=5;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 													
-														[mark_ztv2cj3535nbc1g7lmcr]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+														[mark_6259b629w71u81ij65p6][GOTO TRIP]
 											{this.newlocation=6;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
 												[mark_9b1j9iw3b9zsf8b38vjh]{this.newlocation=6;''}{script trip_calc.qsp}Карта{script show_map.qsp}
 													
-														[mark_2296h43u267im498ir47]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
+														[mark_2296h43u267im498ir47][GOTO TRIP]
 											{this.newlocation=7;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
-												[mark_4k3h8blerj88b25q8642]<Enter text here>
+												[mark_584dx00n37v45or7t549]{this.newlocation=7;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+													
+														[mark_gjzy158mpkc2p16u2z85][GOTO TRIP]
+											{this.newlocation=8;''}{script trip_calc.qsp}{script trip_calc_show.qsp}
+												[mark_iq33rh0s698n3j564nm0]{this.newlocation=8;''}{script trip_calc.qsp}Карта{script show_map.qsp}
+													
+														[mark_ak4m0h2yzwq9tg889t2m][GOTO TRIP]
+										[TRIP]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
 							Поеду на маршрутке ({this.MAP_MOVES_TYPE[2].cost} руб)
 								[mark_30297xh1ylux4uow6923]{if (this.money >= this.MAP_MOVES_TYPE[2].cost) {this.player_move_type=2;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}
 									
@@ -353,8 +386,9 @@
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]
-				[player_die_energy_out]К сожалению - ты умер от недостатка жизненных сил...{script player_show_stats.qsp}
-				[player_die_energy_overflow]К сожалению - ты умер от переизбытка жизненных сил...{script player_show_stats.qsp}
+				[player_die_energy_out]{script player_show_stats.qsp}\nК сожалению - ты умер от недостатка жизненных сил...
+				[player_die_energy_overflow]{script player_show_stats.qsp}\nК сожалению - ты умер от переизбытка жизненных сил...
+				[player_die_rest_out]{script player_show_stats.qsp}\nК сожалению - ты умер от недостатка отдыха...
 		[dude_generator]{this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 			[dude_generator_again]Эти же
 				[mark_br5c8k8j9y801u4057dz]...{script dude_show.qsp}
