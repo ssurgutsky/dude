@@ -291,12 +291,17 @@
 																	Купить
 																		[megapolice_check_money]{this.callback_ok='megapolice_money_ok';this.callback_no='megapolice_money_no';'';}{script player_check_money.qsp}
 																			
-																				[megapolice_money_ok]{this.money-=this.things[this.thing].price;this.things[this.thing].has=1;''}Приобретено![BGNDIMAGE bg/location8_2.jpg]
-																					>>>
-																						[mark_m46ft1qi9vw6nfs8q3wc][GOTO megapolice_buy_something]
+																				[mark_vd40br225904ag5c695n]{if (this.things[this.thing].amount >= this.things[this.thing].maxAmount) '[GOTO megapolice_max_amount]'}
+																					
+																						[megapolice_money_ok]{this.money-=this.things[this.thing].price;this.things[this.thing].amount++;''}Приобретено!{this.things[this.thing].maxAmount}[BGNDIMAGE bg/location8_2.jpg]
+																							>>>
+																								[mark_m46ft1qi9vw6nfs8q3wc][GOTO megapolice_buy_something]
 																				[megapolice_money_no]У тебя недостаточно денег...[BGNDIMAGE bg/location8_2.jpg]
 																					Проклятье!
 																						[mark_jjrlv817rh2377dj6phs][GOTO megapolice_buy_something]
+																				[megapolice_max_amount]У тебя слишком много таких вещей...
+																					Понял
+																						[mark_g9w3n259kiztz5eu6ue1][GOTO megapolice_buy_something]
 																	Отмена
 																		[mark_03dhca98gj6314fnlrxg][GOTO megapolice_buy_something]
 													{this.things[this.thing_gun].name}, цена: {this.things[this.thing_gun].price}

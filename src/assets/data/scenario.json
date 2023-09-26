@@ -1539,16 +1539,28 @@
                                                                                             {
                                                                                               "node": [
                                                                                                 {
-                                                                                                  "_mark": "mark_m46ft1qi9vw6nfs8q3wc",
-                                                                                                  "_content": "[LABEL ][GOTO megapolice_buy_something]"
+                                                                                                  "node": [
+                                                                                                    {
+                                                                                                      "node": [
+                                                                                                        {
+                                                                                                          "_mark": "mark_m46ft1qi9vw6nfs8q3wc",
+                                                                                                          "_content": "[LABEL ][GOTO megapolice_buy_something]"
+                                                                                                        }
+                                                                                                      ],
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL >>>]"
+                                                                                                    }
+                                                                                                  ],
+                                                                                                  "_mark": "megapolice_money_ok",
+                                                                                                  "_content": "[LABEL {this.money-=this.things[this.thing].price;this.things[this.thing].amount++;''}Приобретено!{this.things[this.thing].maxAmount}][BGNDIMAGE bg/location8_2.jpg]"
                                                                                                 }
                                                                                               ],
                                                                                               "_mark": "",
-                                                                                              "_content": "[LABEL >>>]"
+                                                                                              "_content": "[LABEL ]"
                                                                                             }
                                                                                           ],
-                                                                                          "_mark": "megapolice_money_ok",
-                                                                                          "_content": "[LABEL {this.money-=this.things[this.thing].price;this.things[this.thing].has=1;''}Приобретено!][BGNDIMAGE bg/location8_2.jpg]"
+                                                                                          "_mark": "mark_vd40br225904ag5c695n",
+                                                                                          "_content": "[LABEL {if (this.things[this.thing].amount >= this.things[this.thing].maxAmount) '[GOTO megapolice_max_amount]'}]"
                                                                                         },
                                                                                         {
                                                                                           "node": [
@@ -1565,6 +1577,22 @@
                                                                                           ],
                                                                                           "_mark": "megapolice_money_no",
                                                                                           "_content": "[LABEL У тебя недостаточно денег...][BGNDIMAGE bg/location8_2.jpg]"
+                                                                                        },
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "_mark": "mark_g9w3n259kiztz5eu6ue1",
+                                                                                                  "_content": "[LABEL ][GOTO megapolice_buy_something]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL Понял]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "megapolice_max_amount",
+                                                                                          "_content": "[LABEL У тебя слишком много таких вещей...]"
                                                                                         }
                                                                                       ],
                                                                                       "_mark": "",
