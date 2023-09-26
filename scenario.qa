@@ -1,8 +1,8 @@
 [mark_072k0e5b6nffqnr54rsj]Начало
 	
-		[mark_3z68p6amx549c803662v]{script init_vars.qsp}
+		[mark_3z68p6amx549c803662v]
 			
-				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.[BGNDIMAGE poster.jpg][AMBIENT intro]
+				[START]Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.{script init_vars.qsp}[BGNDIMAGE poster.jpg][AMBIENT intro]
 					Начать игру.[ANSWERIMAGE icons/ru.png|50;400]
 						[MENU]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Что будешь делать?{script location_show.qsp}
 							Зайду внутрь
@@ -310,7 +310,7 @@
 														[mark_zje1k69047g41m2xn083]{this.payment=this.things[this.thing_bicycle].price;this.thing=this.thing_bicycle;'';}[GOTO megapolice_show_thing]
 											Выйду наружу
 												[mark_a3vs2rzys3bv39k6t8ij][GOTO MENU]
-							Пойду в другое место
+							Пойду пешком в другое место
 								[mark_qnpag892ow868r0gi4id]{this.player_move_type=1;''}[GOTO MAP]
 									
 										[MAP]{script player_show_stats.qsp}\nМесто: {this.locations[this.location].name}. Куда пойдешь?{script map_show.qsp}
@@ -349,14 +349,16 @@
 													
 														[mark_ak4m0h2yzwq9tg889t2m][GOTO TRIP]
 										[TRIP]{this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}
-							Поеду на маршрутке ({this.MAP_MOVES_TYPE[2].cost} руб)
-								[mark_30297xh1ylux4uow6923]{if (this.money >= this.MAP_MOVES_TYPE[2].cost) {this.player_move_type=2;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}
+							{if (this.things[this.thing_bicycle].amount > 0) {'Поеду на велосипеде';}}
+								[mark_4kpfjoo4yw07rrlkyque]{this.player_move_type=this.MOVE_BICYCLE;'[GOTO MAP]'}
+							Поеду на маршрутке ({this.MOVE_TYPE[this.MOVE_BUS].cost} руб)
+								[mark_30297xh1ylux4uow6923]{if (this.money >= this.MOVE_TYPE[this.MOVE_BUS].cost) {this.player_move_type=this.MOVE_BUS;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}
 									
 										[move_no_money]У тебя нет столько денег...{script location_show.qsp}
 											Точно
 												[mark_425j7iwa8l3uq409669v][GOTO MENU]
-							Поеду на такси ({this.MAP_MOVES_TYPE[3].cost} руб)
-								[mark_lq9rhv56anqf8qg8fxsu]{if (this.money >= this.MAP_MOVES_TYPE[3].cost) {this.player_move_type=3;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}
+							Поеду на такси ({this.MOVE_TYPE[this.MOVE_TAXI].cost} руб)
+								[mark_lq9rhv56anqf8qg8fxsu]{if (this.money >= this.MOVE_TYPE[this.MOVE_TAXI].cost) {this.player_move_type=this.MOVE_TAXI;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}
 					Генератор чуваков
 						[mark_3ryyirl37qf720cp3z9e][GOTO dude_generator]
 					[ddonate]Закивасить.
@@ -387,7 +389,9 @@
 														[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
 						[QUEST3]{script trip_video_in.qsp}
 							
-								[TRIP_COMPLETE]{script trip_complete.qsp}[GOTO MENU]
+								[TRIP_COMPLETE]{script trip_complete.qsp}{script rounding.qsp}{script player_check_status.qsp}
+									
+										[mark_6333d1s9cmkcr2g9133g][GOTO MENU]
 				[GAME_UPGRADEPOINT]Короче, был апгрейд игры, кое что поменялось. Не волнуйся, ничего не пропало. Перейдем сейчас на карту.[IMAGE in_autoservice15,in_autoservice18,in_carwashing14,abandoned_garage]
 					Ну, ладно...
 						[mark_4tx0ilu5994y600686mx]{script init_vars}[GOTO main_menu]

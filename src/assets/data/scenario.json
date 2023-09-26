@@ -1898,7 +1898,17 @@
                                         }
                                       ],
                                       "_mark": "",
-                                      "_content": "[LABEL Пойду в другое место]"
+                                      "_content": "[LABEL Пойду пешком в другое место]"
+                                    },
+                                    {
+                                      "node": [
+                                        {
+                                          "_mark": "mark_4kpfjoo4yw07rrlkyque",
+                                          "_content": "[LABEL {this.player_move_type=this.MOVE_BICYCLE;'[GOTO MAP]'}]"
+                                        }
+                                      ],
+                                      "_mark": "",
+                                      "_content": "[LABEL {if (this.things[this.thing_bicycle].amount > 0) {'Поеду на велосипеде';}}]"
                                     },
                                     {
                                       "node": [
@@ -1928,21 +1938,21 @@
                                             }
                                           ],
                                           "_mark": "mark_30297xh1ylux4uow6923",
-                                          "_content": "[LABEL {if (this.money >= this.MAP_MOVES_TYPE[2].cost) {this.player_move_type=2;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}]"
+                                          "_content": "[LABEL {if (this.money >= this.MOVE_TYPE[this.MOVE_BUS].cost) {this.player_move_type=this.MOVE_BUS;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}]"
                                         }
                                       ],
                                       "_mark": "",
-                                      "_content": "[LABEL Поеду на маршрутке ({this.MAP_MOVES_TYPE[2].cost} руб)]"
+                                      "_content": "[LABEL Поеду на маршрутке ({this.MOVE_TYPE[this.MOVE_BUS].cost} руб)]"
                                     },
                                     {
                                       "node": [
                                         {
                                           "_mark": "mark_lq9rhv56anqf8qg8fxsu",
-                                          "_content": "[LABEL {if (this.money >= this.MAP_MOVES_TYPE[3].cost) {this.player_move_type=3;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}]"
+                                          "_content": "[LABEL {if (this.money >= this.MOVE_TYPE[this.MOVE_TAXI].cost) {this.player_move_type=this.MOVE_TAXI;'[GOTO MAP]'} else {'[GOTO move_no_money]'}}]"
                                         }
                                       ],
                                       "_mark": "",
-                                      "_content": "[LABEL Поеду на такси ({this.MAP_MOVES_TYPE[3].cost} руб)]"
+                                      "_content": "[LABEL Поеду на такси ({this.MOVE_TYPE[this.MOVE_TAXI].cost} руб)]"
                                     }
                                   ],
                                   "_mark": "MENU",
@@ -1986,7 +1996,7 @@
                             }
                           ],
                           "_mark": "START",
-                          "_content": "[LABEL Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.][BGNDIMAGE poster.jpg][AMBIENT intro]"
+                          "_content": "[LABEL Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.{script init_vars.qsp}][BGNDIMAGE poster.jpg][AMBIENT intro]"
                         },
                         {
                           "node": [
@@ -2111,8 +2121,20 @@
                                     {
                                       "node": [
                                         {
+                                          "node": [
+                                            {
+                                              "node": [
+                                                {
+                                                  "_mark": "mark_6333d1s9cmkcr2g9133g",
+                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                }
+                                              ],
+                                              "_mark": "",
+                                              "_content": "[LABEL ]"
+                                            }
+                                          ],
                                           "_mark": "TRIP_COMPLETE",
-                                          "_content": "[LABEL {script trip_complete.qsp}][GOTO MENU]"
+                                          "_content": "[LABEL {script trip_complete.qsp}{script rounding.qsp}{script player_check_status.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -2164,7 +2186,7 @@
                     }
                   ],
                   "_mark": "mark_3z68p6amx549c803662v",
-                  "_content": "[LABEL {script init_vars.qsp}]"
+                  "_content": "[LABEL ]"
                 },
                 {
                   "node": [
