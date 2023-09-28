@@ -35,6 +35,40 @@
                                                                     {
                                                                       "node": [
                                                                         {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_9jgl4lwi214zxm090rv9",
+                                                                                  "_content": "[LABEL ][GOTO home1_room2]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL >>>]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_7vj8gb3l50z69zy4m0gw",
+                                                                          "_content": "[LABEL {this.father_home1_msg2}{script father_dude_prep.qsp}{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL {this.father_home1_answer}]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_7vj8gb3l50z69zy4m0gw",
+                                                                  "_content": "[LABEL {script father_speak.qsp}{this.father_home1_msg1}{script father_dude_prep.qsp}{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Поговорю с отцом]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
                                                                           "_mark": "mark_6g2di69p79b5223pgg4m",
                                                                           "_content": "[LABEL ][GOTO home1_room2]"
                                                                         }
@@ -64,7 +98,7 @@
                                                             }
                                                           ],
                                                           "_mark": "home1_room2",
-                                                          "_content": "[LABEL Зал. Что будешь делать?\n{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room2.jpg]"
+                                                          "_content": "[LABEL Зал. Что будешь делать?\n{script player_show_stats.qsp}{script father_dude_prep.qsp}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "go_home1_room2",
@@ -239,6 +273,40 @@
                                                                     {
                                                                       "node": [
                                                                         {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_u3u911pe5euh2y4jj86y",
+                                                                                  "_content": "[LABEL ][GOTO home1_room4]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL >>>]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_793pep9sc2jl9pc8d94c",
+                                                                          "_content": "[LABEL {this.mother_home1_msg2}{script mother_dude_prep.qsp}{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL {this.mother_home1_answer}]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_3tez7feb6l96843vfu24",
+                                                                  "_content": "[LABEL {script mother_speak.qsp}{this.mother_home1_msg1}{script mother_dude_prep.qsp}{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Поговорю с матерью]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
                                                                           "_mark": "mark_1utn430b61m3b6hi15a6",
                                                                           "_content": "[LABEL ][GOTO home1_room4]"
                                                                         }
@@ -268,7 +336,7 @@
                                                             }
                                                           ],
                                                           "_mark": "home1_room4",
-                                                          "_content": "[LABEL Кухня. Что будешь делать?\n{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room4.jpg]"
+                                                          "_content": "[LABEL Кухня. Что будешь делать?\n{script player_show_stats.qsp}{script mother_dude_prep.qsp}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "go_home1_room4",
@@ -2325,6 +2393,16 @@
                       ],
                       "_mark": "dude_generator_next",
                       "_content": "[LABEL Всякие разные]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_2h211mfx13fv0w1v5rxz",
+                          "_content": "[LABEL {this.dudesCtg=14;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Продавщицы]"
                     }
                   ],
                   "_mark": "dude_generator",

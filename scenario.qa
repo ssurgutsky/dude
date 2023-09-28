@@ -10,7 +10,13 @@
 									
 										[location1]Прихожая. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room1.jpg]
 											[go_home1_room2]Пойду в зал
-												[home1_room2]Зал. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room2.jpg]
+												[home1_room2]Зал. Что будешь делать?\n{script player_show_stats.qsp}{script father_dude_prep.qsp}{script dude_show.qsp}
+													Поговорю с отцом
+														[mark_7vj8gb3l50z69zy4m0gw]{script father_speak.qsp}{this.father_home1_msg1}{script father_dude_prep.qsp}{script dude_show.qsp}
+															{this.father_home1_answer}
+																[mark_7vj8gb3l50z69zy4m0gw]{this.father_home1_msg2}{script father_dude_prep.qsp}{script dude_show.qsp}
+																	>>>
+																		[mark_9jgl4lwi214zxm090rv9][GOTO home1_room2]
 													Почитаю объявления
 														[mark_2a5xcj1661r162tdhh7g]Требуются грузчики на ЖД Вокзал, Доставщики в фирму "Фома виз лав"...[BGNDIMAGE bg/home1_room2.jpg]
 															...
@@ -48,7 +54,13 @@
 													[GOTO go_home1_room4]
 													[GOTO home1_go_out]
 											[go_home1_room4]Пойду на кухню
-												[home1_room4]Кухня. Что будешь делать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room4.jpg]
+												[home1_room4]Кухня. Что будешь делать?\n{script player_show_stats.qsp}{script mother_dude_prep.qsp}{script dude_show.qsp}
+													Поговорю с матерью
+														[mark_3tez7feb6l96843vfu24]{script mother_speak.qsp}{this.mother_home1_msg1}{script mother_dude_prep.qsp}{script dude_show.qsp}
+															{this.mother_home1_answer}
+																[mark_793pep9sc2jl9pc8d94c]{this.mother_home1_msg2}{script mother_dude_prep.qsp}{script dude_show.qsp}
+																	>>>
+																		[mark_u3u911pe5euh2y4jj86y][GOTO home1_room4]
 													Поем
 														[mark_f235bcn695nos7r24g9n]{this.energy=100;''}Было вкусно!{this.game_hours++;''}{script rounding.qsp}[BGNDIMAGE bg/home1_room4.jpg]
 															...
@@ -426,3 +438,5 @@
 				[mark_1wz088jqf91rl7xzt349]{this.dudesCtg=10;''}[GOTO dude_generator]
 			[dude_generator_next]Всякие разные
 				[mark_5i558f76n5f1iu6kiw33]{this.dudesCtg=0;''}[GOTO dude_generator]
+			Продавщицы
+				[mark_2h211mfx13fv0w1v5rxz]{this.dudesCtg=14;''}[GOTO dude_generator]
