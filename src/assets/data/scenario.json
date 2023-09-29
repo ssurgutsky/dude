@@ -2392,7 +2392,7 @@
                         }
                       ],
                       "_mark": "dude_generator_next",
-                      "_content": "[LABEL Всякие разные]"
+                      "_content": "[LABEL Все мужики]"
                     },
                     {
                       "node": [
@@ -2402,7 +2402,7 @@
                         }
                       ],
                       "_mark": "",
-                      "_content": "[LABEL Продавщицы]"
+                      "_content": "[LABEL Все женщины]"
                     }
                   ],
                   "_mark": "dude_generator",
