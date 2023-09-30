@@ -1616,7 +1616,7 @@
                                                                                                         }
                                                                                                       ],
                                                                                                       "_mark": "",
-                                                                                                      "_content": "[LABEL >>>]"
+                                                                                                      "_content": "[LABEL Пройду внутрь]"
                                                                                                     }
                                                                                                   ],
                                                                                                   "_mark": "megapolice_money_ok",
@@ -1743,8 +1743,124 @@
                                                   "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location8_1.jpg]"
                                                 },
                                                 {
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_v7716xxkjd1868z760cc",
+                                                                                  "_content": "[LABEL ][GOTO nightclub_main_loop]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Потанцую]"
+                                                                            },
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_1u48wjwh573cskvgje1r",
+                                                                                  "_content": "[LABEL ][GOTO nightclub_main_loop]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Закажу выпить]"
+                                                                            },
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "_mark": "mark_0058b69h8w8x6eb0jpfe",
+                                                                                          "_content": "[LABEL ][GOTO MENU]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL Да, ухожу]"
+                                                                                    },
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "_mark": "mark_q7ay35n6u2300b7gstdm",
+                                                                                          "_content": "[LABEL ][GOTO nightclub_main_loop]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL Нет, остаюсь]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "mark_t1h1k1s4602c13005gfc",
+                                                                                  "_content": "[LABEL Если уйдешь, придется заново покупать билет. Точно уходишь?][BGNDIMAGE bg/location9_2.jpg]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL Уйду отсюда]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "nightclub_main_loop",
+                                                                          "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location9_2.jpg]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Пройду внутрь]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "nightclub_money_ok",
+                                                                  "_content": "[LABEL {this.money-=this.NIGHTCLUB_COST;'';}Приобретено!][BGNDIMAGE bg/location9_1.jpg]"
+                                                                },
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_cs8i9pf44sg0u591j49h",
+                                                                          "_content": "[LABEL ][GOTO MENU]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Надо бы подзаработать...]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "nightclub_money_no",
+                                                                  "_content": "[LABEL У тебя недостаточно денег...][BGNDIMAGE bg/location9_1.jpg]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_110e4j99vu7bo43en738",
+                                                          "_content": "[LABEL {this.payment=this.NIGHTCLUB_COST;this.callback_ok='nightclub_money_ok';this.callback_no='nightclub_money_no';'';}{script player_check_money.qsp}]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL Куплю билет (Цена: {this.NIGHTCLUB_COST})]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_412m1fay507p61m60506",
+                                                          "_content": "[LABEL ][GOTO MENU]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL Уйду отсюда]"
+                                                    }
+                                                  ],
                                                   "_mark": "location9",
-                                                  "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location9_1.jpg]"
+                                                  "_content": "[LABEL {script player_show_stats.qsp}\nВход стоит {this.NIIGHTCLUB_COST}. Купишь билет?][BGNDIMAGE bg/location9_1.jpg]"
                                                 },
                                                 {
                                                   "_mark": "location10",
@@ -1955,6 +2071,28 @@
                                                       ],
                                                       "_mark": "",
                                                       "_content": "[LABEL {this.newlocation=8;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_alu8t6t71wy7jn8ymt8w",
+                                                                  "_content": "[LABEL ][GOTO TRIP]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_nyq9jv534t416fbv7jg2",
+                                                          "_content": "[LABEL {this.newlocation=9;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL {this.newlocation=9;''}{script trip_calc.qsp}{script trip_calc_show.qsp}]"
                                                     }
                                                   ],
                                                   "_mark": "MAP",
