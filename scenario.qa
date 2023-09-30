@@ -408,7 +408,7 @@
 					
 						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]"} 
 							
-								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[3];this.dudesCnt=1;''}{script dude_show.qsp}
+								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.dudesBg='bg/bg1';this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[3];this.dudesCnt=1;''}{script dude_show.qsp}
 									Иди работай
 										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю / Я итак на работе.{script dude_show.qsp}
 											Это бесчеловечно
@@ -421,7 +421,7 @@
 							
 								[mark_75n6axfeqvpwk2p1hwqu]{script trip_video_med.qsp}
 									
-										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[2];this.dudesCnt=1;''}{script dude_show.qsp}
+										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesBg='bg/bg1';this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[2];this.dudesCnt=1;''}{script dude_show.qsp}
 											Мне некогда
 												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}
 													Отвали
