@@ -322,11 +322,11 @@
 														[mark_zje1k69047g41m2xn083]{this.payment=this.things[this.thing_bicycle].price;this.thing=this.thing_bicycle;'';}[GOTO megapolice_show_thing]
 											Выйду наружу
 												[mark_a3vs2rzys3bv39k6t8ij][GOTO MENU]
-										[location9]{script player_show_stats.qsp}\nВход стоит {this.NIIGHTCLUB_COST}. Купишь билет?[BGNDIMAGE bg/location9_1.jpg]
+										[location9]{script player_show_stats.qsp}\nВход стоит {this.NIIGHTCLUB_COST}. Купишь билет?{script nightclub_prepare.qsp}{script dude_show.qsp}
 											Куплю билет (Цена: {this.NIGHTCLUB_COST})
 												[mark_110e4j99vu7bo43en738]{this.payment=this.NIGHTCLUB_COST;this.callback_ok='nightclub_money_ok';this.callback_no='nightclub_money_no';'';}{script player_check_money.qsp}
 													
-														[nightclub_money_ok]{this.money-=this.NIGHTCLUB_COST;'';}Приобретено![BGNDIMAGE bg/location9_1.jpg]
+														[nightclub_money_ok]{this.money-=this.NIGHTCLUB_COST;'';}Приобретено!{script dude_show.qsp}
 															Пройду внутрь
 																[nightclub_main_loop]{script player_show_stats.qsp}\nЧто будешь делать?[BGNDIMAGE bg/location9_2.jpg]
 																	Потанцую
@@ -339,7 +339,7 @@
 																				[mark_0058b69h8w8x6eb0jpfe][GOTO MENU]
 																			Нет, остаюсь
 																				[mark_q7ay35n6u2300b7gstdm][GOTO nightclub_main_loop]
-														[nightclub_money_no]У тебя недостаточно денег...[BGNDIMAGE bg/location9_1.jpg]
+														[nightclub_money_no]У тебя недостаточно денег...{script dude_show.qsp}
 															Надо бы подзаработать...
 																[mark_cs8i9pf44sg0u591j49h][GOTO MENU]
 											Уйду отсюда

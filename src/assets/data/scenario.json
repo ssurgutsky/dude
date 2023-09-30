@@ -1818,7 +1818,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "nightclub_money_ok",
-                                                                  "_content": "[LABEL {this.money-=this.NIGHTCLUB_COST;'';}Приобретено!][BGNDIMAGE bg/location9_1.jpg]"
+                                                                  "_content": "[LABEL {this.money-=this.NIGHTCLUB_COST;'';}Приобретено!{script dude_show.qsp}]"
                                                                 },
                                                                 {
                                                                   "node": [
@@ -1834,7 +1834,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "nightclub_money_no",
-                                                                  "_content": "[LABEL У тебя недостаточно денег...][BGNDIMAGE bg/location9_1.jpg]"
+                                                                  "_content": "[LABEL У тебя недостаточно денег...{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -1860,7 +1860,7 @@
                                                     }
                                                   ],
                                                   "_mark": "location9",
-                                                  "_content": "[LABEL {script player_show_stats.qsp}\nВход стоит {this.NIIGHTCLUB_COST}. Купишь билет?][BGNDIMAGE bg/location9_1.jpg]"
+                                                  "_content": "[LABEL {script player_show_stats.qsp}\nВход стоит {this.NIIGHTCLUB_COST}. Купишь билет?{script nightclub_prepare.qsp}{script dude_show.qsp}]"
                                                 },
                                                 {
                                                   "_mark": "location10",
