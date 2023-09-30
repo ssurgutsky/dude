@@ -648,7 +648,7 @@
                                                                                                     }
                                                                                                   ],
                                                                                                   "_mark": "mark_99m5c2c84m59131989rk",
-                                                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=[1];this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                                                 }
                                                                                               ],
                                                                                               "_mark": "",
@@ -878,7 +878,7 @@
                                                                             }
                                                                           ],
                                                                           "_mark": "mark_98n6e72jh8x4ex06wo4k",
-                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_2_3.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_2_3.jpg';this.dudesData=null;this.dudesCtg=[9];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                         }
                                                                       ],
                                                                       "_mark": "",
@@ -890,7 +890,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_i226f0kq9w9f8p4fx8gw",
-                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location5_2_2.jpg';this.dudesData=null;this.dudesCtg=8;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=80;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location5_2_2.jpg';this.dudesData=null;this.dudesCtg=[8];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=80;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -902,7 +902,7 @@
                                                             }
                                                           ],
                                                           "_mark": "mark_90yk3d0gkrm93qc889xj",
-                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_2.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_2.jpg';this.dudesData=null;this.dudesCtg=[9];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
@@ -942,7 +942,7 @@
                                                                             }
                                                                           ],
                                                                           "_mark": "mark_83naacfm59nen6d4z609",
-                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_3_3.jpg';this.dudesData=null;this.dudesCtg=8;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_3_3.jpg';this.dudesData=null;this.dudesCtg=[8];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                         }
                                                                       ],
                                                                       "_mark": "",
@@ -954,7 +954,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_601s120gw7ei85i8l78h",
-                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location5_3_2.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                  "_content": "[LABEL ...{this.dudesBg='bg/location5_3_2.jpg';this.dudesData=null;this.dudesCtg=[9];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -966,7 +966,7 @@
                                                             }
                                                           ],
                                                           "_mark": "mark_j42j2cew3158jw7s3aya",
-                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_3.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                          "_content": "[LABEL ...{this.dudesBg='bg/location5_3.jpg';this.dudesData=null;this.dudesCtg=[9];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
@@ -1250,7 +1250,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_2i5qnz1gu6y0c61q3363",
-                                                                  "_content": "[LABEL На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=11;this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                  "_content": "[LABEL На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=[11];this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -1741,6 +1741,14 @@
                                                   ],
                                                   "_mark": "location8",
                                                   "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location8_1.jpg]"
+                                                },
+                                                {
+                                                  "_mark": "location9",
+                                                  "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location9_1.jpg]"
+                                                },
+                                                {
+                                                  "_mark": "location10",
+                                                  "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location10_1.jpg]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -2122,7 +2130,7 @@
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=3;this.dudesCnt=1;''}{script dude_show.qsp}]"
+                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[3];this.dudesCnt=1;''}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -2166,7 +2174,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_26hez718lm5g88ibsc8o",
-                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=2;this.dudesCnt=1;''}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[2];this.dudesCnt=1;''}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -2288,7 +2296,7 @@
                       "node": [
                         {
                           "_mark": "mark_fu8079797p9u8m5e612r",
-                          "_content": "[LABEL {this.dudesCtg=2;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[2];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2298,7 +2306,7 @@
                       "node": [
                         {
                           "_mark": "mark_td27t7x3vy28x50hlc46",
-                          "_content": "[LABEL {this.dudesCtg=3;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[3];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2308,7 +2316,7 @@
                       "node": [
                         {
                           "_mark": "mark_33ath74m5a41q61bu55x",
-                          "_content": "[LABEL {this.dudesCtg=1;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[1];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2318,7 +2326,7 @@
                       "node": [
                         {
                           "_mark": "mark_m82u2l32u3z685s5o7ax",
-                          "_content": "[LABEL {this.dudesCtg=4;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[4];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2328,7 +2336,7 @@
                       "node": [
                         {
                           "_mark": "mark_a6151259092ew03ivuhz",
-                          "_content": "[LABEL {this.dudesCtg=5;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[5];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2338,7 +2346,7 @@
                       "node": [
                         {
                           "_mark": "mark_t7ap7427q65183296ey5",
-                          "_content": "[LABEL {this.dudesCtg=6;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[6];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2348,7 +2356,7 @@
                       "node": [
                         {
                           "_mark": "mark_vtijvkg54d647dgtf802",
-                          "_content": "[LABEL {this.dudesCtg=7;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[7];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2358,7 +2366,7 @@
                       "node": [
                         {
                           "_mark": "mark_7q5a2k6g8n3t50mr05zl",
-                          "_content": "[LABEL {this.dudesCtg=8;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[8];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2368,7 +2376,7 @@
                       "node": [
                         {
                           "_mark": "mark_qux8j77b2dpdh4fje0v0",
-                          "_content": "[LABEL {this.dudesCtg=9;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[9];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2378,7 +2386,7 @@
                       "node": [
                         {
                           "_mark": "mark_1wz088jqf91rl7xzt349",
-                          "_content": "[LABEL {this.dudesCtg=10;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[10];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
@@ -2388,7 +2396,7 @@
                       "node": [
                         {
                           "_mark": "mark_5i558f76n5f1iu6kiw33",
-                          "_content": "[LABEL {this.dudesCtg=0;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[1,2,3,4,5,6,7,8,9,10,11,12];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "dude_generator_next",
@@ -2398,15 +2406,25 @@
                       "node": [
                         {
                           "_mark": "mark_2h211mfx13fv0w1v5rxz",
-                          "_content": "[LABEL {this.dudesCtg=14;''}][GOTO dude_generator]"
+                          "_content": "[LABEL {this.dudesCtg=[14];''}][GOTO dude_generator]"
                         }
                       ],
                       "_mark": "",
                       "_content": "[LABEL Все женщины]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_eg4m4mu7k76x2f7vq5vh",
+                          "_content": "[LABEL {this.dudesCtg=[1,2,3,4,5,6,7,8,9,10,11,14];''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Все все все]"
                     }
                   ],
                   "_mark": "dude_generator",
-                  "_content": "[LABEL {this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                  "_content": "[LABEL {this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesCtg=this.dudesCtg||[2];this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                 }
               ],
               "_mark": "",

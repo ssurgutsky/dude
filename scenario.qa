@@ -97,7 +97,7 @@
 																			
 																				[train_work_success]Иди разгружай вагон. Сегодня плачу {this.train_work_payment_hour} руб в час. Работы на {this.train_work_hours} ч.[BGNDIMAGE bg/location3_2.jpg]
 																					Ладно
-																						[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																						[mark_99m5c2c84m59131989rk]...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=[1];this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 																							Здарова, мужики.
 																								[mark_6v2of29vibs4gbkvdy9o]{if (this.train_work_vodka > 0) {'[GOTO train_work_vodka]'} else {'[GOTO train_work_start]'}}
 																									
@@ -159,11 +159,11 @@
 											[GOTO tolyan_go_away]
 										[location5]...[BGNDIMAGE bg/location5_1.jpg]
 											Пойду налево
-												[mark_90yk3d0gkrm93qc889xj]...{this.dudesBg='bg/location5_2.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+												[mark_90yk3d0gkrm93qc889xj]...{this.dudesBg='bg/location5_2.jpg';this.dudesData=null;this.dudesCtg=[9];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 													Вперед
-														[mark_i226f0kq9w9f8p4fx8gw]...{this.dudesBg='bg/location5_2_2.jpg';this.dudesData=null;this.dudesCtg=8;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=80;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+														[mark_i226f0kq9w9f8p4fx8gw]...{this.dudesBg='bg/location5_2_2.jpg';this.dudesData=null;this.dudesCtg=[8];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=80;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 															Вперед
-																[mark_98n6e72jh8x4ex06wo4k]...{this.dudesBg='bg/location5_2_3.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																[mark_98n6e72jh8x4ex06wo4k]...{this.dudesBg='bg/location5_2_3.jpg';this.dudesData=null;this.dudesCtg=[9];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 																	Зайду в аудиторию
 																		[mark_8j06819se2dn6y23wu08]...[BGNDIMAGE bg/location5_4.jpg]
 																			[location5_go_out]Уйду из универа
@@ -172,11 +172,11 @@
 															[GOTO location5_go_out]
 													[GOTO location5_go_out]
 											Пойду направо
-												[mark_j42j2cew3158jw7s3aya]...{this.dudesBg='bg/location5_3.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+												[mark_j42j2cew3158jw7s3aya]...{this.dudesBg='bg/location5_3.jpg';this.dudesData=null;this.dudesCtg=[9];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 													Вперед
-														[mark_601s120gw7ei85i8l78h]...{this.dudesBg='bg/location5_3_2.jpg';this.dudesData=null;this.dudesCtg=9;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+														[mark_601s120gw7ei85i8l78h]...{this.dudesBg='bg/location5_3_2.jpg';this.dudesData=null;this.dudesCtg=[9];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 															Вперед
-																[mark_83naacfm59nen6d4z609]...{this.dudesBg='bg/location5_3_3.jpg';this.dudesData=null;this.dudesCtg=8;this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+																[mark_83naacfm59nen6d4z609]...{this.dudesBg='bg/location5_3_3.jpg';this.dudesData=null;this.dudesCtg=[8];this.dudesCnt=this.randomInt(1,3);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 																	Зайду в аудиторию
 																		[mark_g16fic37ine09drk5657]Закрыто[BGNDIMAGE bg/location5_3_3.jpg]
 																			[GOTO location5_go_out]
@@ -188,7 +188,7 @@
 											
 												[sixstore_lobby]{script player_show_stats.qsp}\nЧто будешь делать?[BGNDIMAGE bg/location6_6.jpg]
 													Спрошу про работу
-														[mark_2i5qnz1gu6y0c61q3363]На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=11;this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+														[mark_2i5qnz1gu6y0c61q3363]На сегодня у нас есть следующие вакансии, выбирай:{this.dudesBg='bg/location6_1.jpg';this.dudesData=null;this.dudesCtg=[11];this.dudesCnt=this.randomInt(1,1);this.dudesDistance=60;this.dudesOX=220;this.dudesOY=50;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 															Работа грузчиком ({this.SIXSTORE_WORK1_RATE} в час)
 																[mark_941tukb83u3x7ttnf8f6]Иди на склад, там тебе скажут, что делать...{this.sixstore_work_type=1;this.sixstore_work_hour=0;this.sixstore_work_hours=this.randomInt(6,10);'';}{script dude_show.qsp}
 																	Пойду
@@ -322,6 +322,8 @@
 														[mark_zje1k69047g41m2xn083]{this.payment=this.things[this.thing_bicycle].price;this.thing=this.thing_bicycle;'';}[GOTO megapolice_show_thing]
 											Выйду наружу
 												[mark_a3vs2rzys3bv39k6t8ij][GOTO MENU]
+										[location9]{script player_show_stats.qsp}\nЧто будешь делать?[BGNDIMAGE bg/location9_1.jpg]
+										[location10]{script player_show_stats.qsp}\nЧто будешь делать?[BGNDIMAGE bg/location10_1.jpg]
 							Пойду пешком в другое место
 								[mark_qnpag892ow868r0gi4id]{this.player_move_type=1;''}[GOTO MAP]
 									
@@ -381,7 +383,7 @@
 					
 						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]"} 
 							
-								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=3;this.dudesCnt=1;''}{script dude_show.qsp}
+								[mark_8i78i65qrm7jv0s6a437]Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[3];this.dudesCnt=1;''}{script dude_show.qsp}
 									Иди работай
 										[mark_3rx50wu498p329wkm06r]Нее! Я так больше получаю / Я итак на работе.{script dude_show.qsp}
 											Это бесчеловечно
@@ -394,7 +396,7 @@
 							
 								[mark_75n6axfeqvpwk2p1hwqu]{script trip_video_med.qsp}
 									
-										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=2;this.dudesCnt=1;''}{script dude_show.qsp}
+										[mark_26hez718lm5g88ibsc8o]Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[2];this.dudesCnt=1;''}{script dude_show.qsp}
 											Мне некогда
 												[mark_m4of8zwf5xb29h8548e7]Да ты чо?! Куда пошел?{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}
 													Отвали
@@ -410,33 +412,35 @@
 				[player_die_energy_out]{script player_show_stats.qsp}\nК сожалению - ты умер от недостатка жизненных сил...
 				[player_die_energy_overflow]{script player_show_stats.qsp}\nК сожалению - ты умер от переизбытка жизненных сил...
 				[player_die_rest_out]{script player_show_stats.qsp}\nК сожалению - ты умер от недостатка отдыха...
-		[dude_generator]{this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+		[dude_generator]{this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesCtg=this.dudesCtg||[2];this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
 			[dude_generator_again]Эти же
 				[mark_br5c8k8j9y801u4057dz]...{script dude_show.qsp}
 					[GOTO dude_generator_again]
 					Другие
 						[mark_x873ca8518w0236273u3][GOTO dude_generator]
 			Гопники
-				[mark_fu8079797p9u8m5e612r]{this.dudesCtg=2;''}[GOTO dude_generator]
+				[mark_fu8079797p9u8m5e612r]{this.dudesCtg=[2];''}[GOTO dude_generator]
 			Бомжы
-				[mark_td27t7x3vy28x50hlc46]{this.dudesCtg=3;''}[GOTO dude_generator]
+				[mark_td27t7x3vy28x50hlc46]{this.dudesCtg=[3];''}[GOTO dude_generator]
 			Грузчики
-				[mark_33ath74m5a41q61bu55x]{this.dudesCtg=1;''}[GOTO dude_generator]
+				[mark_33ath74m5a41q61bu55x]{this.dudesCtg=[1];''}[GOTO dude_generator]
 			Обычные
-				[mark_m82u2l32u3z685s5o7ax]{this.dudesCtg=4;''}[GOTO dude_generator]
+				[mark_m82u2l32u3z685s5o7ax]{this.dudesCtg=[4];''}[GOTO dude_generator]
 			Бандит
-				[mark_a6151259092ew03ivuhz]{this.dudesCtg=5;''}[GOTO dude_generator]
+				[mark_a6151259092ew03ivuhz]{this.dudesCtg=[5];''}[GOTO dude_generator]
 			Толян
-				[mark_t7ap7427q65183296ey5]{this.dudesCtg=6;''}[GOTO dude_generator]
+				[mark_t7ap7427q65183296ey5]{this.dudesCtg=[6];''}[GOTO dude_generator]
 			Барыги
-				[mark_vtijvkg54d647dgtf802]{this.dudesCtg=7;''}[GOTO dude_generator]
+				[mark_vtijvkg54d647dgtf802]{this.dudesCtg=[7];''}[GOTO dude_generator]
 			Преподы
-				[mark_7q5a2k6g8n3t50mr05zl]{this.dudesCtg=8;''}[GOTO dude_generator]
+				[mark_7q5a2k6g8n3t50mr05zl]{this.dudesCtg=[8];''}[GOTO dude_generator]
 			Студент
-				[mark_qux8j77b2dpdh4fje0v0]{this.dudesCtg=9;''}[GOTO dude_generator]
+				[mark_qux8j77b2dpdh4fje0v0]{this.dudesCtg=[9];''}[GOTO dude_generator]
 			Работник
-				[mark_1wz088jqf91rl7xzt349]{this.dudesCtg=10;''}[GOTO dude_generator]
-			[dude_generator_next]Всякие разные
-				[mark_5i558f76n5f1iu6kiw33]{this.dudesCtg=0;''}[GOTO dude_generator]
-			Продавщицы
-				[mark_2h211mfx13fv0w1v5rxz]{this.dudesCtg=14;''}[GOTO dude_generator]
+				[mark_1wz088jqf91rl7xzt349]{this.dudesCtg=[10];''}[GOTO dude_generator]
+			[dude_generator_next]Все мужики
+				[mark_5i558f76n5f1iu6kiw33]{this.dudesCtg=[1,2,3,4,5,6,7,8,9,10,11,12];''}[GOTO dude_generator]
+			Все женщины
+				[mark_2h211mfx13fv0w1v5rxz]{this.dudesCtg=[14];''}[GOTO dude_generator]
+			Все все все
+				[mark_eg4m4mu7k76x2f7vq5vh]{this.dudesCtg=[1,2,3,4,5,6,7,8,9,10,11,14];''}[GOTO dude_generator]
