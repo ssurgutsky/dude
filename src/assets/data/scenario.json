@@ -2229,20 +2229,48 @@
                                                     {
                                                       "node": [
                                                         {
-                                                          "_mark": "mark_d2752e0b18z1a1r2wd58",
-                                                          "_content": "[LABEL ][GOTO QUEST2]"
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_d2752e0b18z1a1r2wd58",
+                                                                  "_content": "[LABEL ][GOTO QUEST2]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL >>>]"
+                                                            }
+                                                          ],
+                                                          "_mark": "quest1_money_ok",
+                                                          "_content": "[LABEL {this.money-=this.quest1_payment;''}{this.quest1_msg_ok}{script dude_show.qsp}]"
+                                                        },
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_602knnrv650jqeg79q61",
+                                                                  "_content": "[LABEL ][GOTO QUEST2]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL В другой раз]"
+                                                            }
+                                                          ],
+                                                          "_mark": "quest1_money_no",
+                                                          "_content": "[LABEL У тебя нет столько денег...{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
-                                                      "_content": "[LABEL Это бесчеловечно]"
+                                                      "_content": "[LABEL ]"
                                                     }
                                                   ],
-                                                  "_mark": "mark_3rx50wu498p329wkm06r",
-                                                  "_content": "[LABEL Нее! Я так больше получаю / Я итак на работе.{script dude_show.qsp}]"
+                                                  "_mark": "mark_q6lb772v08jz7gv2yk8w",
+                                                  "_content": "[LABEL {if (this.money>this.quest1_payment) {'[GOTO quest1_money_ok]'} else {'[GOTO quest1_money_no]'}}]"
                                                 }
                                               ],
                                               "_mark": "",
-                                              "_content": "[LABEL Иди работай]"
+                                              "_content": "[LABEL {this.quest1_answer_ok}]"
                                             },
                                             {
                                               "node": [
@@ -2256,19 +2284,19 @@
                                                         }
                                                       ],
                                                       "_mark": "",
-                                                      "_content": "[LABEL Ну бывай]"
+                                                      "_content": "[LABEL >>>]"
                                                     }
                                                   ],
                                                   "_mark": "mark_4tf36mhe4817916jgx8q",
-                                                  "_content": "[LABEL От души душевно в душу, брат!{script dude_show.qsp}]"
+                                                  "_content": "[LABEL {this.quest1_msg_no}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
-                                              "_content": "[LABEL Ну держи]"
+                                              "_content": "[LABEL {this.quest1_answer_no}]"
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesBg='bg/bg1';this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[3];this.dudesCnt=1;''}{script dude_show.qsp}]"
+                                          "_content": "[LABEL {script quest1_prep.qsp}{script quest1_speak.qsp}{this.quest1_msg1}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -2276,7 +2304,7 @@
                                     }
                                   ],
                                   "_mark": "QUEST1",
-                                  "_content": "[LABEL {if (Math.random() > 0.5) \"[GOTO QUEST2]\"} ]"
+                                  "_content": "[LABEL {if (Math.random() > 0.5 && true) \"[GOTO QUEST2]\"} ]"
                                 },
                                 {
                                   "node": [
@@ -2295,24 +2323,74 @@
                                                             {
                                                               "node": [
                                                                 {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_0qu6l31d9880dvdf62f8",
+                                                                          "_content": "[LABEL ][GOTO QUEST3]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL >>>]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_hj2895bwzaj7y12i513c",
+                                                                  "_content": "[LABEL {this.quest2_msg_ok}{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL {this.quest2_answer2_ok}]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL <Enter text here>]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "",
+                                                                  "_content": "[LABEL <Enter text here>]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL {this.quest2_answer2_no}]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_e9i3et4j9n2krb266028",
+                                                          "_content": "[LABEL {this.quest2_msg2}{script dude_show.qsp}]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL {this.quest2_answer1_ok}]"
+                                                    },
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
                                                                   "_mark": "mark_q5lxq4mz1oe25ue5j178",
                                                                   "_content": "[LABEL ][GOTO QUEST3]"
                                                                 }
                                                               ],
                                                               "_mark": "",
-                                                              "_content": "[LABEL Отвали]"
+                                                              "_content": "[LABEL >>>]"
                                                             }
                                                           ],
                                                           "_mark": "mark_m4of8zwf5xb29h8548e7",
-                                                          "_content": "[LABEL Да ты чо?! Куда пошел?{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}]"
+                                                          "_content": "[LABEL {this.quest2_msg_no}{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
-                                                      "_content": "[LABEL Мне некогда]"
+                                                      "_content": "[LABEL {this.quest2_answer1_no}]"
                                                     }
                                                   ],
-                                                  "_mark": "mark_26hez718lm5g88ibsc8o",
-                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesBg='bg/bg1';this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=[2];this.dudesCnt=1;''}{script dude_show.qsp}]"
+                                                  "_mark": "mark_1654w8308a75a0xb8r22",
+                                                  "_content": "[LABEL {script quest2_prep.qsp}{script quest2_speak.qsp}{this.quest2_msg1}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -2328,7 +2406,7 @@
                                     }
                                   ],
                                   "_mark": "QUEST2",
-                                  "_content": "[LABEL {if (Math.random() > 0.5) \"[GOTO QUEST3]\"} ]"
+                                  "_content": "[LABEL {if (Math.random() > 0.5 && false) \"[GOTO QUEST3]\"} ]"
                                 },
                                 {
                                   "node": [
@@ -2533,11 +2611,21 @@
                     {
                       "node": [
                         {
-                          "_mark": "mark_5i558f76n5f1iu6kiw33",
-                          "_content": "[LABEL {this.dudesCtg=[1,2,3,4,5,6,7,8,9,10,11,12];''}][GOTO dude_generator]"
+                          "_mark": "mark_q8m398gb62e7vz583dfi",
+                          "_content": "[LABEL {this.dudesCtg=[15];''}][GOTO dude_generator]"
                         }
                       ],
-                      "_mark": "dude_generator_next",
+                      "_mark": "",
+                      "_content": "[LABEL Охранники]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_5i558f76n5f1iu6kiw33",
+                          "_content": "[LABEL {this.dudesCtg=[1,2,3,4,5,6,7,8,9,10,11,12,15];''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
                       "_content": "[LABEL Все мужики]"
                     },
                     {
