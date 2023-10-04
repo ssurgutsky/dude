@@ -436,9 +436,11 @@
 													{this.quest2_answer2_no}
 														[quest2_msg2]{this.quest2_msg_no}{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=180;this.dudesOY=100;''}{script dude_show.qsp}
 															{if (this.things[this.thing_pepper].amount>0) 'Применю перцовку'}
-																[mark_s22z6x070xpl38qvjp4l]{this.things[this.thing_pepper].amount-=1;this.quest2_msg_success}{this.dudesSX=0.8;this.dudesSY=0.8;this.dudesOX=220;this.dudesOY=0;''}{script dude_show.qsp}
+																[mark_r106kr4ni3its797x8y8]...{this.things[this.thing_pepper].amount-=1;'';}{script dude_show.qsp}[IMAGE etc/pepper_hit.png]
 																	>>>
-																		[mark_rksal7k7tip2361s8v6r][GOTO QUEST3]
+																		[mark_s22z6x070xpl38qvjp4l]{this.quest2_msg_success}{this.dudesSX=0.8;this.dudesSY=0.8;this.dudesOX=220;this.dudesOY=0;''}{script dude_show.qsp}
+																			>>>
+																				[mark_rksal7k7tip2361s8v6r][GOTO QUEST3]
 															Буду биться
 																[mark_9a0720774b731ifn602t]{if (this.quest2_win) {'[GOTO quest2_win]'} else {'[GOTO quest2_fail]'}}
 																	

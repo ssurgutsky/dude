@@ -2353,16 +2353,28 @@
                                                                             {
                                                                               "node": [
                                                                                 {
-                                                                                  "_mark": "mark_rksal7k7tip2361s8v6r",
-                                                                                  "_content": "[LABEL ][GOTO QUEST3]"
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "_mark": "mark_rksal7k7tip2361s8v6r",
+                                                                                          "_content": "[LABEL ][GOTO QUEST3]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL >>>]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "mark_s22z6x070xpl38qvjp4l",
+                                                                                  "_content": "[LABEL {this.quest2_msg_success}{this.dudesSX=0.8;this.dudesSY=0.8;this.dudesOX=220;this.dudesOY=0;''}{script dude_show.qsp}]"
                                                                                 }
                                                                               ],
                                                                               "_mark": "",
                                                                               "_content": "[LABEL >>>]"
                                                                             }
                                                                           ],
-                                                                          "_mark": "mark_s22z6x070xpl38qvjp4l",
-                                                                          "_content": "[LABEL {this.things[this.thing_pepper].amount-=1;this.quest2_msg_success}{this.dudesSX=0.8;this.dudesSY=0.8;this.dudesOX=220;this.dudesOY=0;''}{script dude_show.qsp}]"
+                                                                          "_mark": "mark_r106kr4ni3its797x8y8",
+                                                                          "_content": "[LABEL ...{this.things[this.thing_pepper].amount-=1;'';}{script dude_show.qsp}][IMAGE etc/pepper_hit.png]"
                                                                         }
                                                                       ],
                                                                       "_mark": "",
