@@ -406,9 +406,9 @@
 								[mark_8r456ve83222mbv60b0m][GOTO START]
 				[TRIP_QUESTS]{script trip_video_out.qsp}
 					
-						[QUEST1]{if (Math.random() > 0.5 && true) "[GOTO QUEST2]"} 
+						[QUEST1]{if (Math.random() > 0.5) "[GOTO QUEST2]"} 
 							
-								[mark_8i78i65qrm7jv0s6a437]{script quest1_prep.qsp}{script quest1_speak.qsp}{this.quest1_msg1}{script dude_show.qsp}
+								[mark_8i78i65qrm7jv0s6a437]{script quest1_prep.qsp}{this.quest1_msg1}{script dude_show.qsp}
 									{this.quest1_answer_ok}
 										[mark_q6lb772v08jz7gv2yk8w]{if (this.money>this.quest1_payment) {'[GOTO quest1_money_ok]'} else {'[GOTO quest1_money_no]'}}
 											
@@ -426,18 +426,38 @@
 							
 								[mark_75n6axfeqvpwk2p1hwqu]{script trip_video_med.qsp}
 									
-										[mark_1654w8308a75a0xb8r22]{script quest2_prep.qsp}{script quest2_speak.qsp}{this.quest2_msg1}{script dude_show.qsp}
+										[mark_1654w8308a75a0xb8r22]{script quest2_prep.qsp}{this.quest2_msg1}{script dude_show.qsp}
 											{this.quest2_answer1_ok}
 												[mark_e9i3et4j9n2krb266028]{this.quest2_msg2}{script dude_show.qsp}
 													{this.quest2_answer2_ok}
-														[mark_hj2895bwzaj7y12i513c]{this.quest2_msg_ok}{script dude_show.qsp}
+														[mark_hj2895bwzaj7y12i513c]{this.money-=this.quest2_payment;if(this.money<0){this.money=0;};''}{this.quest2_msg_ok}{script dude_show.qsp}
 															>>>
 																[mark_0qu6l31d9880dvdf62f8][GOTO QUEST3]
 													{this.quest2_answer2_no}
+														[quest2_msg2]{this.quest2_msg_no}{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=220;this.dudesOY=100;''}{script dude_show.qsp}
+															{if (this.things[this.thing_pepper].amount>0) 'Применю перцовку'}
+																[mark_s22z6x070xpl38qvjp4l]{this.things[this.thing_pepper].amount-=1;this.quest2_msg_success}{this.dudesSX=0.8;this.dudesSY=0.8;this.dudesOX=220;this.dudesOY=0;''}{script dude_show.qsp}
+																	>>>
+																		[mark_rksal7k7tip2361s8v6r][GOTO QUEST3]
+															Буду биться
+																[mark_9a0720774b731ifn602t]{if (this.quest2_win) {'[GOTO quest2_win]'} else {'[GOTO quest2_fail]'}}
+																	
+																		[quest2_win]Тебе удалось победить.{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=220;this.dudesOY=100;''}{script dude_show.qsp}
+																			>>>
+																				[mark_86edho414ibm6857wq21]{this.quest2_msg_success}{script dude_show.qsp}
+																					>>>
+																						[mark_e6hea8541br0619j66zl][GOTO QUEST3]
+																		[quest2_fail]Тебя избили... -{this.quest2_damage}% силы.{this.energy-=this.quest2_damage;''}{this.dudesSX=1.5;this.dudesSY=1.5;this.dudesOY=-100;''}{script dude_show.qsp}
+																			>>>
+																				[mark_7b6r343j6x625xclo475]{if (this.money<=0)'[GOTO quest2_fail_end]'}
+																					
+																						[mark_2s3h72i1yi7488s6m550]И отняли все деньги.{this.money=0;''}{script dude_show.qsp}
+																							>>>
+																								[quest2_fail_end]{this.quest2_msg_fail}{script dude_show.qsp}
+																									>>>
+																										[mark_0p5fti3mzdx13wui06l5][GOTO QUEST3]
 											{this.quest2_answer1_no}
-												[mark_m4of8zwf5xb29h8548e7]{this.quest2_msg_no}{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}
-													>>>
-														[mark_q5lxq4mz1oe25ue5j178][GOTO QUEST3]
+												[mark_39p865a53due3479210v][GOTO quest2_msg2]
 						[QUEST3]{script trip_video_in.qsp}
 							
 								[TRIP_COMPLETE]{script trip_complete.qsp}{script rounding.qsp}{script player_check_status.qsp}

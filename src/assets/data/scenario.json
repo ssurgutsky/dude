@@ -2296,7 +2296,7 @@
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL {script quest1_prep.qsp}{script quest1_speak.qsp}{this.quest1_msg1}{script dude_show.qsp}]"
+                                          "_content": "[LABEL {script quest1_prep.qsp}{this.quest1_msg1}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -2304,7 +2304,7 @@
                                     }
                                   ],
                                   "_mark": "QUEST1",
-                                  "_content": "[LABEL {if (Math.random() > 0.5 && true) \"[GOTO QUEST2]\"} ]"
+                                  "_content": "[LABEL {if (Math.random() > 0.5) \"[GOTO QUEST2]\"} ]"
                                 },
                                 {
                                   "node": [
@@ -2336,7 +2336,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_hj2895bwzaj7y12i513c",
-                                                                  "_content": "[LABEL {this.quest2_msg_ok}{script dude_show.qsp}]"
+                                                                  "_content": "[LABEL {this.money-=this.quest2_payment;if(this.money<0){this.money=0;};''}{this.quest2_msg_ok}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -2347,12 +2347,128 @@
                                                                 {
                                                                   "node": [
                                                                     {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_rksal7k7tip2361s8v6r",
+                                                                                  "_content": "[LABEL ][GOTO QUEST3]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL >>>]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_s22z6x070xpl38qvjp4l",
+                                                                          "_content": "[LABEL {this.things[this.thing_pepper].amount-=1;this.quest2_msg_success}{this.dudesSX=0.8;this.dudesSY=0.8;this.dudesOX=220;this.dudesOY=0;''}{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
                                                                       "_mark": "",
-                                                                      "_content": "[LABEL <Enter text here>]"
+                                                                      "_content": "[LABEL {if (this.things[this.thing_pepper].amount>0) 'Применю перцовку'}]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "_mark": "mark_e6hea8541br0619j66zl",
+                                                                                                  "_content": "[LABEL ][GOTO QUEST3]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL >>>]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "mark_86edho414ibm6857wq21",
+                                                                                          "_content": "[LABEL {this.quest2_msg_success}{script dude_show.qsp}]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL >>>]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "quest2_win",
+                                                                                  "_content": "[LABEL Тебе удалось победить.{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=220;this.dudesOY=100;''}{script dude_show.qsp}]"
+                                                                                },
+                                                                                {
+                                                                                  "node": [
+                                                                                    {
+                                                                                      "node": [
+                                                                                        {
+                                                                                          "node": [
+                                                                                            {
+                                                                                              "node": [
+                                                                                                {
+                                                                                                  "node": [
+                                                                                                    {
+                                                                                                      "node": [
+                                                                                                        {
+                                                                                                          "node": [
+                                                                                                            {
+                                                                                                              "node": [
+                                                                                                                {
+                                                                                                                  "_mark": "mark_0p5fti3mzdx13wui06l5",
+                                                                                                                  "_content": "[LABEL ][GOTO QUEST3]"
+                                                                                                                }
+                                                                                                              ],
+                                                                                                              "_mark": "",
+                                                                                                              "_content": "[LABEL >>>]"
+                                                                                                            }
+                                                                                                          ],
+                                                                                                          "_mark": "quest2_fail_end",
+                                                                                                          "_content": "[LABEL {this.quest2_msg_fail}{script dude_show.qsp}]"
+                                                                                                        }
+                                                                                                      ],
+                                                                                                      "_mark": "",
+                                                                                                      "_content": "[LABEL >>>]"
+                                                                                                    }
+                                                                                                  ],
+                                                                                                  "_mark": "mark_2s3h72i1yi7488s6m550",
+                                                                                                  "_content": "[LABEL И отняли все деньги.{this.money=0;''}{script dude_show.qsp}]"
+                                                                                                }
+                                                                                              ],
+                                                                                              "_mark": "",
+                                                                                              "_content": "[LABEL ]"
+                                                                                            }
+                                                                                          ],
+                                                                                          "_mark": "mark_7b6r343j6x625xclo475",
+                                                                                          "_content": "[LABEL {if (this.money<=0)'[GOTO quest2_fail_end]'}]"
+                                                                                        }
+                                                                                      ],
+                                                                                      "_mark": "",
+                                                                                      "_content": "[LABEL >>>]"
+                                                                                    }
+                                                                                  ],
+                                                                                  "_mark": "quest2_fail",
+                                                                                  "_content": "[LABEL Тебя избили... -{this.quest2_damage}% силы.{this.energy-=this.quest2_damage;''}{this.dudesSX=1.5;this.dudesSY=1.5;this.dudesOY=-100;''}{script dude_show.qsp}]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_9a0720774b731ifn602t",
+                                                                          "_content": "[LABEL {if (this.quest2_win) {'[GOTO quest2_win]'} else {'[GOTO quest2_fail]'}}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Буду биться]"
                                                                     }
                                                                   ],
-                                                                  "_mark": "",
-                                                                  "_content": "[LABEL <Enter text here>]"
+                                                                  "_mark": "quest2_msg2",
+                                                                  "_content": "[LABEL {this.quest2_msg_no}{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=220;this.dudesOY=100;''}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -2369,20 +2485,8 @@
                                                     {
                                                       "node": [
                                                         {
-                                                          "node": [
-                                                            {
-                                                              "node": [
-                                                                {
-                                                                  "_mark": "mark_q5lxq4mz1oe25ue5j178",
-                                                                  "_content": "[LABEL ][GOTO QUEST3]"
-                                                                }
-                                                              ],
-                                                              "_mark": "",
-                                                              "_content": "[LABEL >>>]"
-                                                            }
-                                                          ],
-                                                          "_mark": "mark_m4of8zwf5xb29h8548e7",
-                                                          "_content": "[LABEL {this.quest2_msg_no}{this.dudesOX=250;this.dudesOY=50;''}{script dude_show.qsp}]"
+                                                          "_mark": "mark_39p865a53due3479210v",
+                                                          "_content": "[LABEL ][GOTO quest2_msg2]"
                                                         }
                                                       ],
                                                       "_mark": "",
@@ -2390,7 +2494,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_1654w8308a75a0xb8r22",
-                                                  "_content": "[LABEL {script quest2_prep.qsp}{script quest2_speak.qsp}{this.quest2_msg1}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL {script quest2_prep.qsp}{this.quest2_msg1}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
