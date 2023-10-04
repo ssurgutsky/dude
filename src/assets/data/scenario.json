@@ -2400,7 +2400,7 @@
                                                                                     }
                                                                                   ],
                                                                                   "_mark": "quest2_win",
-                                                                                  "_content": "[LABEL Тебе удалось победить.{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=220;this.dudesOY=100;''}{script dude_show.qsp}]"
+                                                                                  "_content": "[LABEL Тебе удалось победить.{this.dudesSX=1;this.dudesSY=1;this.dudesOX=220;this.dudesOY=350;''}{script dude_show.qsp}]"
                                                                                 },
                                                                                 {
                                                                                   "node": [
@@ -2452,7 +2452,7 @@
                                                                                     }
                                                                                   ],
                                                                                   "_mark": "quest2_fail",
-                                                                                  "_content": "[LABEL Тебя избили... -{this.quest2_damage}% силы.{this.energy-=this.quest2_damage;''}{this.dudesSX=1.5;this.dudesSY=1.5;this.dudesOY=-100;''}{script dude_show.qsp}]"
+                                                                                  "_content": "[LABEL Тебя избили... -{this.quest2_damage}% силы.{this.energy-=this.quest2_damage;''}{this.dudesData=null;this.dudesBg='bg/bg_fail'+this.randomInt(1,5)+'.jpg';this.dudesSX=2;this.dudesSY=2;this.dudesOY=-300;''}{script dude_show.qsp}]"
                                                                                 }
                                                                               ],
                                                                               "_mark": "",
@@ -2468,7 +2468,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "quest2_msg2",
-                                                                  "_content": "[LABEL {this.quest2_msg_no}{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=220;this.dudesOY=100;''}{script dude_show.qsp}]"
+                                                                  "_content": "[LABEL {this.quest2_msg_no}{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=180;this.dudesOY=100;''}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",

@@ -434,7 +434,7 @@
 															>>>
 																[mark_0qu6l31d9880dvdf62f8][GOTO QUEST3]
 													{this.quest2_answer2_no}
-														[quest2_msg2]{this.quest2_msg_no}{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=220;this.dudesOY=100;''}{script dude_show.qsp}
+														[quest2_msg2]{this.quest2_msg_no}{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=180;this.dudesOY=100;''}{script dude_show.qsp}
 															{if (this.things[this.thing_pepper].amount>0) 'Применю перцовку'}
 																[mark_s22z6x070xpl38qvjp4l]{this.things[this.thing_pepper].amount-=1;this.quest2_msg_success}{this.dudesSX=0.8;this.dudesSY=0.8;this.dudesOX=220;this.dudesOY=0;''}{script dude_show.qsp}
 																	>>>
@@ -442,12 +442,12 @@
 															Буду биться
 																[mark_9a0720774b731ifn602t]{if (this.quest2_win) {'[GOTO quest2_win]'} else {'[GOTO quest2_fail]'}}
 																	
-																		[quest2_win]Тебе удалось победить.{this.dudesSX=1.2;this.dudesSY=1.2;this.dudesOX=220;this.dudesOY=100;''}{script dude_show.qsp}
+																		[quest2_win]Тебе удалось победить.{this.dudesSX=1;this.dudesSY=1;this.dudesOX=220;this.dudesOY=350;''}{script dude_show.qsp}
 																			>>>
 																				[mark_86edho414ibm6857wq21]{this.quest2_msg_success}{script dude_show.qsp}
 																					>>>
 																						[mark_e6hea8541br0619j66zl][GOTO QUEST3]
-																		[quest2_fail]Тебя избили... -{this.quest2_damage}% силы.{this.energy-=this.quest2_damage;''}{this.dudesSX=1.5;this.dudesSY=1.5;this.dudesOY=-100;''}{script dude_show.qsp}
+																		[quest2_fail]Тебя избили... -{this.quest2_damage}% силы.{this.energy-=this.quest2_damage;''}{this.dudesData=null;this.dudesBg='bg/bg_fail'+this.randomInt(1,5)+'.jpg';this.dudesSX=2;this.dudesSY=2;this.dudesOY=-300;''}{script dude_show.qsp}
 																			>>>
 																				[mark_7b6r343j6x625xclo475]{if (this.money<=0)'[GOTO quest2_fail_end]'}
 																					
