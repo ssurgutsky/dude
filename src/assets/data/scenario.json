@@ -2304,7 +2304,7 @@
                                     }
                                   ],
                                   "_mark": "QUEST1",
-                                  "_content": "[LABEL {if (Math.random() > 0.5) \"[GOTO QUEST2]\"} ]"
+                                  "_content": "[LABEL {if (Math.random()*100>this.negative) '[GOTO QUEST2]'} ]"
                                 },
                                 {
                                   "node": [
@@ -2327,6 +2327,50 @@
                                                                     {
                                                                       "node": [
                                                                         {
+                                                                          "node": [
+                                                                            {
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL ][GOTO quest2_fight]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "quest2_go_fight",
+                                                                          "_content": "[LABEL Тогда давай биться.{script dude_show.qsp}]"
+                                                                        },
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_jdujz3zun7k0eti6i12c",
+                                                                                  "_content": "[LABEL ][GOTO QUEST3]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL >>>]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "quest2_go_away",
+                                                                          "_content": "[LABEL Ладно, иди куда шел.{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL ]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_51nbs05g8h9q2va8he76",
+                                                                  "_content": "[LABEL {if (Math.random()*100<this.negative) {'[GOTO quest2_go_fight]'} else {'[GOTO quest2_go_away]'}} ]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL {if (this.money<=0) 'У меня нет денег'}]"
+                                                            },
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
                                                                           "_mark": "mark_0qu6l31d9880dvdf62f8",
                                                                           "_content": "[LABEL ][GOTO QUEST3]"
                                                                         }
@@ -2340,7 +2384,7 @@
                                                                 }
                                                               ],
                                                               "_mark": "",
-                                                              "_content": "[LABEL {this.quest2_answer2_ok}]"
+                                                              "_content": "[LABEL {if (this.money>0) this.quest2_answer2_ok}]"
                                                             },
                                                             {
                                                               "node": [
@@ -2374,10 +2418,10 @@
                                                                             }
                                                                           ],
                                                                           "_mark": "mark_r106kr4ni3its797x8y8",
-                                                                          "_content": "[LABEL ...{this.things[this.thing_pepper].amount-=1;'';}{script dude_show.qsp}][IMAGE etc/pepper_hit.png]"
+                                                                          "_content": "[LABEL ...{this.things[this.thing_pepper].amount-=0.3;'';}{script dude_show.qsp}][IMAGE etc/pepper_hit.png]"
                                                                         }
                                                                       ],
-                                                                      "_mark": "",
+                                                                      "_mark": "quest2_pepper",
                                                                       "_content": "[LABEL {if (this.things[this.thing_pepper].amount>0) 'Применю перцовку'}]"
                                                                     },
                                                                     {
@@ -2412,7 +2456,7 @@
                                                                                     }
                                                                                   ],
                                                                                   "_mark": "quest2_win",
-                                                                                  "_content": "[LABEL Тебе удалось победить.{this.dudesSX=1;this.dudesSY=1;this.dudesOX=220;this.dudesOY=350;''}{script dude_show.qsp}]"
+                                                                                  "_content": "[LABEL Тебе удалось победить! Бонус за победу {this.quest2_win_money} денег.{this.money+=this.quest2_win_money;'';}{this.dudesSX=1;this.dudesSY=1;this.dudesOX=220;this.dudesOY=350;''}{script dude_show.qsp}]"
                                                                                 },
                                                                                 {
                                                                                   "node": [
@@ -2475,7 +2519,7 @@
                                                                           "_content": "[LABEL {if (this.quest2_win) {'[GOTO quest2_win]'} else {'[GOTO quest2_fail]'}}]"
                                                                         }
                                                                       ],
-                                                                      "_mark": "",
+                                                                      "_mark": "quest2_fight",
                                                                       "_content": "[LABEL Буду биться]"
                                                                     }
                                                                   ],
@@ -2522,7 +2566,7 @@
                                     }
                                   ],
                                   "_mark": "QUEST2",
-                                  "_content": "[LABEL {if (Math.random() > 0.5 && false) \"[GOTO QUEST3]\"} ]"
+                                  "_content": "[LABEL {if (Math.random()*100>this.negative) '[GOTO QUEST3]'} ]"
                                 },
                                 {
                                   "node": [
@@ -2587,6 +2631,10 @@
                         {
                           "_mark": "player_die_rest_out",
                           "_content": "[LABEL {script player_show_stats.qsp}\nК сожалению - ты умер от недостатка отдыха...]"
+                        },
+                        {
+                          "_mark": "player_die_rest_energy_out",
+                          "_content": "[LABEL {script player_show_stats.qsp}\nК сожалению - ты умер от недостатка физических сил и отдыха...]"
                         }
                       ],
                       "_mark": "",
