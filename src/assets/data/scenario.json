@@ -98,7 +98,7 @@
                                                             }
                                                           ],
                                                           "_mark": "home1_room2",
-                                                          "_content": "[LABEL Зал. Что будешь делать?\n{script player_show_stats.qsp}{script father_dude_prep.qsp}{script dude_show.qsp}]"
+                                                          "_content": "[LABEL Зал. Что будешь делать?\n{script player_show_stats.qsp}{script father_prep.qsp}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "go_home1_room2",
@@ -286,7 +286,7 @@
                                                                             }
                                                                           ],
                                                                           "_mark": "mark_793pep9sc2jl9pc8d94c",
-                                                                          "_content": "[LABEL {this.mother_home1_msg2}{script mother_dude_prep.qsp}{script dude_show.qsp}]"
+                                                                          "_content": "[LABEL {this.mother_home1_msg2}{script mother_prep.qsp}{script dude_show.qsp}]"
                                                                         }
                                                                       ],
                                                                       "_mark": "",
@@ -294,7 +294,7 @@
                                                                     }
                                                                   ],
                                                                   "_mark": "mark_3tez7feb6l96843vfu24",
-                                                                  "_content": "[LABEL {script mother_speak.qsp}{this.mother_home1_msg1}{script mother_dude_prep.qsp}{script dude_show.qsp}]"
+                                                                  "_content": "[LABEL {script mother_speak.qsp}{this.mother_home1_msg1}{script mother_prep.qsp}{script dude_show.qsp}]"
                                                                 }
                                                               ],
                                                               "_mark": "",
@@ -336,7 +336,7 @@
                                                             }
                                                           ],
                                                           "_mark": "home1_room4",
-                                                          "_content": "[LABEL Кухня. Что будешь делать?\n{script player_show_stats.qsp}{script mother_dude_prep.qsp}{script dude_show.qsp}]"
+                                                          "_content": "[LABEL Кухня. Что будешь делать?\n{script player_show_stats.qsp}{script mother_prep.qsp}{script dude_show.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "go_home1_room4",
