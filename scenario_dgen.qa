@@ -1,0 +1,36 @@
+[mark_072k0e5b6nffqnr54rsj]{script init_vars.qsp}...
+	
+		[dude_generator]{this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesCtg=this.dudesCtg||[2];this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}
+			[dude_generator_again]Эти же
+				[mark_br5c8k8j9y801u4057dz]...{script dude_show.qsp}
+					[GOTO dude_generator_again]
+					Другие
+						[mark_x873ca8518w0236273u3][GOTO dude_generator]
+			Гопники
+				[mark_fu8079797p9u8m5e612r]{this.dudesCtg=[2];''}[GOTO dude_generator]
+			Бомжы
+				[mark_td27t7x3vy28x50hlc46]{this.dudesCtg=[3];''}[GOTO dude_generator]
+			Грузчики
+				[mark_33ath74m5a41q61bu55x]{this.dudesCtg=[1];''}[GOTO dude_generator]
+			Обычные
+				[mark_m82u2l32u3z685s5o7ax]{this.dudesCtg=[4];''}[GOTO dude_generator]
+			Бандит
+				[mark_a6151259092ew03ivuhz]{this.dudesCtg=[5];''}[GOTO dude_generator]
+			Толян
+				[mark_t7ap7427q65183296ey5]{this.dudesCtg=[6];''}[GOTO dude_generator]
+			Барыги
+				[mark_vtijvkg54d647dgtf802]{this.dudesCtg=[7];''}[GOTO dude_generator]
+			Преподы
+				[mark_7q5a2k6g8n3t50mr05zl]{this.dudesCtg=[8];''}[GOTO dude_generator]
+			Студент
+				[mark_qux8j77b2dpdh4fje0v0]{this.dudesCtg=[9];''}[GOTO dude_generator]
+			Работник
+				[mark_1wz088jqf91rl7xzt349]{this.dudesCtg=[10];''}[GOTO dude_generator]
+			Охранники
+				[mark_q8m398gb62e7vz583dfi]{this.dudesCtg=[15];''}[GOTO dude_generator]
+			Все мужики
+				[mark_5i558f76n5f1iu6kiw33]{this.dudesCtg=[1,2,3,4,5,6,7,8,9,10,11,12,15];''}[GOTO dude_generator]
+			Все женщины
+				[mark_2h211mfx13fv0w1v5rxz]{this.dudesCtg=[14];''}[GOTO dude_generator]
+			Все все все
+				[mark_eg4m4mu7k76x2f7vq5vh]{this.dudesCtg=[1,2,3,4,5,6,7,8,9,10,11,14];''}[GOTO dude_generator]
