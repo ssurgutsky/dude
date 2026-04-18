@@ -52,6 +52,16 @@
 																		[mark_dyu9io0qic70wrepa0jc][GOTO home1_room3_slept]
 													[GOTO go_home1_room2]
 													[GOTO go_home1_room4]
+													Послушаю песни
+														[home1_room3_songs]Что будешь слушать?\n{script player_show_stats.qsp}[BGNDIMAGE bg/home1_room3.jpg]
+															Ничего[MUSIC none]
+																[mark_r7n5m7214k4pc6spq7jo][GOTO home1_room3]
+															"Батрак и комбайнер"[MUSIC home1_room3_track1.mp3]
+																[mark_2ue6367y87p6l791qi96][GOTO home1_room3_songs]
+															"Дворовая шлю"[MUSIC home1_room3_track2.mp3]
+																[mark_v1w58267cya9hzrrey15][GOTO home1_room3_songs]
+															"Дворовой вайбкодер"[MUSIC home1_room3_track3.mp3]
+																[mark_051wfvg31me455dh9h59][GOTO home1_room3_songs]
 													[GOTO home1_go_out]
 											[go_home1_room4]Пойду на кухню
 												[home1_room4]Кухня. Что будешь делать?\n{script player_show_stats.qsp}{script mother_prep.qsp}{script dude_show.qsp}
@@ -345,6 +355,17 @@
 											Уйду отсюда
 												[mark_412m1fay507p61m60506][GOTO MENU]
 										[location10]{script player_show_stats.qsp}\nЧто будешь делать?[BGNDIMAGE bg/location10_1.jpg]
+											Слетаю на Бали (Цена: {this.AIRPORT_BALI_COST})
+												[mark_046rb08cb6wm2oivcaky]{this.payment=this.AIRPORT_BALI_COST;this.callback_ok='airport_bali_money_ok';this.callback_no='airport_bali_money_no';'';}{script player_check_money.qsp}
+													
+														[nightclub_money_ok]{this.money-=this.AIRPORT_BALI_COST;'';}Приобретено!{script dude_show.qsp}
+															Сяду в самолет
+																[mark_iqfh1228m4m2e8zc6996]Летим...[BGNDIMAGE bg/location10_2.jpg]
+																	<Enter text here>
+																	<Enter text here>
+														[airport_bali_money_no]У тебя недостаточно денег...{script dude_show.qsp}
+															Эх... пусть пока останется мечтой.
+																[mark_b772ze75c96lkprq7ern][GOTO MENU]
 							Пойду пешком в другое место
 								[mark_qnpag892ow868r0gi4id]{this.player_move_type=1;''}[GOTO MAP]
 									

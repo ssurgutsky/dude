@@ -1,2 +1,2 @@
-SET JAVA_HOME="C:\Program Files\Java\jdk-18.0.1.1\"
+#SET JAVA_HOME="C:\JDK\jdk-25.0.2.10"
 npm run build

@@ -251,6 +251,58 @@
                                                               "_content": "[LABEL ][GOTO go_home1_room4]"
                                                             },
                                                             {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_r7n5m7214k4pc6spq7jo",
+                                                                          "_content": "[LABEL ][GOTO home1_room3]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Ничего][MUSIC none]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_2ue6367y87p6l791qi96",
+                                                                          "_content": "[LABEL ][GOTO home1_room3_songs]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL \"Батрак и комбайнер\"][MUSIC home1_room3_track1.mp3]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_v1w58267cya9hzrrey15",
+                                                                          "_content": "[LABEL ][GOTO home1_room3_songs]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL \"Дворовая шлю\"][MUSIC home1_room3_track2.mp3]"
+                                                                    },
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_051wfvg31me455dh9h59",
+                                                                          "_content": "[LABEL ][GOTO home1_room3_songs]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL \"Дворовой вайбкодер\"][MUSIC home1_room3_track3.mp3]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "home1_room3_songs",
+                                                                  "_content": "[LABEL Что будешь слушать?\n{script player_show_stats.qsp}][BGNDIMAGE bg/home1_room3_musicbox.jpg]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Послушаю песни]"
+                                                            },
+                                                            {
                                                               "_mark": "",
                                                               "_content": "[LABEL ][GOTO home1_go_out]"
                                                             }
@@ -1863,6 +1915,68 @@
                                                   "_content": "[LABEL {script player_show_stats.qsp}\nВход стоит {this.NIIGHTCLUB_COST}. Купишь билет?{script nightclub_prepare.qsp}{script dude_show.qsp}]"
                                                 },
                                                 {
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL <Enter text here>]"
+                                                                            },
+                                                                            {
+                                                                              "_mark": "",
+                                                                              "_content": "[LABEL <Enter text here>]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_iqfh1228m4m2e8zc6996",
+                                                                          "_content": "[LABEL Летим...][BGNDIMAGE bg/location10_2.jpg]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Сяду в самолет]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "nightclub_money_ok",
+                                                                  "_content": "[LABEL {this.money-=this.AIRPORT_BALI_COST;'';}Приобретено!{script dude_show.qsp}]"
+                                                                },
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "_mark": "mark_b772ze75c96lkprq7ern",
+                                                                          "_content": "[LABEL ][GOTO MENU]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL Эх... пусть пока останется мечтой.]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "airport_bali_money_no",
+                                                                  "_content": "[LABEL У тебя недостаточно денег...{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_046rb08cb6wm2oivcaky",
+                                                          "_content": "[LABEL {this.payment=this.AIRPORT_BALI_COST;this.callback_ok='airport_bali_money_ok';this.callback_no='airport_bali_money_no';'';}{script player_check_money.qsp}]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL Слетаю на Бали (Цена: {this.AIRPORT_BALI_COST})]"
+                                                    }
+                                                  ],
                                                   "_mark": "location10",
                                                   "_content": "[LABEL {script player_show_stats.qsp}\nЧто будешь делать?][BGNDIMAGE bg/location10_1.jpg]"
                                                 }
